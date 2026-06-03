@@ -805,6 +805,7 @@ function renderQuestion() {
   const starred = getStarred().includes(q.id);
   const flagged = getFlagged().includes(q.id);
   const r = getRecord();
+  const doneCount = queue.filter(x => r[x.id]).length;
   answered = false;
 
   const aiBadge = q.answer_source === 'ai_generated'
@@ -822,11 +823,11 @@ function renderQuestion() {
   area.innerHTML = `
     <div class="progress-wrap">
       <div class="progress-bar-track">
-        <div class="progress-bar-fill" style="width: ${(qIndex / queue.length) * 100}%"></div>
+        <div class="progress-bar-fill" style="width: ${doneCount / queue.length * 100}%"></div>
       </div>
       <div class="progress-labels">
-        <span>${qIndex} done</span>
-        <span>${queue.length - qIndex} remaining</span>
+        <span>${doneCount} done</span>
+        <span>${queue.length - doneCount} remaining</span>
       </div>
     </div>
 
@@ -951,8 +952,10 @@ function showResults() {
 
 // ── UI Helpers ──
 function updateCounter() {
+  const r = getRecord();
+  const doneCount = queue.filter(q => r[q.id]).length;
   document.getElementById('q-counter').textContent =
-    queue.length > 0 ? `${qIndex + 1} / ${queue.length}` : '0 / 0';
+    queue.length > 0 ? `${doneCount} / ${queue.length}` : '0 / 0';
   const titles = {
     all: 'All Questions', starred: 'Starred Questions', wrong: 'Needs Review', flagged: 'Flagged Questions'
   };
