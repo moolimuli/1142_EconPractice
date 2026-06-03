@@ -359,15 +359,32 @@
     border-radius: 12px;
     font-size: 14px;
     display: none;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
   }
   .feedback-box.show { display: flex; }
   .feedback-box.correct { background: var(--green-soft); border: 1px solid #22c55e30; color: var(--green); }
   .feedback-box.wrong { background: var(--red-soft); border: 1px solid #ef444430; color: var(--red); }
 
+  .feedback-main { display: flex; align-items: center; gap: 12px; }
   .feedback-icon { font-size: 20px; }
   .feedback-text { flex: 1; line-height: 1.5; }
+
+  .feedback-explanation {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid currentColor;
+    opacity: 0.85;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+  .explanation-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    margin-bottom: 6px;
+  }
 
   /* ── Navigation ── */
   .nav-row {
@@ -830,9 +847,12 @@ function selectOption(qid, key) {
   const correctLabel = correctArr.join(' or ');
   const fb = document.getElementById('feedback');
   fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
+  const expHtml = q.explanation
+    ? `<div class="feedback-explanation"><div class="explanation-label">Explanation</div>${q.explanation}</div>`
+    : '';
   fb.innerHTML = isCorrect
-    ? `<span class="feedback-icon">✓</span><span class="feedback-text">Correct!</span>`
-    : `<span class="feedback-icon">✗</span><span class="feedback-text">Incorrect. The correct answer is <strong>${correctLabel}</strong>.</span>`;
+    ? `<div class="feedback-main"><span class="feedback-icon">✓</span><span class="feedback-text">Correct!</span></div>${expHtml}`
+    : `<div class="feedback-main"><span class="feedback-icon">✗</span><span class="feedback-text">Incorrect. The correct answer is <strong>${correctLabel}</strong>.</span></div>${expHtml}`;
 
   // Record
   const r = getRecord();
