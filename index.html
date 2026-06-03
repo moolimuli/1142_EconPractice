@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economics Practice</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f0f11;
+    --surface: #18181c;
+    --surface2: #222228;
+    --border: #2e2e36;
+    --text: #e8e8f0;
+    --text-dim: #7a7a8e;
+    --text-muted: #4a4a5e;
+    --accent: #7c6af7;
+    --accent-soft: #7c6af720;
+    --accent-border: #7c6af740;
+    --green: #4ade80;
+    --green-soft: #4ade8015;
+    --red: #f87171;
+    --red-soft: #f8717115;
+    --yellow: #fbbf24;
+    --yellow-soft: #fbbf2415;
+    --ai-badge: #f59e0b;
+    --ai-badge-soft: #f59e0b18;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── Layout ── */
+  #app { display: flex; height: 100vh; }
+
+  /* ── Sidebar ── */
+  #sidebar {
+    width: 260px;
+    min-width: 260px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 28px 20px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--text);
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+  }
+  .sidebar-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .sidebar-section {
+    padding: 20px 20px 12px;
+  }
+  .sidebar-section-label {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+  }
+
+  .filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 10px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--text-dim);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .filter-btn:hover { background: var(--surface2); color: var(--text); }
+  .filter-btn.active {
+    background: var(--accent-soft);
+    border-color: var(--accent-border);
+    color: var(--text);
+  }
+  .filter-btn .count {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    background: var(--surface2);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  .filter-btn.active .count {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .divider { height: 1px; background: var(--border); margin: 4px 20px; }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 16px 20px;
+  }
+  .stat-card {
+    background: var(--surface2);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .stat-val {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+  .stat-label { font-size: 11px; color: var(--text-muted); }
+
+  /* ── Main Content ── */
+  #main {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Top Bar ── */
+  #topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .topbar-left { display: flex; align-items: center; gap: 12px; }
+
+  .view-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .question-counter {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .topbar-right { display: flex; gap: 8px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-dim);
+  }
+  .btn:hover { background: var(--surface2); color: var(--text); }
+  .btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+  }
+  .btn.primary:hover { opacity: 0.9; }
+  .btn.danger { color: var(--red); border-color: #f8717130; }
+  .btn.danger:hover { background: var(--red-soft); }
+
+  /* ── Question Area ── */
+  #question-area {
+    flex: 1;
+    padding: 40px 32px;
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ── Progress Bar ── */
+  .progress-wrap {
+    margin-bottom: 32px;
+  }
+  .progress-bar-track {
+    height: 3px;
+    background: var(--surface2);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+  }
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ── Question Card ── */
+  .question-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .question-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .badge-chapter { background: var(--surface2); color: var(--text-dim); border: 1px solid var(--border); }
+  .badge-source { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-border); }
+  .badge-ai {
+    background: var(--ai-badge-soft);
+    color: var(--ai-badge);
+    border: 1px solid #f59e0b25;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .badge-unverified { background: var(--yellow-soft); color: var(--yellow); border: 1px solid #fbbf2425; }
+
+  .star-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-muted);
+    transition: all 0.2s;
+    padding: 2px;
+    line-height: 1;
+  }
+  .star-btn:hover { color: var(--yellow); transform: scale(1.15); }
+  .star-btn.starred { color: var(--yellow); }
+
+  .question-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+
+  /* ── Options ── */
+  .options-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .option-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: left;
+    width: 100%;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateX(2px);
+  }
+  .option-btn:disabled { cursor: default; }
+
+  .option-key {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    width: 20px;
+    min-width: 20px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .option-btn.selected { border-color: var(--accent); background: var(--accent-soft); }
+  .option-btn.correct {
+    border-color: var(--green);
+    background: var(--green-soft);
+  }
+  .option-btn.correct .option-key { color: var(--green); }
+  .option-btn.wrong {
+    border-color: var(--red);
+    background: var(--red-soft);
+  }
+  .option-btn.wrong .option-key { color: var(--red); }
+
+  /* ── Feedback ── */
+  .feedback-box {
+    margin-top: 20px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    display: none;
+    align-items: center;
+    gap: 12px;
+  }
+  .feedback-box.show { display: flex; }
+  .feedback-box.correct { background: var(--green-soft); border: 1px solid #4ade8030; color: var(--green); }
+  .feedback-box.wrong { background: var(--red-soft); border: 1px solid #f8717130; color: var(--red); }
+
+  .feedback-icon { font-size: 20px; }
+  .feedback-text { flex: 1; line-height: 1.5; }
+
+  /* ── Navigation ── */
+  .nav-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  /* ── Empty State ── */
+  .empty-state {
+    text-align: center;
+    padding: 80px 40px;
+    color: var(--text-muted);
+  }
+  .empty-icon { font-size: 48px; margin-bottom: 16px; }
+  .empty-title { font-family: 'Syne', sans-serif; font-size: 20px; color: var(--text-dim); margin-bottom: 8px; }
+  .empty-sub { font-size: 14px; line-height: 1.6; }
+
+  /* ── Results Screen ── */
+  #results-screen {
+    display: none;
+    padding: 60px 32px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .results-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .results-sub { color: var(--text-dim); font-size: 15px; margin-bottom: 40px; }
+  .results-score {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .results-score-label { color: var(--text-muted); font-size: 14px; margin-bottom: 32px; }
+  .results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .results-stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .results-stat-val { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 28px; margin-bottom: 4px; }
+  .results-stat-label { font-size: 12px; color: var(--text-muted); }
+  .r-correct { color: var(--green); }
+  .r-wrong { color: var(--red); }
+  .r-skip { color: var(--text-dim); }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+<script src="questions.js"></script>
+<div id="app">
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">Econ Practice</div>
+      <div class="sidebar-sub">Homework Questions</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Mode</div>
+      <button class="filter-btn active" id="btn-all" onclick="setMode('all')">
+        All Questions <span class="count" id="cnt-all">0</span>
+      </button>
+      <button class="filter-btn" id="btn-starred" onclick="setMode('starred')">
+        ⭐ Starred <span class="count" id="cnt-starred">0</span>
+      </button>
+      <button class="filter-btn" id="btn-wrong" onclick="setMode('wrong')">
+        ✗ Needs Review <span class="count" id="cnt-wrong">0</span>
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Chapter</div>
+      <button class="filter-btn active" id="btn-ch-all" onclick="setChapter('all')">
+        All Chapters <span class="count" id="cnt-ch-all">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-23-24" onclick="setChapter('23-24')">
+        CH 23–24 GDP & CPI <span class="count" id="cnt-ch-23-24">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-25-26" onclick="setChapter('25-26')">
+        CH 25–26 Growth <span class="count" id="cnt-ch-25-26">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-27" onclick="setChapter('27')">
+        CH 27 Finance <span class="count" id="cnt-ch-27">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-29" onclick="setChapter('29')">
+        CH 29 Banking <span class="count" id="cnt-ch-29">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-30" onclick="setChapter('30')">
+        CH 30 Open Econ <span class="count" id="cnt-ch-30">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-31" onclick="setChapter('31')">
+        CH 31 Inflation <span class="count" id="cnt-ch-31">0</span>
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-val" id="stat-total" style="color: var(--text)">0</div>
+        <div class="stat-label">Total Done</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-correct" style="color: var(--green)">0</div>
+        <div class="stat-label">Correct</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-wrong" style="color: var(--red)">0</div>
+        <div class="stat-label">Wrong</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-acc" style="color: var(--accent)">—</div>
+        <div class="stat-label">Accuracy</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div id="main">
+    <div id="topbar">
+      <div class="topbar-left">
+        <span class="view-title" id="view-title">All Questions</span>
+        <span class="question-counter" id="q-counter">— / —</span>
+      </div>
+      <div class="topbar-right">
+        <button class="btn" onclick="shuffleQuestions()">⇄ Shuffle</button>
+        <button class="btn danger" onclick="resetSession()">↺ Reset</button>
+      </div>
+    </div>
+
+    <div id="question-area">
+      <!-- will be populated by JS -->
+    </div>
+
+    <div id="results-screen">
+      <div class="results-title">Session Complete</div>
+      <div class="results-sub" id="res-sub"></div>
+      <div class="results-score" id="res-pct"></div>
+      <div class="results-score-label">accuracy</div>
+      <div class="results-grid">
+        <div class="results-stat"><div class="results-stat-val r-correct" id="res-correct"></div><div class="results-stat-label">Correct</div></div>
+        <div class="results-stat"><div class="results-stat-val r-wrong" id="res-wrong"></div><div class="results-stat-label">Wrong</div></div>
+        <div class="results-stat"><div class="results-stat-val r-skip" id="res-total"></div><div class="results-stat-label">Total</div></div>
+      </div>
+      <button class="btn primary" style="margin: 0 auto; display: inline-flex;" onclick="restartSession()">Practice Again</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State ──
+let currentMode = 'all';
+let currentChapter = 'all';
+let queue = [];
+let qIndex = 0;
+let answered = false;
+let sessionCorrect = 0;
+let sessionWrong = 0;
+
+// Persistent state in localStorage
+function getRecord() {
+  try { return JSON.parse(localStorage.getItem('econ_record') || '{}'); } catch { return {}; }
+}
+function saveRecord(r) { localStorage.setItem('econ_record', JSON.stringify(r)); }
+function getStarred() {
+  try { return JSON.parse(localStorage.getItem('econ_starred') || '[]'); } catch { return []; }
+}
+function saveStarred(s) { localStorage.setItem('econ_starred', JSON.stringify(s)); }
+
+// ── Filter Logic ──
+function getFilteredQuestions() {
+  let q = questionsData;
+  if (currentChapter !== 'all') q = q.filter(x => x.chapter === currentChapter);
+  if (currentMode === 'starred') {
+    const s = getStarred();
+    q = q.filter(x => s.includes(x.id));
+  } else if (currentMode === 'wrong') {
+    const r = getRecord();
+    q = q.filter(x => r[x.id] === 'wrong');
+  }
+  return q;
+}
+
+function setMode(mode) {
+  currentMode = mode;
+  ['all','starred','wrong'].forEach(m => {
+    document.getElementById('btn-'+m).classList.toggle('active', m === mode);
+  });
+  startSession();
+}
+
+function setChapter(ch) {
+  currentChapter = ch;
+  ['all','23-24','25-26','27','29','30','31'].forEach(c => {
+    const el = document.getElementById('btn-ch-'+c);
+    if (el) el.classList.toggle('active', c === ch);
+  });
+  startSession();
+}
+
+// ── Session ──
+function startSession() {
+  sessionCorrect = 0;
+  sessionWrong = 0;
+  queue = [...getFilteredQuestions()];
+  qIndex = 0;
+  answered = false;
+  document.getElementById('results-screen').style.display = 'none';
+  document.getElementById('question-area').style.display = '';
+  updateCounts();
+  renderQuestion();
+}
+
+function shuffleQuestions() {
+  for (let i = queue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [queue[i], queue[j]] = [queue[j], queue[i]];
+  }
+  qIndex = 0;
+  answered = false;
+  renderQuestion();
+}
+
+function resetSession() {
+  if (confirm('Reset all answer history?')) {
+    saveRecord({});
+    startSession();
+    updateStats();
+  }
+}
+
+function restartSession() {
+  startSession();
+}
+
+// ── Render ──
+function renderQuestion() {
+  const area = document.getElementById('question-area');
+  updateCounter();
+
+  if (queue.length === 0) {
+    area.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">📭</div>
+        <div class="empty-title">No questions here</div>
+        <div class="empty-sub">Try selecting a different filter or chapter.</div>
+      </div>`;
+    return;
+  }
+
+  if (qIndex >= queue.length) {
+    showResults();
+    return;
+  }
+
+  const q = queue[qIndex];
+  const starred = getStarred().includes(q.id);
+  const r = getRecord();
+  answered = false;
+
+  const aiBadge = q.answer_source === 'ai_generated'
+    ? `<span class="badge badge-ai">🤖 AI Answer</span>` : '';
+  const verBadge = !q.verified
+    ? `<span class="badge badge-unverified">⚠ Unverified</span>` : '';
+
+  const optionsHTML = Object.entries(q.options).map(([key, val]) => `
+    <button class="option-btn" id="opt-${key}" onclick="selectOption('${q.id}', '${key}')">
+      <span class="option-key">${key}</span>
+      <span>${val}</span>
+    </button>
+  `).join('');
+
+  area.innerHTML = `
+    <div class="progress-wrap">
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" style="width: ${(qIndex / queue.length) * 100}%"></div>
+      </div>
+      <div class="progress-labels">
+        <span>${qIndex} done</span>
+        <span>${queue.length - qIndex} remaining</span>
+      </div>
+    </div>
+
+    <div class="question-card">
+      <div class="question-meta">
+        <span class="badge badge-chapter">CH ${q.chapter}</span>
+        <span class="badge badge-source">${q.topic}</span>
+        ${aiBadge}
+        ${verBadge}
+        <button class="star-btn ${starred ? 'starred' : ''}" id="star-btn" onclick="toggleStar('${q.id}')" title="Mark as difficult">
+          ${starred ? '★' : '☆'}
+        </button>
+      </div>
+      <div class="question-text">${q.question}</div>
+      <div class="options-list">${optionsHTML}</div>
+      <div class="feedback-box" id="feedback"></div>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn" onclick="prevQuestion()" ${qIndex === 0 ? 'disabled style="opacity:0.3"' : ''}>← Prev</button>
+      <button class="btn primary" id="next-btn" onclick="nextQuestion()" style="display:none">Next →</button>
+    </div>
+  `;
+}
+
+function selectOption(qid, key) {
+  if (answered) return;
+  answered = true;
+
+  const q = questionsData.find(x => x.id === qid);
+  const correct = q.answer;
+  const isCorrect = key === correct;
+
+  // Style buttons
+  Object.keys(q.options).forEach(k => {
+    const btn = document.getElementById('opt-' + k);
+    btn.disabled = true;
+    if (k === correct) btn.classList.add('correct');
+    if (k === key && !isCorrect) btn.classList.add('wrong');
+  });
+
+  // Feedback
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
+  fb.innerHTML = isCorrect
+    ? `<span class="feedback-icon">✓</span><span class="feedback-text">Correct!</span>`
+    : `<span class="feedback-icon">✗</span><span class="feedback-text">Incorrect. The correct answer is <strong>${correct}</strong>.</span>`;
+
+  // Record
+  const r = getRecord();
+  r[qid] = isCorrect ? 'correct' : 'wrong';
+  saveRecord(r);
+
+  if (isCorrect) sessionCorrect++; else sessionWrong++;
+  updateStats();
+
+  document.getElementById('next-btn').style.display = 'inline-flex';
+}
+
+function nextQuestion() {
+  qIndex++;
+  answered = false;
+  renderQuestion();
+}
+
+function prevQuestion() {
+  if (qIndex > 0) {
+    qIndex--;
+    answered = false;
+    renderQuestion();
+  }
+}
+
+function toggleStar(qid) {
+  const s = getStarred();
+  const i = s.indexOf(qid);
+  if (i >= 0) s.splice(i, 1); else s.push(qid);
+  saveStarred(s);
+  const btn = document.getElementById('star-btn');
+  if (btn) {
+    btn.classList.toggle('starred', s.includes(qid));
+    btn.textContent = s.includes(qid) ? '★' : '☆';
+  }
+  updateCounts();
+}
+
+// ── Results ──
+function showResults() {
+  document.getElementById('question-area').style.display = 'none';
+  const rs = document.getElementById('results-screen');
+  rs.style.display = 'block';
+  const total = sessionCorrect + sessionWrong;
+  const pct = total > 0 ? Math.round(sessionCorrect / total * 100) : 0;
+  document.getElementById('res-sub').textContent = `${queue.length} questions · ${currentChapter === 'all' ? 'All Chapters' : 'CH ' + currentChapter}`;
+  document.getElementById('res-pct').textContent = pct + '%';
+  document.getElementById('res-correct').textContent = sessionCorrect;
+  document.getElementById('res-wrong').textContent = sessionWrong;
+  document.getElementById('res-total').textContent = total;
+}
+
+// ── UI Helpers ──
+function updateCounter() {
+  document.getElementById('q-counter').textContent =
+    queue.length > 0 ? `${qIndex + 1} / ${queue.length}` : '0 / 0';
+  const titles = {
+    all: 'All Questions', starred: 'Starred Questions', wrong: 'Needs Review'
+  };
+  document.getElementById('view-title').textContent = titles[currentMode] || 'Practice';
+}
+
+function updateCounts() {
+  const r = getRecord();
+  const s = getStarred();
+  const wrongIds = Object.entries(r).filter(([,v]) => v === 'wrong').map(([k]) => k);
+  const chapters = ['23-24','25-26','27','29','30','31'];
+
+  document.getElementById('cnt-all').textContent = questionsData.length;
+  document.getElementById('cnt-starred').textContent = s.length;
+  document.getElementById('cnt-wrong').textContent = wrongIds.length;
+  document.getElementById('cnt-ch-all').textContent = questionsData.length;
+
+  chapters.forEach(ch => {
+    const el = document.getElementById('cnt-ch-' + ch);
+    if (el) el.textContent = questionsData.filter(q => q.chapter === ch).length;
+  });
+}
+
+function updateStats() {
+  const r = getRecord();
+  const vals = Object.values(r);
+  const total = vals.length;
+  const correct = vals.filter(v => v === 'correct').length;
+  const wrong = vals.filter(v => v === 'wrong').length;
+  const acc = total > 0 ? Math.round(correct / total * 100) + '%' : '—';
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-correct').textContent = correct;
+  document.getElementById('stat-wrong').textContent = wrong;
+  document.getElementById('stat-acc').textContent = acc;
+}
+
+// ── Init ──
+updateCounts();
+updateStats();
+startSession();
+</script>
+</body>
+</html>
