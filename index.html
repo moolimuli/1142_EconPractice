@@ -527,6 +527,9 @@
       <button class="filter-btn" id="btn-src-student" onclick="setSource('student')">
         Student <span class="count" id="cnt-src-student">0</span>
       </button>
+      <button class="filter-btn" id="btn-src-practice" onclick="setSource('practice')">
+        Practice <span class="count" id="cnt-src-practice">0</span>
+      </button>
     </div>
 
     <div class="divider"></div>
@@ -648,7 +651,7 @@ function saveStarred(s) { localStorage.setItem('econ_starred', JSON.stringify(s)
 
 // ── Filter Logic ──
 function getFilteredQuestions() {
-  let q = questionsData;
+  let q = questionsData.filter(x => !x.disabled);
   if (currentSource !== 'all') q = q.filter(x => x.source === currentSource);
   if (currentChapter !== 'all') q = q.filter(x => x.chapter === currentChapter);
   if (currentMode === 'starred') {
@@ -672,7 +675,7 @@ function setMode(mode) {
 
 function setSource(src) {
   currentSource = src;
-  ['all','lecture','homework','student'].forEach(s => {
+  ['all','lecture','homework','student','practice'].forEach(s => {
     document.getElementById('btn-src-'+s).classList.toggle('active', s === src);
   });
   closeSidebar();
@@ -786,8 +789,8 @@ function renderQuestion() {
 
     <div class="question-card">
       <div class="question-meta">
-        <span class="badge badge-chapter">CH ${q.chapter}</span>
-        <span class="badge badge-source">${q.topic}</span>
+        <span class="badge badge-chapter">${q.chapter ? 'CH ' + q.chapter : q.source.charAt(0).toUpperCase() + q.source.slice(1)}</span>
+        ${q.topic ? `<span class="badge badge-source">${q.topic}</span>` : ''}
         ${aiBadge}
         ${verBadge}
         <button class="star-btn ${starred ? 'starred' : ''}" id="star-btn" onclick="toggleStar('${q.id}')" title="Mark as difficult">
@@ -897,7 +900,7 @@ function updateCounts() {
   const r = getRecord();
   const s = getStarred();
   const wrongIds = Object.entries(r).filter(([,v]) => v === 'wrong').map(([k]) => k);
-  const sources = ['lecture','homework','student'];
+  const sources = ['lecture','homework','student','practice'];
   const chapters = ['23-24','23','24','25-26','25','26','27','29','30','31'];
 
   document.getElementById('cnt-all').textContent = questionsData.length;
