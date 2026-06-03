@@ -7,24 +7,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f0f11;
-    --surface: #18181c;
-    --surface2: #222228;
-    --border: #2e2e36;
-    --text: #e8e8f0;
-    --text-dim: #7a7a8e;
-    --text-muted: #4a4a5e;
-    --accent: #7c6af7;
-    --accent-soft: #7c6af720;
-    --accent-border: #7c6af740;
-    --green: #4ade80;
-    --green-soft: #4ade8015;
-    --red: #f87171;
-    --red-soft: #f8717115;
-    --yellow: #fbbf24;
-    --yellow-soft: #fbbf2415;
-    --ai-badge: #f59e0b;
-    --ai-badge-soft: #f59e0b18;
+    --bg: #fffbf5;
+    --surface: #ffffff;
+    --surface2: #fef3e2;
+    --border: #fde8c4;
+    --text: #1c1917;
+    --text-dim: #78716c;
+    --text-muted: #a8a29e;
+    --accent: #f97316;
+    --accent-soft: #f9731618;
+    --accent-border: #f9731640;
+    --green: #22c55e;
+    --green-soft: #22c55e15;
+    --red: #ef4444;
+    --red-soft: #ef444415;
+    --yellow: #eab308;
+    --yellow-soft: #eab30815;
+    --ai-badge: #d97706;
+    --ai-badge-soft: #d9770618;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -207,7 +207,7 @@
     color: white;
   }
   .btn.primary:hover { opacity: 0.9; }
-  .btn.danger { color: var(--red); border-color: #f8717130; }
+  .btn.danger { color: var(--red); border-color: #ef444430; }
   .btn.danger:hover { background: var(--red-soft); }
 
   /* ── Question Area ── */
@@ -276,10 +276,10 @@
   .badge-ai {
     background: var(--ai-badge-soft);
     color: var(--ai-badge);
-    border: 1px solid #f59e0b25;
+    border: 1px solid #d9770625;
     display: flex; align-items: center; gap: 4px;
   }
-  .badge-unverified { background: var(--yellow-soft); color: var(--yellow); border: 1px solid #fbbf2425; }
+  .badge-unverified { background: var(--yellow-soft); color: var(--yellow); border: 1px solid #eab30825; }
 
   .star-btn {
     margin-left: auto;
@@ -363,8 +363,8 @@
     gap: 12px;
   }
   .feedback-box.show { display: flex; }
-  .feedback-box.correct { background: var(--green-soft); border: 1px solid #4ade8030; color: var(--green); }
-  .feedback-box.wrong { background: var(--red-soft); border: 1px solid #f8717130; color: var(--red); }
+  .feedback-box.correct { background: var(--green-soft); border: 1px solid #22c55e30; color: var(--green); }
+  .feedback-box.wrong { background: var(--red-soft); border: 1px solid #ef444430; color: var(--red); }
 
   .feedback-icon { font-size: 20px; }
   .feedback-text { flex: 1; line-height: 1.5; }
