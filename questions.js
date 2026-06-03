@@ -114,7 +114,7 @@ const questionsData = [
       C: "The consumer price index will fall, and the GDP deflator will be unaffected.",
       D: "The consumer price index will be unaffected, and the GDP deflator will fall."
     },
-    answer: "D",
+    answer: "B",
     answer_source: "official",
     starred: false,
     verified: true
@@ -424,7 +424,7 @@ const questionsData = [
       C: "$1,600",
       D: "$3,200"
     },
-    answer: "C",
+    answer: "D",
     answer_source: "official",
     starred: false,
     verified: true
@@ -597,7 +597,7 @@ const questionsData = [
       D: "sells government bonds, and in so doing decreases the money supply."
     },
     answer: "D",
-    answer_source: "ai_generated",
+    answer_source: "official",
     starred: false,
     verified: false
   },
@@ -687,11 +687,11 @@ const questionsData = [
     verified: false
   },
 
-  // ===== CH30: Open Economy Macroeconomics =====
+  // ===== CH31: Open Economy Macroeconomics =====
   {
-    id: "hw_ch30_01",
+    id: "hw_ch31_01",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "A country sells more goods and services to foreign countries than it buys from them. It has",
     options: {
@@ -706,9 +706,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_02",
+    id: "hw_ch31_02",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "Which of the following equations is correct?",
     options: {
@@ -723,9 +723,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_03",
+    id: "hw_ch31_03",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "If a country has Y > C + I + G, then it has",
     options: {
@@ -740,9 +740,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_04",
+    id: "hw_ch31_04",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "If the price levels in the U.S and in Canada are unchanged, but the nominal exchange rate (Canadian dollars per U.S. dollar) rises, then",
     options: {
@@ -757,9 +757,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_05",
+    id: "hw_ch31_05",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "Other things the same, the real exchange rate between American and French goods would be lower if",
     options: {
@@ -768,15 +768,15 @@ const questionsData = [
       C: "prices of French goods were lower, or the number of euros a dollar purchased was higher.",
       D: "prices of French goods were lower, or the number of euros a dollar purchased was lower."
     },
-    answer: "D",
+    answer: "B",
     answer_source: "official",
     starred: false,
     verified: true
   },
   {
-    id: "hw_ch30_06",
+    id: "hw_ch31_06",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "Suppose the real exchange rate is 5/4 of a Canadian textbook per U.S. textbook, a U.S. textbook costs $150, and a Canadian one costs 120 Canadian dollars. To the nearest penny, what is the nominal exchange rate?",
     options: {
@@ -791,9 +791,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_07",
+    id: "hw_ch31_07",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "Suppose that the real exchange rate between the United States and Kenya is defined in terms of baskets of goods. Other things the same, which of the following will increase the real exchange rate (that is increase the number of baskets of Kenyan goods a basket of U.S. goods buys)?",
     options: {
@@ -808,9 +808,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_08",
+    id: "hw_ch31_08",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "Suppose that in 2015 the nominal exchange rate was 9 Egyptian pounds per dollar, the price of a basket of goods in the U.S. was $600 and the price of the same basket of goods in Egypt was 6000 pounds. Suppose that in 2016 these values were 10 Egyptian pounds per dollar, $620, and 7200 pounds. From 2015 to 2016 U.S. real exchange rate",
     options: {
@@ -825,9 +825,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_09",
+    id: "hw_ch31_09",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "If the real exchange rate between the U.S. and Argentina is 1, then",
     options: {
@@ -842,9 +842,9 @@ const questionsData = [
     verified: true
   },
   {
-    id: "hw_ch30_10",
+    id: "hw_ch31_10",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "If the dollar buys less cotton in Egypt than in the United States, then traders could make a profit by",
     options: {
@@ -853,15 +853,15 @@ const questionsData = [
       C: "buying cotton in Egypt and selling it in the United States, which would tend to raise the price of cotton in Egypt.",
       D: "buying cotton in Egypt and selling it in the United States, which would tend to raise the price of cotton in the United States."
     },
-    answer: "C",
+    answer: "A",
     answer_source: "official",
     starred: false,
     verified: true
   },
   {
-    id: "hw_ch30_11",
+    id: "hw_ch31_11",
     source: "homework",
-    chapter: "30",
+    chapter: "31",
     topic: "Open Economy",
     question: "If purchasing power parity holds, then if the price of a basket of goods in the U.S. rose from $1,000 to $1,200 and the price of the same basket in Poland rose from 6,400 Polish zloty to 8,000 zloty, then",
     options: {
@@ -870,17 +870,17 @@ const questionsData = [
       C: "the nominal exchange rate would be unchanged and the real exchange rate would depreciate.",
       D: "the U.S. dollar would depreciate and the real exchange rate would be unchanged."
     },
-    answer: "D",
+    answer: "B",
     answer_source: "official",
     starred: false,
     verified: true
   },
 
-  // ===== CH31: Money Growth & Inflation =====
+  // ===== CH30: Money Growth & Inflation =====
   {
-    id: "hw_ch31_01",
+    id: "hw_ch30_01",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "You bought some shares of stock and sell them one year later. At the end of the year, the price per share was 5 percent higher and the price level was 3 percent higher. Before taxes, you experienced",
     options: {
@@ -895,9 +895,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_02",
+    id: "hw_ch30_02",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "When the money market is drawn with the value of money on the vertical axis, the money demand curve slopes",
     options: {
@@ -912,9 +912,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_03",
+    id: "hw_ch30_03",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "The economy of Mainland uses gold as its money. If the government discovers a large reserve of gold on their land",
     options: {
@@ -929,9 +929,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_04",
+    id: "hw_ch30_04",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "On a given morning, Franco sold 40 pairs of shoes for a total of $80 at his shoe store.",
     options: {
@@ -946,9 +946,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_05",
+    id: "hw_ch30_05",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "Kelly puts money in a savings account. One year later she has two percent more dollars and can buy three percent more goods. Kelly earned a real interest rate of",
     options: {
@@ -963,9 +963,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_06",
+    id: "hw_ch30_06",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "Monetary neutrality means that a change in the money supply",
     options: {
@@ -980,9 +980,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_07",
+    id: "hw_ch30_07",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "Other things the same, a decrease in velocity means that",
     options: {
@@ -997,9 +997,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_08",
+    id: "hw_ch30_08",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "Suppose the money supply tripled, but at the same time velocity doubled and real GDP was unchanged. According to the quantity equation the price level",
     options: {
@@ -1014,9 +1014,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_09",
+    id: "hw_ch30_09",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "Based on past experience, if a country is experiencing hyperinflation, then which of the following would be a reasonable guess?",
     options: {
@@ -1031,9 +1031,9 @@ const questionsData = [
     verified: false
   },
   {
-    id: "hw_ch31_10",
+    id: "hw_ch30_10",
     source: "homework",
-    chapter: "31",
+    chapter: "30",
     topic: "Money & Inflation",
     question: "In which case below is the real interest rate the highest?",
     options: {
