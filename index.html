@@ -703,22 +703,24 @@ function selectOption(qid, key) {
 
   const q = questionsData.find(x => x.id === qid);
   const correct = q.answer;
-  const isCorrect = key === correct;
+  const correctArr = Array.isArray(correct) ? correct : [correct];
+  const isCorrect = correctArr.includes(key);
 
   // Style buttons
   Object.keys(q.options).forEach(k => {
     const btn = document.getElementById('opt-' + k);
     btn.disabled = true;
-    if (k === correct) btn.classList.add('correct');
+    if (correctArr.includes(k)) btn.classList.add('correct');
     if (k === key && !isCorrect) btn.classList.add('wrong');
   });
 
   // Feedback
+  const correctLabel = correctArr.join(' or ');
   const fb = document.getElementById('feedback');
   fb.className = 'feedback-box show ' + (isCorrect ? 'correct' : 'wrong');
   fb.innerHTML = isCorrect
     ? `<span class="feedback-icon">✓</span><span class="feedback-text">Correct!</span>`
-    : `<span class="feedback-icon">✗</span><span class="feedback-text">Incorrect. The correct answer is <strong>${correct}</strong>.</span>`;
+    : `<span class="feedback-icon">✗</span><span class="feedback-text">Incorrect. The correct answer is <strong>${correctLabel}</strong>.</span>`;
 
   // Record
   const r = getRecord();

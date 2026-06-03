@@ -596,7 +596,7 @@ const questionsData = [
       C: "sells government bonds, and in so doing increases the money supply.",
       D: "sells government bonds, and in so doing decreases the money supply."
     },
-    answer: "D",
+    answer: ["A", "D"],
     answer_source: "official",
     starred: false,
     verified: false
