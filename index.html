@@ -295,6 +295,19 @@
   .star-btn:hover { color: var(--yellow); transform: scale(1.15); }
   .star-btn.starred { color: var(--yellow); }
 
+  .flag-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-muted);
+    transition: all 0.2s;
+    padding: 2px;
+    line-height: 1;
+  }
+  .flag-btn:hover { color: var(--red); transform: scale(1.15); }
+  .flag-btn.flagged { color: var(--red); }
+
   .question-text {
     font-size: 16px;
     line-height: 1.7;
@@ -526,6 +539,9 @@
       <button class="filter-btn" id="btn-wrong" onclick="setMode('wrong')">
         ✗ Needs Review <span class="count" id="cnt-wrong">0</span>
       </button>
+      <button class="filter-btn" id="btn-flagged" onclick="setMode('flagged')">
+        🚩 Flagged <span class="count" id="cnt-flagged">0</span>
+      </button>
     </div>
 
     <div class="divider"></div>
@@ -665,6 +681,10 @@ function getStarred() {
   try { return JSON.parse(localStorage.getItem('econ_starred') || '[]'); } catch { return []; }
 }
 function saveStarred(s) { localStorage.setItem('econ_starred', JSON.stringify(s)); }
+function getFlagged() {
+  try { return JSON.parse(localStorage.getItem('econ_flagged') || '[]'); } catch { return []; }
+}
+function saveFlagged(f) { localStorage.setItem('econ_flagged', JSON.stringify(f)); }
 
 // ── Filter Logic ──
 function getFilteredQuestions() {
@@ -677,13 +697,16 @@ function getFilteredQuestions() {
   } else if (currentMode === 'wrong') {
     const r = getRecord();
     q = q.filter(x => r[x.id] === 'wrong');
+  } else if (currentMode === 'flagged') {
+    const f = getFlagged();
+    q = q.filter(x => f.includes(x.id));
   }
   return q;
 }
 
 function setMode(mode) {
   currentMode = mode;
-  ['all','starred','wrong'].forEach(m => {
+  ['all','starred','wrong','flagged'].forEach(m => {
     document.getElementById('btn-'+m).classList.toggle('active', m === mode);
   });
   closeSidebar();
@@ -778,6 +801,7 @@ function renderQuestion() {
 
   const q = queue[qIndex];
   const starred = getStarred().includes(q.id);
+  const flagged = getFlagged().includes(q.id);
   const r = getRecord();
   answered = false;
 
@@ -810,6 +834,9 @@ function renderQuestion() {
         ${q.topic ? `<span class="badge badge-source">${q.topic}</span>` : ''}
         ${aiBadge}
         ${verBadge}
+        <button class="flag-btn ${flagged ? 'flagged' : ''}" id="flag-btn" onclick="toggleFlag('${q.id}')" title="Flag for review">
+          ${flagged ? '🚩' : '⚑'}
+        </button>
         <button class="star-btn ${starred ? 'starred' : ''}" id="star-btn" onclick="toggleStar('${q.id}')" title="Mark as difficult">
           ${starred ? '★' : '☆'}
         </button>
@@ -892,6 +919,19 @@ function toggleStar(qid) {
   updateCounts();
 }
 
+function toggleFlag(qid) {
+  const f = getFlagged();
+  const i = f.indexOf(qid);
+  if (i >= 0) f.splice(i, 1); else f.push(qid);
+  saveFlagged(f);
+  const btn = document.getElementById('flag-btn');
+  if (btn) {
+    btn.classList.toggle('flagged', f.includes(qid));
+    btn.textContent = f.includes(qid) ? '🚩' : '⚑';
+  }
+  updateCounts();
+}
+
 // ── Results ──
 function showResults() {
   document.getElementById('question-area').style.display = 'none';
@@ -911,7 +951,7 @@ function updateCounter() {
   document.getElementById('q-counter').textContent =
     queue.length > 0 ? `${qIndex + 1} / ${queue.length}` : '0 / 0';
   const titles = {
-    all: 'All Questions', starred: 'Starred Questions', wrong: 'Needs Review'
+    all: 'All Questions', starred: 'Starred Questions', wrong: 'Needs Review', flagged: 'Flagged Questions'
   };
   document.getElementById('view-title').textContent = titles[currentMode] || 'Practice';
 }
@@ -923,9 +963,11 @@ function updateCounts() {
   const sources = ['lecture','homework','student','practice'];
   const chapters = ['23-24','23','24','25-26','25','26','27','29','30','31'];
 
+  const f = getFlagged();
   document.getElementById('cnt-all').textContent = questionsData.length;
   document.getElementById('cnt-starred').textContent = s.length;
   document.getElementById('cnt-wrong').textContent = wrongIds.length;
+  document.getElementById('cnt-flagged').textContent = f.length;
   document.getElementById('cnt-src-all').textContent = questionsData.length;
   document.getElementById('cnt-ch-all').textContent = questionsData.length;
 
