@@ -653,7 +653,7 @@ function saveStarred(s) { localStorage.setItem('econ_starred', JSON.stringify(s)
 function getFilteredQuestions() {
   let q = questionsData.filter(x => !x.disabled);
   if (currentSource !== 'all') q = q.filter(x => x.source === currentSource);
-  if (currentChapter !== 'all') q = q.filter(x => x.chapter === currentChapter);
+  if (currentChapter !== 'all') q = q.filter(x => [].concat(x.chapter).includes(currentChapter));
   if (currentMode === 'starred') {
     const s = getStarred();
     q = q.filter(x => s.includes(x.id));
@@ -789,7 +789,7 @@ function renderQuestion() {
 
     <div class="question-card">
       <div class="question-meta">
-        <span class="badge badge-chapter">${q.chapter ? 'CH ' + q.chapter : q.source.charAt(0).toUpperCase() + q.source.slice(1)}</span>
+        <span class="badge badge-chapter">${[].concat(q.chapter).filter(Boolean).length ? [].concat(q.chapter).map(c => 'CH ' + c).join(' · ') : q.source.charAt(0).toUpperCase() + q.source.slice(1)}</span>
         ${q.topic ? `<span class="badge badge-source">${q.topic}</span>` : ''}
         ${aiBadge}
         ${verBadge}
@@ -916,7 +916,7 @@ function updateCounts() {
 
   chapters.forEach(ch => {
     const el = document.getElementById('cnt-ch-' + ch);
-    if (el) el.textContent = questionsData.filter(q => q.chapter === ch).length;
+    if (el) el.textContent = questionsData.filter(q => !q.disabled && [].concat(q.chapter).includes(ch)).length;
   });
 }
 

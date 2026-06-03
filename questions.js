@@ -2192,8 +2192,8 @@ const questionsData = [
   {
     id: "q_0001",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `假設某國在 2024 年生產了 500 萬美元的汽車，但消費者只購買了其中的 470 萬美元。根 據 GDP 的計算定義，下列關於該國 2024 年 GDP 組成的敘述何者正確？`,
     options: {
       A: `GDP 僅增加 470 萬美元，因為只有賣出的商品才計入。`,
@@ -2209,8 +2209,8 @@ const questionsData = [
   {
     id: "q_0002",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `某國的 CPI 籃子只包含「披薩」與「拿鐵」兩項商品。2023 年（基準年）披薩單價 $10、 拿鐵 $2；2024 年披薩單價變為 $11、拿鐵變為 $2.5。若籃子固定為 4 個披薩與 10 杯拿鐵， 請問 2024 年的 CPI 與通貨膨脹率為何？`,
     options: {
       A: `CPI = 110；通膨率 = 10%`,
@@ -2226,8 +2226,8 @@ const questionsData = [
   {
     id: "q_0003",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `當消費者因為牛肉價格上漲而改為購買相對便宜的雞肉時，若政府仍使用固定的商品籃子來計 算 CPI，將會導致何種結果？`,
     options: {
       A: `替代偏誤（Substitution Bias），導致 CPI 低估生活成本。`,
@@ -2243,8 +2243,8 @@ const questionsData = [
   {
     id: "q_0004",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `根據「追趕效應（Catch-up Effect）」，在其他條件相同的情況下，下列敘述何者正確？`,
     options: {
       A: `富裕國家的成長速度通常比貧窮國家快，因為其擁有更多資本。`,
@@ -2260,8 +2260,8 @@ const questionsData = [
   {
     id: "q_0005",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `某美國公司在台灣設立工廠並直接管理營運，這種投資行為在經濟學中稱為什麼？對台灣的影 響為何？`,
     options: {
       A: `外國證券投資（FPI）；會增加台灣的 GDP 但不影響生產力。`,
@@ -2277,8 +2277,8 @@ const questionsData = [
   {
     id: "q_0006",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `假設在 2025 年，小明購買了一棟「全新的」透天厝自住，並且沒有將房屋出租給任何人。關 於這項行為對當年度 GDP 的影響，下列敘述何者正確？`,
     options: {
       A: `購買新成屋的金額應計入民間消 費。`,
@@ -2294,8 +2294,8 @@ const questionsData = [
   {
     id: "q_0007",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `假設某國是一個只生產單一商品「電腦」的經濟體。在 2024 年（設定為基準年），該國生產 了 10 台電腦，每台市價為 3,000 元；到了 2025 年，該國生產了 12 台電腦，但因為物價上 漲，每台市價變為 3,500 元。關於該國 2025 年的國民所得數據，下列敘述何者正確？`,
     options: {
       A: `2025 年的名目 GDP 為 36,000 元。`,
@@ -2311,8 +2311,8 @@ const questionsData = [
   {
     id: "q_0008",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23"],
+    topic: "CPI & Inflation",
     question: `假設某家義大利知名服飾品牌調高了在美國境內銷售的進口牛仔褲價格。同時，美國本土的重 機械製造商（如 Caterpillar）也調高了其在美國境內生產，並直接賣給企業作為生產工具的工 業用牽引機價格。請問這兩項價格變動，對於美國的消費者物價指數（CPI）與 GDP 平減指 數各有何影響？`,
     options: {
       A: `進口牛仔褲漲價會使美國 CPI 與 GDP 平減指數皆上升；牽引機漲價只 會使 CPI 上升。`,
@@ -2328,8 +2328,8 @@ const questionsData = [
   {
     id: "q_0009",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設小華在銀行存了 10,000 元，為期一年，該筆存款的名目利率為 5%。然而，在同一年 間，該國的整體物價水準也上升了，通貨膨脹率達到了 8%。請問一年後，小華這筆存款的實 質利率與購買力發生了什麼變化？`,
     options: {
       A: `實質利率為 13%，小華存款的購買力增加了 13%。`,
@@ -2345,8 +2345,8 @@ const questionsData = [
   {
     id: "q_0010",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `根據經濟學原理，一個國家長期的生活水準取決於其生產力。關於生產力的決定因素以及公共 政策對經濟成長的影響，下列敘述何者錯誤？`,
     options: {
       A: `當一個國家的平均每位勞工擁有更多的實 體資本（如機器設備）時，生產力通常會提高，因此政府鼓勵儲蓄和投資有助於促進經濟成 長。`,
@@ -2362,8 +2362,8 @@ const questionsData = [
   {
     id: "q_0011",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23","31"],
+    topic: "CPI & Inflation",
     question: `2024 年初的台灣經歷「人工智慧（AI）伺服器出口需求爆發」，帶動國內出口與民間投資大 幅增加，使該年度的實質 GDP 成長率遠高於預期。然而，與此同時，國際油價因地緣政治緊 張而上漲，且國內基本工資調升，導致消費者物價指數（CPI）年增率連續數月超過 2%。在 其他條件不變的情況下，下列敘述何者最正確？`,
     options: {
       A: `若實質 GDP 的成長率高於 CPI 的成長 率，表示該國國民的「平均實質購買力」必定下降。`,
@@ -2379,8 +2379,8 @@ const questionsData = [
   {
     id: "q_0012",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","24","29"],
+    topic: "Finance",
     question: `2026 年初，由於全球消費者物價指數（CPI）下降速度不如預期，美國聯準會（Fed）暗示將 維持「高利率」更長一段時間（Higher for Longer）。在此時事背景下，投資人針對手中資產 進行調整，下列敘述何者最正確？`,
     options: {
       A: `債券價格： 市場利率上升時，原本流通的舊債券因為 利率較低、吸引力下降，其市場價格通常會下跌。`,
@@ -2396,8 +2396,8 @@ const questionsData = [
   {
     id: "q_0013",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","29"],
+    topic: "Open Economy",
     question: `2026 年初，美國聯準會（Fed）為了對抗通膨而維持高利率（例如 5%），而台灣央行考量國 內景氣，決定維持較低的利率（例如 2%）。在這種「台美利差」擴大的情況下，關於匯率與 經濟影響的敘述，下列何者最正確？`,
     options: {
       A: `資金流向： 投資人為了賺取更高利息，會將台幣換 成美金存入美國銀行，這會導致美金需求增加、台幣面臨貶值壓力。`,
@@ -2413,8 +2413,8 @@ const questionsData = [
   {
     id: "q_0014",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `假設聯準會（Fed）發現市場上的資金過於充沛，導致投機氣氛濃厚且物價（CPI）持續走 高。為了收回市場多餘的流動性，聯準會決定進行「公開市場操作」。下列關於此操作的敘 述，何者正確？`,
     options: {
       A: `聯準會應向商業銀行買入政府公債，藉此將資金注入金融體系。`,
@@ -2430,8 +2430,8 @@ const questionsData = [
   {
     id: "q_0015",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","27"],
+    topic: "CPI & Inflation",
     question: `2026 年初，美國公佈的 CPI 年增率為 3.5%，高於市場預期的 2%，導致聯準會暗示將維持高 利率。小明在 2024 年以 面額 10,000 元 買入一張「兩年期」美國國庫券，票面利率為 5% （每年底付息一次，到期還本）。 現在（2026 年初）該債券即將進入最後一年。但因為通膨 數據太高，市場要求的殖利率（市場利率）突然從 5% 飆升至 6%。請根據債券定價公式，算 出小明這張債券目前的市場價值最接近下列何者？`,
     options: {
       A: `10,500 元（溢價發行）`,
@@ -2447,8 +2447,8 @@ const questionsData = [
   {
     id: "q_0016",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `近期許多銀行推出「數位帳戶高利定存」專案。假設小明為了賺取較高的利息，將原本放在銀 行「活期儲蓄存款」帳戶中的 10 萬元，轉存為同銀行的「定期存款」。在不考慮其他因素的 情況下，此舉動對台灣貨幣供給量（M1B 與 M2）的影響為何？`,
     options: {
       A: `M1B 增加，M2 增加`,
@@ -2464,8 +2464,8 @@ const questionsData = [
   {
     id: "q_0017",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `根據「泰勒法則」（Taylor Rule），當一個經濟體的實際通貨膨脹率「高於」央行的目標通 膨率，且實際 GDP 也「高於」潛在 GDP（產出缺口為正）時，中央銀行理論上應採取下列 何種政策來穩定經濟？`,
     options: {
       A: `調降政策利率`,
@@ -2481,8 +2481,8 @@ const questionsData = [
   {
     id: "q_0018",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `台灣央行若觀察到市場上游資過剩，欲實施「緊縮性貨幣政策」以收回市場資金、抑制通膨預 期，下列哪一項是央行最常使用的公開市場操作（Open Market Operations）手段？`,
     options: {
       A: `在次 級市場大量買進政府公債`,
@@ -2498,8 +2498,8 @@ const questionsData = [
   {
     id: "q_0019",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","24","25","29"],
+    topic: "Open Economy",
     question: `假設美國聯準會（Fed）為了對抗通膨而持續大幅升息，但台灣央行考量國內經濟成長而選擇 維持利率不變。在其他條件不變的情況下，台美「利差擴大」最有可能對新台幣匯率造成什麼 直接影響？`,
     options: {
       A: `資金大量流入台灣，新台幣面臨升值壓力`,
@@ -2515,8 +2515,8 @@ const questionsData = [
   {
     id: "q_0020",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `小華將一筆資金存入銀行的高利數位帳戶，名目利率為 2.5%。但同年台灣的主計總處公布 CPI（消費者物價指數）年增率（通膨率）為 3.0%。根據費雪方程式（Fisher Equation）， 關於小華這筆存款的實質情況，下列敘述何者正確？`,
     options: {
       A: `實質利率為 5.5%，購買力上升`,
@@ -2532,8 +2532,8 @@ const questionsData = [
   {
     id: "q_0021",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `假設 Armani（亞曼尼）提高了其在美國銷售的「義大利製造」牛仔褲價格。請問這對美國的 消費者物價指數（CPI）和 GDP 平減指數（GDP Deflator）會有什麼影響？`,
     options: {
       A: `CPI 和 GDP 平減指數都會上升`,
@@ -2549,8 +2549,8 @@ const questionsData = [
   {
     id: "q_0022",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `一個國家的生活水準取決於其生產商品與服務的能力（生產力）。根據生產力決定因素的定 義，下列哪一項敘述屬於「人力資本（Human capital）」的增加？`,
     options: {
       A: `企業購買了更新、更 快速的自動化機器設備`,
@@ -2566,8 +2566,8 @@ const questionsData = [
   {
     id: "q_0023",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `假設一個封閉經濟體中，GDP（Y）為 10 兆美元，民間消費（C）為 6.5 兆美元，政府支出 （G）為 2.0 兆美元，且政府有 3,000 億美元（0.3 兆美元）的預算赤字。請問該經濟體的 「私人儲蓄（Private saving）」與「公共儲蓄（Public saving）」分別是多少？`,
     options: {
       A: `私人儲 蓄為 1.5 兆美元；公共儲蓄為 0.3 兆美元`,
@@ -2583,8 +2583,8 @@ const questionsData = [
   {
     id: "q_0024",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `你正在考慮花 70,000 美元購買一塊六英畝的土地。預期這塊土地在 5 年後價值會變成 100,000 美元。假設目前的市場利率（r）為 10%（0.10），請問這塊土地未來收益的「現值 （Present Value）」大約是多少？你是否應該進行這項投資？`,
     options: {
       A: `現值約為 $78,350，大於 成本，因此應該購買`,
@@ -2600,8 +2600,8 @@ const questionsData = [
   {
     id: "q_0025",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `根據可貸資金市場（Market for Loanable Funds）模型，當政府產生「預算赤字（Budget deficit）」時，會對該國的資金市場造成什麼影響？進而會如何改變均衡的實質利率與民間投 資量？`,
     options: {
       A: `可貸資金的供給增加，導致均衡利率下降，投資量增加`,
@@ -2617,8 +2617,8 @@ const questionsData = [
   {
     id: "q_0026",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `Which of the following best explains how Donald Trump’s policies could affect global trade for Taiwan Semiconductor Manufacturing Company (TSMC) chips?`,
     options: {
       A: `TSMC would stop producing chips for international companies.`,
@@ -2634,8 +2634,8 @@ const questionsData = [
   {
     id: "q_0027",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25","31"],
+    topic: "Production & Growth",
     question: `What could happen to Taiwan’s economy if global demand for semiconductors decreases significantly?`,
     options: {
       A: `Taiwan’s economy would be completely unaffected because semiconductors are only a small industry.`,
@@ -2651,8 +2651,8 @@ const questionsData = [
   {
     id: "q_0028",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `How could rising tensions between Taiwan and China affect Taiwan’s foreign exchange market?`,
     options: {
       A: `Investors may move money out of Taiwan, causing the New Taiwan Dollar (TWD) to weaken.`,
@@ -2668,8 +2668,8 @@ const questionsData = [
   {
     id: "q_0029",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `Which of the following is a major challenge Taiwan faces in maintaining its technological dominance in global competition?`,
     options: {
       A: `Taiwan no longer needs innovation because it already dominates the semiconductor industry.`,
@@ -2685,8 +2685,8 @@ const questionsData = [
   {
     id: "q_0030",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `Why is it difficult for other countries to fully replace Taiwan’s dominance in semiconductor manufacturing?`,
     options: {
       A: `Taiwan is the only country allowed to produce semiconductors.`,
@@ -2702,8 +2702,8 @@ const questionsData = [
   {
     id: "q_0031",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `根據 GDP 的定義與組成成分（Y=C+I+G+NX），下列哪一項交易應計入當年度的 GDP？`,
     options: {
       A: `張先生購買了一輛生產於十年前的二手車。`,
@@ -2719,8 +2719,8 @@ const questionsData = [
   {
     id: "q_0032",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `消費者物價指數（CPI）常被認為會高估生活成本，其中一個原因是「替代偏誤（Substitution Bias）」。請問這項偏誤是指什麼？`,
     options: {
       A: `CPI 未能反映新產品進入市場帶來的選擇增加。`,
@@ -2736,8 +2736,8 @@ const questionsData = [
   {
     id: "q_0033",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `在一個封閉經濟體（Closed Economy）中，若政府支出 G 大於稅收淨額 T，這會導致什麼現 象？`,
     options: {
       A: `產生預算盈餘（Budget Surplus），增加國民儲蓄。`,
@@ -2753,8 +2753,8 @@ const questionsData = [
   {
     id: "q_0034",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `假設市場盛行利率為 5%，你有一項投資機會，預計在 5 年後可以獲得 $100,000 元。根據現 值公式，這筆錢在今天的價值大約是多少？`,
     options: {
       A: `100,000/(1.05) ^5`,
@@ -2770,8 +2770,8 @@ const questionsData = [
   {
     id: "q_0035",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `假設某年度台灣經濟發生了以下兩項物價變動事件： 事件一： 台灣本土廠商生產並僅賣給國 內營建公司使用的「專業隧道挖掘機」價格大幅上漲。 事件二： 台灣民眾習慣購買、完全由 中南美洲進口的「頂級精品咖啡豆」價格大幅上漲。 在其他條件不變的情況下，請問這兩項 事件對台灣 CPI 與 GDP 平減指數 的影響為何？`,
     options: {
       A: `事件一會使 CPI 上升；事件二會使 GDP 平減指數上升。`,
@@ -2787,8 +2787,8 @@ const questionsData = [
   {
     id: "q_0036",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `假設小明在 2024 年購買了一棟全新的住宅自住，同時小華在同年購買了一棟屋齡 10 年的中 古屋自住。請問這兩筆交易在 2024 年的 GDP 計算中應如何歸類？`,
     options: {
       A: `兩者皆算入民間消費 (C)。`,
@@ -2804,8 +2804,8 @@ const questionsData = [
   {
     id: "q_0037",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設官方設定的 CPI 固定商品籃子為「5 斤蘋果與 10 斤香蕉」。隔年蘋果價格大幅上漲，而 香蕉價格維持不變，導致消費者真實購買行為轉向，變成只買「2 斤蘋果與 15 斤香蕉」。在 這種情況下，官方計算出的 CPI 通膨率與消費者真實生活成本增加率有何差異？這反映了 CPI 的哪一個缺陷？`,
     options: {
       A: `CPI 通膨率會「低估」真實生活成本的增加；反映了「未衡量的品質 變動」。`,
@@ -2821,8 +2821,8 @@ const questionsData = [
   {
     id: "q_0038",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `根據總體經濟學中資本的「報酬遞減 (Diminishing returns)」法則，若 A 國是一個資本極度匱 乏的窮國，B 國是一個資本充裕的富國。假設兩國都增加相同單位的實體資本投資，下列敘述 何者正確？`,
     options: {
       A: `B 國的經濟成長率會比 A 國快，因為 B 國技術較先進。`,
@@ -2838,8 +2838,8 @@ const questionsData = [
   {
     id: "q_0039",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `在一個「封閉經濟體 (Closed economy)」中，若當年度的總產出 (GDP) 為 15 兆元，民間消 費為 9 兆元，政府淨稅收為 3 兆元，政府支出為 4 兆元。請計算該國的「私人儲蓄 (Private saving)」與「國民儲蓄 (National saving)」分別為多少？`,
     options: {
       A: `私人儲蓄 3 兆元，國民儲蓄 2 兆元`,
@@ -2855,8 +2855,8 @@ const questionsData = [
   {
     id: "q_0040",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `小華將 10 萬元存入銀行定存一年，該年的「名目利率 (Nominal interest rate)」為 5%。在這 一年期間，國內的通貨膨脹率為 2%。關於小華這筆存款的價值變化，下列敘述何者正確？`,
     options: {
       A: `存款的「美元價值 (dollar value)」增加了 3%。`,
@@ -2872,8 +2872,8 @@ const questionsData = [
   {
     id: "q_0041",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據現值公式（PV = FV ÷ (1+r)ᴺ），當市場利率 r 上升時，債券的現值會如何變化？`,
     options: {
       A: `現 值上升，因為利率越高代表報酬越好，吸引更多人買入`,
@@ -2889,8 +2889,8 @@ const questionsData = [
   {
     id: "q_0042",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `2022 年美國快速升息，以下哪種資產的跌幅理論上最大？`,
     options: {
       A: `1 年期短期公債 ETF`,
@@ -2906,8 +2906,8 @@ const questionsData = [
   {
     id: "q_0043",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","31"],
+    topic: "Finance",
     question: `投資人同時持有 0050（台股 ETF）與長期美債 ETF，原本期望兩者能互相分散風險。但 2022 年兩者同步大跌。根據風險分散理論，最主要的原因是什麼？`,
     options: {
       A: `0050 與美債 ETF 都 是高風險資產，本來就不應該同時持有`,
@@ -2923,8 +2923,8 @@ const questionsData = [
   {
     id: "q_0044",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `升息對股票（如：0050）的衝擊，比對短期公債更複雜。根據股票現值理論，升息對股票價 格的影響來自哪兩個方向？`,
     options: {
       A: `股利發放減少，以及股票交易量下降`,
@@ -2940,8 +2940,8 @@ const questionsData = [
   {
     id: "q_0045",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `2026 年媒體廣泛報導「Fed 將持續降息，美債 ETF 即將大漲」。投資人小明看到報導後立刻 買入大量美債 ETF，期待獲得超額報酬。根據效率市場假說（EMH），小明的期待最可能發 生什麼問題？`,
     options: {
       A: `沒有問題，降息確實會推升債券現值，小明的判斷是正確的`,
@@ -2957,8 +2957,8 @@ const questionsData = [
   {
     id: "q_0046",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `近期受國際供應鏈影響，台灣進口的 iPhone 手機價格大幅上漲；同時，由台灣本地機械廠製 造、專門賣給國內企業使用的「大型工業機具」價格也宣布調漲。根據總體經濟學的指標定 義，這兩項商品的漲價將如何影響台灣的消費者物價指數（CPI）與 GDP 平減指數（GDP Deflator）？`,
     options: {
       A: `兩者皆會同時推升 CPI 與 GDP 平減指數`,
@@ -2974,8 +2974,8 @@ const questionsData = [
   {
     id: "q_0047",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `隨著 AI 產業爆發，全球科技巨頭紛紛擴大投資。假設「東南亞某開發中國家」與「美國」在 今年都引進了完全相同數量的最新 AI 伺服器（實體資本增加）。若根據《CH25 生產與成 長》理論中的「生產函數」特性，下列推論何者最為合理？`,
     options: {
       A: `美國因為科技較發達，這批伺 服器能為美國帶來高於東南亞國家的經濟成長率。`,
@@ -2991,8 +2991,8 @@ const questionsData = [
   {
     id: "q_0048",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `近年來，為因應疫情紓困與前瞻基礎建設，政府編列了大量特別預算，導致政府出現「預算赤 字（Budget deficit）」並需大量發行公債來籌措資金。根據《CH26》的「可貸資金市場 （Market for Loanable Funds）」模型，這項政策將對整體經濟產生什麼影響？`,
     options: {
       A: `國民儲蓄 減少，可貸資金供給曲線向左移，導致利率上升並排擠民間投資。`,
@@ -3008,8 +3008,8 @@ const questionsData = [
   {
     id: "q_0049",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `在台股市場中，許多分析師每天在電視上解讀技術線圖與公司財報，試圖找出「被低估」的股 票來打敗大盤。然而，若根據《CH27》中的「效率市場假說 (Efficient Markets Hypothesis, EMH)」，下列對於目前股市現況的描述何者正確？`,
     options: {
       A: `只要認真分析公開的財報數據，投資 人就能輕易且持續地獲得超越大盤的超額報酬。`,
@@ -3025,8 +3025,8 @@ const questionsData = [
   {
     id: "q_0050",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `為解決居住問題並刺激內需，假設政府祭出新青安房貸優惠，帶動了一波購屋熱潮。若小明今 年剛成家，進行了以下幾筆交易，哪一筆金額將會被計入今年台灣 GDP 組成要素中的「民間 消費（C）」？`,
     options: {
       A: `花費 1,500 萬元買了一間建商今年全新蓋好的預售屋`,
@@ -3042,8 +3042,8 @@ const questionsData = [
   {
     id: "q_0051",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `下列哪一項 不會被計入 GDP？`,
     options: {
       A: `去餐廳吃飯`,
@@ -3059,8 +3059,8 @@ const questionsData = [
   {
     id: "q_0052",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `CPI 的主要用途為何？`,
     options: {
       A: `衡量失業率`,
@@ -3076,8 +3076,8 @@ const questionsData = [
   {
     id: "q_0053",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `若去年 CPI 為 100，今年 CPI 為 120，則通貨膨脹率為多少？`,
     options: {
       A: `10%`,
@@ -3093,8 +3093,8 @@ const questionsData = [
   {
     id: "q_0054",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `若義大利牛仔褲在美國售價上升，會對哪個指標產生影響？`,
     options: {
       A: `CPI 上升，GDP Deflator 不 變`,
@@ -3110,8 +3110,8 @@ const questionsData = [
   {
     id: "q_0055",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `下列何者正確描述 名目 GDP 與實質 GDP？`,
     options: {
       A: `名目 GDP 已排除通膨影響`,
@@ -3127,8 +3127,8 @@ const questionsData = [
   {
     id: "q_0056",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `Regarding the components for measuring a nation's income (GDP), assuming the following four economic activities occurred in Taiwan this year, which of the following statements is correct?`,
     options: {
       A: `A brand new laptop manufactured and sold by a Taiwanese enterprise to a local consumer this year will simultaneously increase consumption (C) and net exports (NX).`,
@@ -3144,8 +3144,8 @@ const questionsData = [
   {
     id: "q_0057",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23","31"],
+    topic: "CPI & Inflation",
     question: `All of the "salmon" consumed daily by the general public in Taiwan relies on imports from Norway, while all of the "industrial precision lathes" produced domestically in Taiwan are exported. When international raw material fluctuations cause the price of Norwegian salmon to surge, and simultaneously the export price of Taiwan's precision lathes also surges, assuming no other factors are considered, what is the impact on Taiwan's price indices?`,
     options: {
       A: `The Consumer Price Index (CPI) will rise, while the GDP deflator remains unaffected.`,
@@ -3161,8 +3161,8 @@ const questionsData = [
   {
     id: "q_0058",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `Suppose the Taiwanese government, to promote the "Forward-looking Infrastructure Development Program," significantly increases public spending by borrowing heavily without increasing taxes, resulting in a massive "budget deficit." In the Market for Loanable Funds model, assuming other conditions remain unchanged, what impact will this action have?`,
     options: {
       A: `National saving increases, shifting the supply of loanable funds curve to the right, leading to a decrease in the real interest rate.`,
@@ -3178,8 +3178,8 @@ const questionsData = [
   {
     id: "q_0059",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `David is considering buying a zero-coupon bond that "matures in 28 years and guarantees a payment of 4 million NT dollars upon maturity." Assuming the current market annual interest rate is 5%, according to the "Rule of 70," which of the following statements regarding the present value of this bond and interest rate risk is correct?`,
     options: {
       A: `The current present value of the bond is approximately 1 million NT dollars. If the central bank announces tomorrow that the market interest rate will drop to 2%, the present value of the bond will fall.`,
@@ -3195,8 +3195,8 @@ const questionsData = [
   {
     id: "q_0060",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `To stimulate a sluggish economy, the central bank decides to "buy" 50 million NT dollars of government bonds from the public in the open market. Assuming the reserve requirement ratio is 10%, the public customarily "deposits all acquired funds into the banking system (holds no currency)," and the banking system "holds no excess reserves." Regarding the impact of this monetary policy, which of the following statements is correct?`,
     options: {
       A: `The reserves of the banking system will decrease by 50 million NT dollars, and the ultimate money supply will decrease by at most 500 million NT dollars.`,
@@ -3212,8 +3212,8 @@ const questionsData = [
   {
     id: "q_0061",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `下列哪一種情況最可能讓人民感受到的生活壓力高於官方 CPI 所呈現的通膨程度？`,
     options: {
       A: `多數 商品價格都維持不變`,
@@ -3229,8 +3229,8 @@ const questionsData = [
   {
     id: "q_0062",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `下列哪一個最符合「Substitution Bias（替代偏誤）」的概念？`,
     options: {
       A: `消費者因牛肉變貴而改買 雞肉，但 CPI 購物籃沒有立即改變`,
@@ -3246,8 +3246,8 @@ const questionsData = [
   {
     id: "q_0063",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `如果一個人的薪水增加 5%，但同期物價上漲 7%，下列何者最正確？`,
     options: {
       A: `他的實際購買力提 高`,
@@ -3263,8 +3263,8 @@ const questionsData = [
   {
     id: "q_0064",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","27"],
+    topic: "CPI & Inflation",
     question: `下列哪一項最有可能被納入 CPI 的計算？`,
     options: {
       A: `股票價格變化`,
@@ -3280,8 +3280,8 @@ const questionsData = [
   {
     id: "q_0065",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `為什麼不同族群對通膨的感受可能不同？`,
     options: {
       A: `因為每個人的消費習慣與支出結構不同`,
@@ -3297,8 +3297,8 @@ const questionsData = [
   {
     id: "q_0066",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `關於資產組合的風險管理，下列敘述何者正確？`,
     options: {
       A: `只要投資組合中包含超過 50 檔不同產業 的股票，投資人即可完全免除所有風險`,
@@ -3314,8 +3314,8 @@ const questionsData = [
   {
     id: "q_0067",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","25"],
+    topic: "GDP",
     question: `若台灣政府向國內的造船廠採購了全新研發的國造潛艦，且該潛艦的造價大幅超出市場原先預 期，這項事件會如何影響台灣的 CPI 與 GDP 平減指數？`,
     options: {
       A: `兩者皆會大幅上升`,
@@ -3331,8 +3331,8 @@ const questionsData = [
   {
     id: "q_0068",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","26"],
+    topic: "CPI & Inflation",
     question: `為了鼓勵儲蓄與投資，政府決定廢除現行的所得稅，全面改為課徵消費稅。若這項政策成功改 變了民眾的行為，對可貸資金市場會產生什麼影響？`,
     options: {
       A: `可貸資金需求增加，導致實質利率上 升`,
@@ -3348,8 +3348,8 @@ const questionsData = [
   {
     id: "q_0069",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `依據效率市場假說，如果一家上市公司的財報在下午 1 點顯示其獲利遠超乎華爾街分析師的 預期，股價將會如何反應？`,
     options: {
       A: `由於好消息已經在公布前被內線交易完全消化，下午 1 點後股 價將毫無波動`,
@@ -3365,8 +3365,8 @@ const questionsData = [
   {
     id: "q_0070",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","27"],
+    topic: "Money & Banking",
     question: `假設市場上有兩種由相同國家發行的零息公債：A 債券將在 1 年後到期，B 債券將在 30 年後 到期。若中央銀行無預警大幅調升市場利率，這兩檔債券的市場價格會如何反應？`,
     options: {
       A: `A 債券 與 B 債券的價格皆會上漲，且漲幅相近`,
@@ -3382,8 +3382,8 @@ const questionsData = [
   {
     id: "q_0071",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `下列何者最可能造成「體感通膨高於官方 CPI」？`,
     options: {},
     answer: "B",
@@ -3394,8 +3394,8 @@ const questionsData = [
   {
     id: "q_0072",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","27","31"],
+    topic: "CPI & Inflation",
     question: `CPI 主要是用來衡量什麼？`,
     options: {
       A: `股票市場的漲跌`,
@@ -3411,8 +3411,8 @@ const questionsData = [
   {
     id: "q_0073",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","27","31"],
+    topic: "CPI & Inflation",
     question: `為什麼官方 CPI 不一定完全符合年輕人的物價感受？`,
     options: {
       A: `因為 CPI 只計算股票價格`,
@@ -3428,8 +3428,8 @@ const questionsData = [
   {
     id: "q_0074",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `如果名目薪資上升 3%，但物價上升 5%，代表什麼？`,
     options: {
       A: `實質購買力下降`,
@@ -3445,8 +3445,8 @@ const questionsData = [
   {
     id: "q_0075",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `下列哪一項最能說明「官方 CPI 並非錯誤，但可能無法完全反映年輕人壓力」？`,
     options: {
       A: `CPI 是 以平均消費籃計算，不同族群支出比例不同`,
@@ -3462,8 +3462,8 @@ const questionsData = [
   {
     id: "q_0076",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `某國 CPI basket 固定為： 牛肉 10 單位 雞肉 20 單位 基準年（2024）價格： 牛肉 = $5 雞 肉 = $4 2025 年價格： 牛肉 = $10 雞肉 = $5 但 2025 年消費者實際購買： 牛肉 4 單位 雞 肉 26 單位 下列何者正確？`,
     options: {
       A: `CPI inflation rate 高估了生活成本上升`,
@@ -3479,8 +3479,8 @@ const questionsData = [
   {
     id: "q_0077",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `假設兩國擁有相同的： 技術水準 A 人力資本 H/L 自然資源 N/L 但甲國的每工人資本（K/L） 明顯低於乙國。 若兩國每位工人都增加相同數量的資本，則下列何者最可能發生？`,
     options: {
       A: `乙國 productivity 成長較快`,
@@ -3496,8 +3496,8 @@ const questionsData = [
   {
     id: "q_0078",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `銀行體系存款準備率為 20%。 某人把原本藏在家中的 $500 現金全部存入銀行。 若銀行沒 有持有 excess reserves，則銀行體系最終的「總存款增加量」為何？`,
     options: {
       A: `貨幣供給增加 $500`,
@@ -3513,8 +3513,8 @@ const questionsData = [
   {
     id: "q_0079",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `某投資案： 今日成本 = $300 million 5 年後收益 = $450 million 若市場利率由 4% 上升到 10%，則下列何者正確？`,
     options: {
       A: `投資案 present value 上升`,
@@ -3530,8 +3530,8 @@ const questionsData = [
   {
     id: "q_0080",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","27"],
+    topic: "Open Economy",
     question: `若外國投資人大量購買美國股票，而美國居民沒有增加對外國資產的購買，則在國民所得帳的 accounting identity 下，下列何者最可能發生？`,
     options: {
       A: `美國 NX 上升`,
@@ -3547,8 +3547,8 @@ const questionsData = [
   {
     id: "q_0081",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `Which of the following would be included in Taiwan’s GDP?`,
     options: {
       A: `A person buys a used motorcycle from another consumer`,
@@ -3564,8 +3564,8 @@ const questionsData = [
   {
     id: "q_0082",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `Suppose Taiwan’s nominal GDP increased by 8% in one year, while the GDP deflator increased by 5%. What happened to real GDP?`,
     options: {
       A: `Real GDP increased by about 3%`,
@@ -3581,8 +3581,8 @@ const questionsData = [
   {
     id: "q_0083",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["misc"],
+    topic: "Misc",
     question: `A college graduate spends several months searching for a job after graduation. This is an example of:`,
     options: {
       A: `Cyclical unemployment`,
@@ -3598,8 +3598,8 @@ const questionsData = [
   {
     id: "q_0084",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","23","31"],
+    topic: "Money & Banking",
     question: `Assume inflation is rising rapidly while unemployment is already very low. According to standard macroeconomic theory, which policy response is MOST appropriate for the central bank?`,
     options: {
       A: `Lower interest rates to stimulate investment`,
@@ -3615,8 +3615,8 @@ const questionsData = [
   {
     id: "q_0085",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `Suppose Country A can produce both computers and coffee more efficiently than Country B. According to the theory of comparative advantage, international trade can STILL benefit both countries if:`,
     options: {
       A: `Country B imposes tariffs on imports`,
@@ -3632,8 +3632,8 @@ const questionsData = [
   {
     id: "q_0086",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","25"],
+    topic: "GDP",
     question: `近年許多國家積極發展 AI 技術。 若 AI 能大幅提高勞動生產力，最可能帶來下列哪一項長期 影響？`,
     options: {
       A: `國家生活水平提高`,
@@ -3649,8 +3649,8 @@ const questionsData = [
   {
     id: "q_0087",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `近年許多國家持續提高基本工資。 若基本工資調漲速度長期高於勞動生產力成長速度，企業 最可能面臨什麼情況？`,
     options: {
       A: `生產成本上升`,
@@ -3666,8 +3666,8 @@ const questionsData = [
   {
     id: "q_0088",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25","24","27"],
+    topic: "Production & Growth",
     question: `若某國人民開始更重視教育與技能培訓，長期而言最可能對經濟造成什麼影響？`,
     options: {
       A: `人力資本 增加，提升生產力`,
@@ -3683,8 +3683,8 @@ const questionsData = [
   {
     id: "q_0089",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `下列哪一項最能解釋為什麼 CPI 可能高估實際通貨膨脹率？`,
     options: {
       A: `消費者會改買較便宜的替代 商品`,
@@ -3700,8 +3700,8 @@ const questionsData = [
   {
     id: "q_0090",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `某公司考慮投資一項新設備，未來可帶來高額收益，但市場利率突然上升。根據現值 （present value）概念，下列何者最可能發生？`,
     options: {
       A: `未來收益的現值下降`,
@@ -3717,8 +3717,8 @@ const questionsData = [
   {
     id: "q_0091",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `若某國股市大漲，但 GDP 成長率沒有明顯提升，下列何者最可能是原因？`,
     options: {
       A: `股票價格一定 等於 GDP`,
@@ -3734,8 +3734,8 @@ const questionsData = [
   {
     id: "q_0092",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `若市場利率由 5% 上升至 10%，則下列哪一項投資計畫最可能「由值得投資變成不值得投 資」？`,
     options: {
       A: `現在投資 100 萬元，10 年後回收 300 萬元`,
@@ -3751,8 +3751,8 @@ const questionsData = [
   {
     id: "q_0093",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `下列哪一項最有可能增加台灣的淨出口？`,
     options: {
       A: `台灣民眾大量購買日本汽車`,
@@ -3768,8 +3768,8 @@ const questionsData = [
   {
     id: "q_0094",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `某國中央銀行長期大量增加貨幣供給，但實質 GDP 沒有明顯成長。根據貨幣數量說 （Quantity Theory of Money），長期最可能發生下列何種現象？`,
     options: {
       A: `物價水準持續上升`,
@@ -3785,8 +3785,8 @@ const questionsData = [
   {
     id: "q_0095",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27","31"],
+    topic: "GDP",
     question: `下列哪一項不會直接計入台灣 GDP？`,
     options: {
       A: `台灣企業出口晶片到美國`,
@@ -3802,8 +3802,8 @@ const questionsData = [
   {
     id: "q_0096",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設某廠牌的新款筆記型電腦售價與去年的舊款式完全相同，但是新機型的運算速度提升了兩 倍，且電池續航力也大幅增加。如果 CPI 在統計時只單純比對前後兩代筆電的價格，而沒有 將這些功能升級納入調整，則這種情況與 CPI 的哪一個問題最相關？`,
     options: {
       A: `Introduction of new goods`,
@@ -3819,8 +3819,8 @@ const questionsData = [
   {
     id: "q_0097",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25","23"],
+    topic: "Production & Growth",
     question: `在其他條件不變的情況下，政府成功激勵企業大幅投資於人力資本（例如教育和職業訓練計 畫）的政策，將會增加：`,
     options: {
       A: `其未來的生產力與未來的實質 GDP 都「不會」增加`,
@@ -3836,8 +3836,8 @@ const questionsData = [
   {
     id: "q_0098",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `假設一個封閉經濟體正面臨預算赤字（政府／公營儲蓄小於零），但該國的投資仍然為正數。 請問下列哪一個敘述必然正確？`,
     options: {
       A: `私人儲蓄必然大於國民儲蓄。`,
@@ -3853,8 +3853,8 @@ const questionsData = [
   {
     id: "q_0099",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `利用 rule of 70，如果年利率為 5%，那麼$200 的本金在 42 年後大約會價值多少？`,
     options: {
       A: `$800`,
@@ -3870,8 +3870,8 @@ const questionsData = [
   {
     id: "q_0100",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `某銀行擁有 $12,000 的存款。如果 reserve requirement 為 15%，且該銀行已將所有能貸出的 資金全部貸出，請問該銀行的總放款金額為多少？`,
     options: {
       A: `$1,800`,
@@ -3887,8 +3887,8 @@ const questionsData = [
   {
     id: "q_0101",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `近年全球爆發 AI 伺服器建置狂潮，台灣科技廠因接獲大量美國訂單而創造了巨額的貿易順差 （淨出口 NX > 0）。在完全浮動匯率且中央銀行不干預外匯市場的前提下，根據開放經濟體 的總體經濟恆等式，這筆龐大的順差最終必然會導致下列哪一種現象？`,
     options: {
       A: `台灣的實質利率大 幅下降，導致國內投資全面暴增。`,
@@ -3904,8 +3904,8 @@ const questionsData = [
   {
     id: "q_0102",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `某家知名科技公司（如 NVIDIA）預計在今晚公布財報。過去一個月來，華爾街分析師與各大 財經媒體已經根據供應鏈數據，強烈預測該公司本季營收將創下歷史新高。今晚財報公布後， 數據「完全符合」分析師上個月的超高預測。若股票市場符合「效率市場假說 (Efficient Market Hypothesis, EMH)」，該公司的股價在財報公布當下最可能發生什麼事？`,
     options: {
       A: `因為營 收創歷史新高，股價將在公布瞬間隨之暴漲。`,
@@ -3921,8 +3921,8 @@ const questionsData = [
   {
     id: "q_0103",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `近年來，許多工作者放棄訂閱昂貴的傳統國外學術期刊或顧問服務，轉而每月花費 20 美元訂 閱進階的 AI 生產力工具（如 ChatGPT Plus 或 Google AI Pro），這大幅降低了他們獲取知識 的成本並提升工作效率。然而，傳統的消費者物價指數 (CPI) 可能無法精準捕捉到這種生活成 本下降的好處。請問這是屬於 CPI 衡量上的哪一種偏誤？`,
     options: {
       A: `新產品的引進 (Introduction of new goods)`,
@@ -3938,8 +3938,8 @@ const questionsData = [
   {
     id: "q_0104",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","24"],
+    topic: "Finance",
     question: `美國聯準會 (Fed) 為了對抗通膨，在過去幾年將基準利率維持在極高水準。若市場目前強烈預 期 Fed 將在下個月「意外大幅降息」，在其他條件不變的情況下，這對那些「不孳息（不配 發利息或股利）」的資產（例如黃金、或是比特幣等加密貨幣）的市場需求與價格最有可能造 成什麼影響？`,
     options: {
       A: `需求減少，價格下跌，因為降息代表經濟衰退，沒人想投資。`,
@@ -3955,8 +3955,8 @@ const questionsData = [
   {
     id: "q_0105",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","24"],
+    topic: "Saving & Investment",
     question: `為了防堵科技戰，美國與歐洲各國政府紛紛通過大規模的《晶片法案》，導致政府「預算赤 字」急遽擴大。同一時間，受惠於 AI 浪潮，全球各大科技企業對未來獲利極度樂觀，紛紛發 行公司債籌資，打算瘋狂擴建資料中心。在封閉經濟體的「可貸資金市場 (Market for loanable funds)」中，這兩件事情同時發生，會對「均衡實質利率」與「均衡可貸資金數量」 產生什麼確定的影響？`,
     options: {
       A: `實質利率確定上升；可貸資金數量變動無法確定。`,
@@ -3972,8 +3972,8 @@ const questionsData = [
   {
     id: "q_0106",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `至華在 2025 年買了一棟中古屋自住，沒有出租，也沒有裝修。下列敘述何者正確？`,
     options: {
       A: `中古 屋交易會計入 2025 年 GDP，因為房屋是資本財`,
@@ -3989,8 +3989,8 @@ const questionsData = [
   {
     id: "q_0107",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `年份 | 商品 A 價格 | 商品 A 數量 | 商品 B 價格 | 商品 B 數量 2024 基準年| 10| 100 | 20 | 50 2025 | 12 | 120 | 25 | 40 根據資料，下列敘述何者正確？`,
     options: {
       A: `2025 名目 GDP 為 2,000，實質 GDP 為 2,440，GDP 平 減指數為 82`,
@@ -4006,8 +4006,8 @@ const questionsData = [
   {
     id: "q_0108",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `某年名目薪資上升 4%，但 CPI 上升 6%。下列敘述何者最合理？`,
     options: {
       A: `民眾變得富有，因為薪 資上升`,
@@ -4023,8 +4023,8 @@ const questionsData = [
   {
     id: "q_0109",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `假設一國政府支出增加，但稅收沒有增加，因此政府預算赤字擴大。若其他條件不變，根據可 貸資金市場，下列何者最可能發生？`,
     options: {
       A: `國民儲蓄增加，利率下降，投資增加`,
@@ -4040,8 +4040,8 @@ const questionsData = [
   {
     id: "q_0110",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `某國 2025 年資料如下： 指標 | 數值 名目 GDP 成長率 | 8% 實質 GDP 成長率 | 2% CPI 成長 率 | 5% 名目薪資成長率 | 3% 股市指數成長率 | 20% 出口成長率 | 15% 根據資料，下列判斷 何者最合理？`,
     options: {
       A: `這個國家經濟一定很好，因為名目 GDP、出口和股市都成長`,
@@ -4057,8 +4057,8 @@ const questionsData = [
   {
     id: "q_0111",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `根據開放總體經濟學的會計恆等式，若一個國家目前處於 trade deficit 狀態，下列哪一項敘述 不正確？`,
     options: {
       A: `Exports < Imports`,
@@ -4074,8 +4074,8 @@ const questionsData = [
   {
     id: "q_0112",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","27"],
+    topic: "Open Economy",
     question: `當一個國家的貨幣匯率發生 appreciation 時，國內外不同的經濟群體會受到不同影響 。若 U.S. dollar 升值，下列哪一個群體通常會感到不滿（unhappy）？`,
     options: {
       A: `想要在海外購買房地產 或資產的 American firm`,
@@ -4091,8 +4091,8 @@ const questionsData = [
   {
     id: "q_0113",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `假設一台 Ford Escape SUV 在美國的售館價為 24,000 美元，而在俄羅斯的售價為 720,000 盧布 。在 purchasing-power parity 成立的前提下，rubles per dollar 的 nominal exchange rate 應為多少？`,
     options: {
       A: `20 rubles per dollar`,
@@ -4108,8 +4108,8 @@ const questionsData = [
   {
     id: "q_0114",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","30"],
+    topic: "CPI & Inflation",
     question: `當一個經濟體發生未預期到的高通貨膨脹（例如預期 inflation rate 為 3%，但實際為 5%）， 這將會導致財富在債權人（creditors）與債務人（debtors）之間如何分配？`,
     options: {
       A: `購買力會從 creditors 重新分配到 debtors`,
@@ -4125,8 +4125,8 @@ const questionsData = [
   {
     id: "q_0115",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `考慮到 tax distortions，當 inflation rate 上升且 nominal interest rate 隨之同幅度上升時（滿 足 Fisher effect），這對 savers 的 after-tax real interest rate 有何影響？`,
     options: {
       A: `實質稅後報酬率 保持不變，因為名目利率已隨通膨率同步調整`,
@@ -4142,8 +4142,8 @@ const questionsData = [
   {
     id: "q_0116",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `假設一個經濟體只生產麵包。第一年(基準年)生產了 10 條麵包，每條售價 2 元;第二年生產了 12 條麵包，每條售價 3 元。請問第二年的「實質 GDP」以及「GDP 平減指數(GDP Deflator)」分別為何？`,
     options: {
       A: `實質 GDP 為 24 元;GDP 平減指數為 150。`,
@@ -4159,8 +4159,8 @@ const questionsData = [
   {
     id: "q_0117",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設 A 國的消費者每個月固定會購買 10 公斤的進口 B 國牛肉。某年因為國際地緣政治衝突與 極端氣候，進口 B 國牛肉價格暴漲了 3 倍。這時，聰明的 A 國消費者紛紛改變習慣，完全不 買進口牛肉，改成購買價格完全沒變的 A 國在地國產豬肉。在其他商品價格都不變的情況 下，這場牛肉危機對 A 國統計出來的 CPI 以及民眾真實的生活成本有何影響？`,
     options: {
       A: `CPI 算出來 的通膨率會顯著上升，但民眾真實的生活成本上升幅度並沒有 CPI 反映的那麼大。`,
@@ -4176,8 +4176,8 @@ const questionsData = [
   {
     id: "q_0118",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `某公司在 2024 年於台灣境內的工廠生產了價值 1,000 萬元的全新碳纖維自行車，並於同年底 運送並出口至美國分公司。然而，由於美國市場當年買氣低迷，這批車在 2024 年 12 月 31 日 時，仍堆放在美國分公司的倉庫中未售出。直到 2025 年夏天，美國分公司才成功將這批自行 車以 1,000 萬元賣給美國當地的消費者。在不考慮任何匯率變動下，這項經濟活動對台灣 2024 年與 2025 年的 GDP 組成有何影響？`,
     options: {
       A: `2024 年:因為尚未最終賣給消費者，台灣的 GDP 完全不受影響;2025 年:台灣的淨出口增加 1,000 萬，GDP 增加 1,000 萬。`,
@@ -4193,8 +4193,8 @@ const questionsData = [
   {
     id: "q_0119",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設某小型經濟體的可貸資金市場極為穩定，長期的實質利率固定為 4%。該國政府對民眾的 所有名目利息所得課徵 25%的固定所得稅。現假設該國原本的通貨膨脹率為 0%;隨後央行因 故長期超發貨幣，導致預期通貨膨脹率長期永久性地上升至 8%。根據費雪效應與長期名目變 數的調整，當通膨率上升後，民眾在長期所面臨的實質稅後利率會發生什麼變動？`,
     options: {
       A: `實質稅 後利率保持在 3%不變，因為費雪效應下名目利率會一對一調整，通膨不會扭曲實質回報。`,
@@ -4210,8 +4210,8 @@ const questionsData = [
   {
     id: "q_0120",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `小王把辛苦打工存下來的 100,000 元，拿去辦理「整存整付」定期儲蓄存款，期間為 10 個 月。辦理時，櫃檯行員告訴他現在的年利率為 2.4%。請幫小明計算，10 個月到期後，他一次 領回的「本利和」最接近多少元? (Hint:使用(1+x)^n 在 x=0 的泰勒展開計算)`,
     options: {
       A: `126,765 元`,
@@ -4227,8 +4227,8 @@ const questionsData = [
   {
     id: "q_0121",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `現值（PV）的複利折現數理計算 某資訊公司考慮投入一項雲端升級計畫，今天需支出 1,000 萬元，預期在 2 年後能產生 1,210 萬元的單一現金回報。若目前的市場利率為 10%，根據現 值模型，該公司是否應進行此投資？`,
     options: {
       A: `應投資，因為現值為 1,100 萬元，大於成本。`,
@@ -4244,8 +4244,8 @@ const questionsData = [
   {
     id: "q_0122",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `多樣化（Diversification）之風險辨析 關於投資組合的風險管理，下列敘述何者正確？`,
     options: {
       A: `增 加投資組合中股票的數量可以完全消除「市場風險」。`,
@@ -4261,8 +4261,8 @@ const questionsData = [
   {
     id: "q_0123",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `貨幣三大功能之生活情境題 小明在網購平台看見一支手機標價為 NT$30,000，他考慮了三天 後決定用信用卡支付。這支手機的「標價」與小明「考慮三天」的行為，分別體現了貨幣的哪 些功能？`,
     options: {
       A: `交易媒介、計價單位`,
@@ -4278,8 +4278,8 @@ const questionsData = [
   {
     id: "q_0124",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `央行公開市場操作之動態影響 若央行預期未來通膨壓力過大，決定在公開市場「賣出 (Sale)」政府債券，下列連動效應何者正確 ？`,
     options: {
       A: `銀行準備金增加 → 貨幣供給增加 → 利率 下降`,
@@ -4295,8 +4295,8 @@ const questionsData = [
   {
     id: "q_0125",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `費雪方程式下之通貨緊縮計算陷阱 假設小張將錢存入銀行，約定的「名目利率」為 2%。一年 後，該國發生了 1% 的「通貨緊縮 (Deflation)」。請問根據費雪方程式（Fisher Equation）， 小張實際獲得的「實質利率」是多少？`,
     options: {
       A: `1%`,
@@ -4312,8 +4312,8 @@ const questionsData = [
   {
     id: "q_0126",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `若台灣在 2025 年 Nominal GDP 成長率為 5%，而同年 GDP Deflator 從 100 上升至 102，在 不考慮其他條件下，關於台灣 2025 年的 Real GDP 與通貨膨脹狀況，下列敘述何者正確？`,
     options: {
       A: `2025 年的 Real GDP 成長率約為 3%，且市場出現實質通貨膨脹`,
@@ -4329,8 +4329,8 @@ const questionsData = [
   {
     id: "q_0127",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據經濟學的效率市場假說（EMH），下列關於主動式管理基金（Actively Managed Fund） 與被動型指數基金（Index Fund / ETF）的敘述與推論，何者正確？`,
     options: {
       A: `主動型基金因為雇用 了專業經理人進行個股財報研究，在長期扣除管理費用後，其系統性回報必定能超越被動型指 數基金`,
@@ -4346,8 +4346,8 @@ const questionsData = [
   {
     id: "q_0128",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `當台灣中央銀行為了抑制國內過熱的房市與輸入型通膨壓力，決定在公開市場操作中「發行定 期存單以沖銷市場資金」，並同時「調升存款準備率」。請問這兩項政策對貨幣供給量與市場 利率會帶來什麼影響？`,
     options: {
       A: `貨幣供給量增加，市場利率下降`,
@@ -4363,8 +4363,8 @@ const questionsData = [
   {
     id: "q_0129",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `當台灣政府宣布對進口的汽車「加徵高額關稅」時，在短期內對國內汽車市場帶來的經濟影 響，下列敘述何者正確？`,
     options: {
       A: `國內進口汽車的價格會下降`,
@@ -4380,8 +4380,8 @@ const questionsData = [
   {
     id: "q_0130",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","31"],
+    topic: "Money & Banking",
     question: `如果美國大幅升息，而台灣央行維持利率不動，導致台美利差擴大。在外匯市場上最可能出現 什麼現象？`,
     options: {
       A: `資金流入台灣，新台幣升值`,
@@ -4397,8 +4397,8 @@ const questionsData = [
   {
     id: "q_0131",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `若台灣央行為了強力壓制國內通貨膨脹，決定大幅調升政策利率。在其他條件不變的情況下， 根據生產要素市場理論，此舉對國內廠商的勞動需求最可能造成何種影響？`,
     options: {
       A: `借貸成本上升 促使廠商引進更多自動化設備，導致勞動的邊際產量（MPL）大幅提升，勞動需求曲線右 移。`,
@@ -4414,8 +4414,8 @@ const questionsData = [
   {
     id: "q_0132",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29"],
+    topic: "CPI & Inflation",
     question: `根據泰勒法則，當一國的實際通貨膨脹率「高於」央行的目標通膨率，且實際 GDP 「大於」 潛在 GDP（即正的產出缺口）時，中央銀行理論上應採取下列何種行動？`,
     options: {
       A: `調降政策利率`,
@@ -4431,8 +4431,8 @@ const questionsData = [
   {
     id: "q_0133",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設台灣央行維持低利率環境，導致該年度國內通貨膨脹率達到 3%，而同年國內企業給予勞 工的名目工資調漲了 2%。關於勞工的實質工資與購買力，下列敘述何者正確？`,
     options: {
       A: `實質工資 下降約 1%，勞工的實質購買力減少`,
@@ -4448,8 +4448,8 @@ const questionsData = [
   {
     id: "q_0134",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `若中央銀行擔憂國內房地產市場過熱與資產泡沫化，打算「緊縮」市場上的貨幣供給。下列哪 一項是央行可以採取的公開市場操作？`,
     options: {
       A: `調降法定準備率`,
@@ -4465,8 +4465,8 @@ const questionsData = [
   {
     id: "q_0135",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","30","23","24"],
+    topic: "Money & Banking",
     question: `經濟學中的「貨幣中立性」主張貨幣供給的變動不會影響實質變數（如實質 GDP、就業 量）。多數經濟學家認為這個理論在哪個時期比較成立？這對央行的短期政策有何涵義？`,
     options: {
       A: `在短期成立；這意味著央行無法透過降息刺激景氣。`,
@@ -4482,8 +4482,8 @@ const questionsData = [
   {
     id: "q_0136",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","24"],
+    topic: "Saving & Investment",
     question: `在可貸基金市場中，假設政府同時實施了兩項政策。一、取消投資租稅優惠，二、將原本的預 算赤字轉變為預算盈餘。在其他條件不變的情況下，這兩項政策同時左用後，實質利率和均衡 可貸資金數量的變動趨勢為何?`,
     options: {
       A: `實質利率必然下降，均衡資金數量變動方向不確定`,
@@ -4499,8 +4499,8 @@ const questionsData = [
   {
     id: "q_0137",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30","24"],
+    topic: "Money & Inflation",
     question: `政府透過大量增印貨幣來籌措財政支出，進而引發 Hyperinflation。在總體經濟學中，這種因 為貨幣貶值導致持有現金之大眾購買力受損的現象，本質上等同於下列哪一種機制的運作?`,
     options: {
       A: `皮鞋成本的外部化`,
@@ -4516,8 +4516,8 @@ const questionsData = [
   {
     id: "q_0138",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據 Diminishing Marginal Utility 理論，財富的增加帶給個人的滿足感增幅會越來越小。這項 微觀經濟基礎如何解釋宏觀金融市場中多數人的 Risk Aversion 行為？`,
     options: {
       A: `risk-averse person 只追求最高期望值的投資資產，完全不在乎資產可能產生的波動幅度`,
@@ -4533,8 +4533,8 @@ const questionsData = [
   {
     id: "q_0139",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","25"],
+    topic: "GDP",
     question: `根據 rule of 70，若某個發展中經濟體的實質 GDP 成長率每年穩定在 3.5%，則該國的經濟規 模要翻成原來的 4 倍，大約需要耗多少年?`,
     options: {
       A: `20`,
@@ -4550,8 +4550,8 @@ const questionsData = [
   {
     id: "q_0140",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據總體經濟學名詞的學術定義，下列哪一項經濟活動不屬於宏觀經濟學模型中的投資行為?`,
     options: {
       A: `某位大學教授將其年終獎金中的 30 萬元，用來在證券市場上買進剛上市的科技公司新發行 股票`,
@@ -4567,8 +4567,8 @@ const questionsData = [
   {
     id: "q_0141",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `當一個國家面臨嚴重的進口原物料與能源價格飆漲（成本推動型通膨）時，假設民間對基本能 源與核心食物的「替代彈性趨近於零」，且勞工的名目薪資僅微幅調升。在這樣的參數下，關 於傳統固定籃子的 CPI 衡量，以及對勞工「實質購買力與社會福祉」的評估，下列敘述何者 正確？`,
     options: {
       A: `傳統 CPI 將會顯著高估真實的生活成本，因為當替代彈性趨近於零時，替代偏誤 的數學極限會呈現指數型擴大。`,
@@ -4584,8 +4584,8 @@ const questionsData = [
   {
     id: "q_0142",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `考慮一個總體經濟體，國內所有企業完全專注於生產「供國內企業投資用的工業資本財」以及 「供全數外銷的科技零組件」；與此同時，國內家庭消費所需的「汽車、食品與全數能源」則 100% 依賴海外進口 。若國際供應鏈中斷導致進口車與石油價格暴漲三倍，但因海外市場惡 性競爭，該國外銷的科技零組件價格面臨崩盤。在這樣的情況下，該國當年度 CPI 通膨率與 GDP 平減指數通膨率的統計背離走勢為何？`,
     options: {
       A: `兩者會呈現對稱性的同步上揚，因為無論是 CPI 還是 GDP 平減指數，最終在總體經濟學中映射的都是同一個總體經濟的總合價格均衡。`,
@@ -4601,8 +4601,8 @@ const questionsData = [
   {
     id: "q_0143",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `某跨國汽車巨擘在台灣的製造基地於 2026 年第一季生產了價值共 9 億台幣的先進電動車 。 然而，由於國內面臨突發性的消費緊縮衰退，市場上的一般消費者最終僅購買了其中價值 3 億台幣的車輛，其餘價值 6 億台幣的電動車皆滯銷並堆積在經銷商的實體倉庫中 。請問這項 非自願的存貨堆積，在會計上會如何改變當年度國民所得帳中的消費、投資以及整體 GDP 的 數值？`,
     options: {
       A: `民間消費增加 3 億台幣，民間國內總投資維持不變，當期整體 GDP 僅增加 3 億台 幣；那批滯銷的 6 億元電動車會被視為尚未實現的產出，自動從當期帳目中剔除，遞延至未 來真正賣掉的年度再進行會計認列。`,
@@ -4618,8 +4618,8 @@ const questionsData = [
   {
     id: "q_0144",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `在分析日本近年（2021-2023 年）「核心通膨率轉正、但民間實質薪資持續下滑」的特殊現象 時，若結合經濟學中 CPI 的「替代偏誤（Substitution Bias）」理論進行動態審視，下列關於 傳統 CPI 對日本人生活成本的衡量，以及對勞工真實購買力的影響，何者在經濟學邏輯上的 推論最為嚴謹、且最符合現實體感？`,
     options: {
       A: `由於日本這波通膨屬於「進口能源與生鮮食品全面 暴漲」的成本推動型通膨，家庭對此類必需品的替代彈性極低（避無可避），導致傳統 CPI 的固定籃子高估效應顯著減弱；此時 CPI 數據能極為真實地反映生活成本的激增，而實質薪 資連續下滑的財務事實，正殘酷且精準地體現了勞工實質購買力遭到嚴重剝奪的社會福祉受損 現狀。`,
@@ -4635,8 +4635,8 @@ const questionsData = [
   {
     id: "q_0145",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `在 2026 年 1 月，一位投資人出資 200 億台幣購買了一棟在 2010 年便已完工落成的中古豪華 住宅大廈作為自用住宅，並另外支付了本國在地房屋仲介經銷商 5% 的定額勞務佣金（共 10 億台幣）以協助處理法律過戶程序。隨後，該投資人全家立即搬入該地居住直至年底，期間無 任何商業轉租行為。根據國民所得會計原理，這整串交易活動對當年度台灣 GDP 項目組成的 即時影響為何？`,
     options: {},
     answer: "D",
@@ -4648,8 +4648,8 @@ const questionsData = [
   {
     id: "q_0146",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `2026 年間，某家高科技 AI 晶片巨頭在下午台股收盤後，公開發布了重大的財報利多訊息，宣 布其最新季度獲利與未來展望遠遠超過全市場分析師的預期。根據第 27 章所述的「效率市場 假說（Efficient Markets Hypothesis, EMH）」，在市場具有資訊效率的前提下，隔天開盤時 該公司的股票價格預期會如何反應？`,
     options: {
       A: `股價會在開盤瞬間迅速上漲，立即反映該筆新公開的 財報利多，隨後投資人便無法再利用此已知消息在市場上持續獲得超額報酬`,
@@ -4665,8 +4665,8 @@ const questionsData = [
   {
     id: "q_0147",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `2024 年為因應國內房地產市場熱絡及長期通膨預期，台灣中央銀行於理監事會議中數度決定 「調升存款準備率（Required Reserve Ratio）」各 0.25 個百分點（1 碼），採取對市場信用 總量的管制。在其他條件不變下，根據貨幣系統理論，央行「調升存款準備率」會對市場帶來 什麼直接影響？`,
     options: {
       A: `降低商業銀行創造信用的能力，使貨幣乘數變小，進而減少貨幣供給量`,
@@ -4682,8 +4682,8 @@ const questionsData = [
   {
     id: "q_0148",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","29"],
+    topic: "GDP",
     question: `題組五：台灣 AI 出口狂飆與 GDP 組成（對應 CH23、CH25）題目 5 台灣中央銀行於近年理 監事會議中指出，受益於全球 AI（人工智慧）與資通訊產品需求極度強勁，台灣電子零組件 製造與出口表現無比亮眼，甚至將該時期的台灣經濟成長率大幅上修。央行報告特別提及： 「推動該階段經濟大幅成長的主力來自『國外淨需求』。」請問在外銷訂單與高階晶片出口大 幅增長的狀況下，根據 GDP 的支出法公式 $Y = C + I + G + NX$，這會直接帶動下列哪一個 項目的增長，進而拉高總體 GDP（$Y$）？`,
     options: {
       A: `淨出口（NX）`,
@@ -4699,8 +4699,8 @@ const questionsData = [
   {
     id: "q_0149",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23"],
+    topic: "CPI & Inflation",
     question: `2026 年上半年，因中東地區地緣政治局勢再度緊張，國際原油與大宗商品價格大幅波動。台 灣中央銀行隨即將 2026 年 台灣的消費者物價指數（CPI）年增率預測值上修至 1.8%。主計 總處官員解釋，台灣雖然高度依賴進口原油，但政府設有「油價雙平穩機制」與關稅減免措 施，能有效吸收至少 60% 的漲幅，才使通膨維持在 2% 警戒線以下。請問，若未來國際進口 原油價格持續暴漲，在初期這將如何對台灣的 CPI 與 GDP 平減指數（GDP Deflator）產生不 同的直接衝擊？`,
     options: {
       A: `對 CPI 的拉動效果比對 GDP 平減指數 更明顯，因為進口原油直接影響 消費者的汽柴油與能源開銷，但 GDP 平減指數 只反映國內生產的商品`,
@@ -4716,8 +4716,8 @@ const questionsData = [
   {
     id: "q_0150",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `2026 年 4 月底至 5 月，美國聯準會（Fed）因應其國內通膨率反彈至 3.8% 且就業市場異常 強勁，連續第三次宣佈「暫停降息」，維持基準利率在 3.50% 至 3.75% 的高位，甚至引發市 場預期未來可能重新升息。與此同時，台灣央行則選擇將政策利率維持在 2.0% 凍漲。在其他 條件不變下，美台之間這種「美國維持高利率，台灣維持相對低利率」的利差擴大現象，根據 開放經濟的總體理論（CH31），短期內最可能對台灣的資本流動與外匯市場造成什麼影響？`,
     options: {
       A: `台灣的淨資本流出（NCO）傾向增加，外匯市場上對美元需求增加，新台幣面臨貶值壓力`,
@@ -4733,8 +4733,8 @@ const questionsData = [
   {
     id: "q_0151",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `若台灣央行升息後，名目利率上升，但 CPI 通膨率也維持在高水準，則下列哪一項分析最合 理？`,
     options: {
       A: `只要名目利率上升，實質借貸成本一定大幅上升`,
@@ -4750,8 +4750,8 @@ const questionsData = [
   {
     id: "q_0152",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `如果房價上漲主要來自第二戶以上購屋需求、投資客槓桿操作與銀行不動產貸款過度集中，央 行採取下列哪一項政策最精準？`,
     options: {
       A: `全面升息`,
@@ -4767,8 +4767,8 @@ const questionsData = [
   {
     id: "q_0153",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29"],
+    topic: "CPI & Inflation",
     question: `假設央行同時面對「CPI 通膨壓力」與「房市投機過熱」，下列哪一項政策組合最符合經濟學 分析？`,
     options: {
       A: `只使用選擇性信用管制，因為它可以完全取代升息`,
@@ -4784,8 +4784,8 @@ const questionsData = [
   {
     id: "q_0154",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","29"],
+    topic: "Saving & Investment",
     question: `從可貸資金市場的角度來看，央行升息對企業投資與房市需求的影響，最合理的解釋是什麼？`,
     options: {
       A: `利率上升使借款成本提高，因此企業投資與購屋需求可能下降`,
@@ -4801,8 +4801,8 @@ const questionsData = [
   {
     id: "q_0155",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `關於「升息」與「選擇性信用管制」的政策效果，下列哪一項說法最符合經濟學分析？`,
     options: {
       A: `升息一定能讓房價立刻下跌`,
@@ -4818,8 +4818,8 @@ const questionsData = [
   {
     id: "q_0156",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","25"],
+    topic: "GDP",
     question: `以經濟學角度來看 GDP 與經濟成長，下列敘述何者最為正確？`,
     options: {
       A: `A 國在同期人口大幅增加 且物價上漲的情況下，實質 GDP 成長了，則 A 國人民的生活水準可能提升。`,
@@ -4835,8 +4835,8 @@ const questionsData = [
   {
     id: "q_0157",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","23","24","26"],
+    topic: "Finance",
     question: `在經濟學中，當市場的實質利率上升時，在其他條件不變的情況下，下列關於投資的 Present Value 以及可貸資金市場的敘述何者正確？`,
     options: {
       A: `投資計畫未來收益的現值會增加，進而提升 企業的投資意願。`,
@@ -4852,8 +4852,8 @@ const questionsData = [
   {
     id: "q_0158",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25","23","26","27"],
+    topic: "Production & Growth",
     question: `關於一個國家的經濟長期增長與金融體系，下列哪一個敘述是正確的？`,
     options: {
       A: `為了促進長期的 經濟增長，政府應該採取 inward-oriented 貿易政策。`,
@@ -4869,8 +4869,8 @@ const questionsData = [
   {
     id: "q_0159",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30","23","29"],
+    topic: "Money & Inflation",
     question: `假設貨幣供給量變為原本的 2 倍，但與此同時物價水準變為 2 倍，且實質 GDP 增加了 50%。根據貨幣數量的公式，貨幣流通速度會如何變化？`,
     options: {
       A: `變為舊值的 0.75 倍。`,
@@ -4886,8 +4886,8 @@ const questionsData = [
   {
     id: "q_0160",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設某國選定 2020 年為 CPI 的基期。已知 2020 年的固定消費組合成本為 $200，到了 2024 年，該消費組合的成本上升至 $250。小明在 2020 年時的月薪為 $40,000，如果他希望在 2024 年時，其薪資的實質購買力能比 2020 年時實質成長 10%，則小明在 2024 年的名目薪 資應該是多少？`,
     options: {
       A: `$44,000`,
@@ -4903,8 +4903,8 @@ const questionsData = [
   {
     id: "q_0161",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `某電腦廠商在 2024 年生產了價值 200 萬美元的半導體晶片，其中 150 萬美元賣給了國內的筆 電組裝廠，另外 50 萬美元則存入倉庫作為存貨。2025 年，該筆電廠利用這些晶片製造出價 值 500 萬美元的筆電並全數賣給國內消費者，同時電腦廠商也將倉庫中那 5 萬美元的晶片賣 給了國外公司。請問這兩年對該國 GDP 的貢獻為何？`,
     options: {
       A: `2024 年 GDP 增加 200 萬；2025 年 GDP 增加 500 萬`,
@@ -4921,8 +4921,8 @@ const questionsData = [
   {
     id: "q_0162",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設台灣是一個高度依賴進口能源與精品服飾的經濟體。某年由於國際局勢動盪，導致進口石 油價格大幅飆升，同時義大利精品（如 Armani 牛仔褲）在台灣的售價也翻倍 。若國內其他生 產的財貨與服務價格保持不變，關於台灣該年的通膨衡量，下列敘述何者最正確？`,
     options: {
       A: `CPI 會 顯著上升，但 GDP 平減指數可能完全不變`,
@@ -4938,8 +4938,8 @@ const questionsData = [
   {
     id: "q_0163",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `根據生產函數 Y/L=AF(1,K/L,H/L,N/L)，假設 A 國與 B 國擁有相同的技術水準 (A) 與儲蓄率， 但 A 國是成熟的已開發國家（實體資本 K 很高），B 國是發展中國家（K 很低）。根據「趕 超效應 (Catch-up effect)」，下列推論何者錯誤？`,
     options: {
       A: `若兩國增加相同數量的資本投資，B 國 的生產力成長率會高於 A 國`,
@@ -4955,8 +4955,8 @@ const questionsData = [
   {
     id: "q_0164",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `在一封閉經濟體中，已知 GDP (Y) 為 15 兆，消費 (C) 為 9 兆，政府支出 (G) 為 3 兆，且政 府面臨 5,000 億（0.5 兆）的預算赤字。若政府決定推動稅收優惠以鼓勵家計單位增加儲蓄， 在其他條件不變下，這對可貸資金市場 (Market for Loanable Funds) 的影響為何？`,
     options: {
       A: `私人儲 蓄為 3 兆，且政府預算赤字會導致排擠效果使投資下降`,
@@ -4972,8 +4972,8 @@ const questionsData = [
   {
     id: "q_0165",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `你正考慮投資一家新創公司的股票。該公司預計在第 1 年年底與第 2 年年底各發放 100 元的 股利 (Dividend)，你計畫在第 2 年領完股利後立刻以 1,210 元的價格賣掉這張股票 。若目前 市場盛行利率固定為 10%，請問這張股票在你眼中的合理價值 (Fair Value) 最接近多少？`,
     options: {
       A: `1,410 元`,
@@ -4989,8 +4989,8 @@ const questionsData = [
   {
     id: "q_0166",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `當通膨率為 3%，銀行定存名目利率為 2% 時，下列敘述何者正確？`,
     options: {},
     answer: "",
@@ -5001,8 +5001,8 @@ const questionsData = [
   {
     id: "q_0167",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `當市場利率上升時，原本已發行的債券價格通常會如何變化？`,
     options: {},
     answer: "",
@@ -5013,8 +5013,8 @@ const questionsData = [
   {
     id: "q_0168",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `甲債券 ETF 主要持有 2 年期債券，乙債券 ETF 主要持有 20 年期債券。若市場利率突然上 升，下列判斷何者最合理？`,
     options: {},
     answer: "",
@@ -5025,8 +5025,8 @@ const questionsData = [
   {
     id: "q_0169",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `某債券 ETF 持有一批零息債券，這些債券 5 年後會支付 10,000 元。若市場利率從 3% 上升 到 6%，下列何者正確？`,
     options: {},
     answer: "",
@@ -5037,8 +5037,8 @@ const questionsData = [
   {
     id: "q_0170",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","27"],
+    topic: "Saving & Investment",
     question: `若政府長期出現預算赤字，並大量發行政府債券籌資，在可貸資金市場中最可能造成什麼結 果？`,
     options: {},
     answer: "",
@@ -5049,8 +5049,8 @@ const questionsData = [
   {
     id: "q_0171",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據效率市場假說，若某家上市科技公司於下午盤後公布了創歷史新高的 Q1 財務報表與盈餘 表現，在隔天開盤時，該股票的價格預期會如何反應？`,
     options: {
       A: `在接下來的幾週內，股價受此公 開財報激勵而逐步緩慢地上揚`,
@@ -5066,8 +5066,8 @@ const questionsData = [
   {
     id: "q_0172",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `某投資人手中持有一筆分散在 50 檔不同產業個股的台灣股票投資組合。若台灣央行突然宣布 因應通膨壓力而升息兩碼，導致當天台灣加權指數（大盤）整體重挫 3%，該投資人的組合也 同步下跌。請問這筆損失主要是受到哪一種風險的衝擊？`,
     options: {
       A: `公司特定風險（Firm-specific Risk），可以透過買入更多科技股來完全消除`,
@@ -5083,8 +5083,8 @@ const questionsData = [
   {
     id: "q_0173",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","24","27"],
+    topic: "Money & Banking",
     question: `當市值型 ETF（如 0050）在次級市場（股票交易所）因散戶瘋狂追捧，導致其市價顯著高於 其成分股的真實淨值，出現嚴重的「溢價（Premium）」現象時。請問市場上的授權參與券商 （APs）通常會如何進行套利，以恢復股票市場的價格發現功能？`,
     options: {
       A: `在次級市場大舉買入該 ETF，並同時在個股市場放空台積電等成分股`,
@@ -5100,8 +5100,8 @@ const questionsData = [
   {
     id: "q_0174",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `關於隨機漫步與指數型基金，實證數據顯示長期而言，大多數主動型基金經理人的績效往往無 法擊敗被動的指數型基金。其核心原因為何？`,
     options: {
       A: `指數型基金具備專業 AI 團隊，能精準預測 每一次的金融海嘯與市場低點`,
@@ -5117,8 +5117,8 @@ const questionsData = [
   {
     id: "q_0175",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `某開發中國家的人均生產力方程嚴格符合固定規模報酬性質：Y/L = A * F(1, K/L, H/L, N/L)。 政府內部正激烈辯論以下兩條全然互斥的長期經濟增長政策路線： 路徑 A：政府大舉借債 補貼國內重工業，企圖透過激進拉高人均實體資本存量（K/L）來實現增長。 路徑 B：政府 實施預算平衡與利息免稅以誘發私人儲蓄，並將資金全面定向投入高等技術教育（拉高 H/L） 與基礎科學研發（提升技術知識 A）。 若該國微觀企業正計劃引進一項自動化生產線（未 來 10 年內每年可帶來固定實質收益 $1,000 萬元）。關於這兩條政策路徑的總體與微觀效果 敘述，下列何者錯誤？`,
     options: {
       A: `路徑 A 即使在短期內能刺激生產力，長期下注定會因為「實體資 本邊際報酬遞減」而導致人均產出增長率回歸停滯`,
@@ -5134,8 +5134,8 @@ const questionsData = [
   {
     id: "q_0176",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `下列何者會被計入台灣當年度的國內生產毛額（GDP）中？`,
     options: {
       A: `朋友之間私下買賣的二手車`,
@@ -5151,8 +5151,8 @@ const questionsData = [
   {
     id: "q_0177",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29"],
+    topic: "CPI & Inflation",
     question: `根據費雪效應（Fisher effect）與貨幣中立性，當中央銀行提高貨幣供給成長率時，長期而言 會對利率產生什麼影響？`,
     options: {
       A: `實質利率與名目利率同時上升`,
@@ -5168,8 +5168,8 @@ const questionsData = [
   {
     id: "q_0178",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `關於 GDP 平減指數（GDP deflator）與 CPI 的比較，下列敘述何者正確？`,
     options: {
       A: `若台灣政府向 美國採購的新型戰鬥機價格上漲，此變動會反映在台灣的 CPI 上，但不會影響 GDP 平減指 數。`,
@@ -5185,8 +5185,8 @@ const questionsData = [
   {
     id: "q_0179",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `假設購買力平價（Purchasing-Power Parity, PPP）在長期成立。若 A 國的預期通貨膨脹率為 每年 6%，而 B 國的預期通貨膨脹率為每年 2%；同時兩國的實體經濟條件相同，實質利率相 等。根據總體經濟學理論（結合費雪效應與購買力平價），下列關於 A 國名目利率與兩國匯 率變動的推論，何者最為正確？`,
     options: {
       A: `A 國的名目利率會低於 B 國，且 A 國貨幣相對於 B 國貨 幣將升值約 4%。`,
@@ -5202,8 +5202,8 @@ const questionsData = [
   {
     id: "q_0180",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `在可貸資金市場（Market for loanable funds）模型中，假設政府為了刺激經濟，「同時」實 施了兩項政策：）擴大企業的投資抵減（Investment tax credit）；）降低家庭儲蓄的利息所 得稅（Tax incentive for saving）。請問這兩項政策共同作用下，對均衡實質利率與可貸資金 數量的最終影響為何？`,
     options: {
       A: `均衡實質利率必然上升，可貸資金數量必然增加。`,
@@ -5219,8 +5219,8 @@ const questionsData = [
   {
     id: "q_0181",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `In 1979, in the face of rising competition in the fast food hamburger market, McDonald's reduced the price of its cheeseburger to $0.43. If the CPI in 1979 was 37.2 and the CPI in 2005 was 100, what is the price of a 1979 cheeseburger in 2005 dollars?`,
     options: {
       A: `$0.77`,
@@ -5236,8 +5236,8 @@ const questionsData = [
   {
     id: "q_0182",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","23","25"],
+    topic: "Open Economy",
     question: `When a lower-income economy's GDP is able to "catch up" with a higher-income economy's GDP, this behavior is related to an important concept in the study of economic:`,
     options: {
       A: `growth`,
@@ -5253,8 +5253,8 @@ const questionsData = [
   {
     id: "q_0183",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `When the U.S. economy runs a trade _____, it is implicitly asking the rest of the world to _____.`,
     options: {
       A: `deficit; finance some of its savings`,
@@ -5270,8 +5270,8 @@ const questionsData = [
   {
     id: "q_0184",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `On March 23, 2023, Taiwan’s Central Bank announced an increase in the rediscount rate (重 貼現率) from 1.750% to 1.875%. Recall that the discount rate is the rate of interest which a central bank charges on its loans to a commercial bank. At the same time, the overnight rate was 0.556%. The rate increase is expected to lead to:`,
     options: {
       A: `an increase in bank reserves`,
@@ -5287,8 +5287,8 @@ const questionsData = [
   {
     id: "q_0185",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `A German citizen buys an automobile produced in the United States by a Japanese company. As a result,`,
     options: {
       A: `U.S. net exports increase, U.S. GDP is unaffected, Japanese GNP increases, German net exports decrease, and German GNP and GDP are unaffected.`,
@@ -5304,8 +5304,8 @@ const questionsData = [
   {
     id: "q_0186",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `國內一家大型連鎖咖啡品牌為了提升產能，向義大利製造商採購了一批商用高階濃縮咖啡機。 這批咖啡機僅供門市內部製造飲品使用，並未對外零售。在採購期間，由於國際原物料短缺， 這批義大利商用咖啡機的進口價格飆漲了一倍。在國內其他商品與服務的生產及消費狀況皆未 改變的前提下，此一價格飆漲事件對該國兩大物價指標的影響為何？`,
     options: {
       A: `GDP 平減指數將會 上升，CPI 將維持不變。`,
@@ -5321,8 +5321,8 @@ const questionsData = [
   {
     id: "q_0187",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `甲國擁有高度發展的基礎建設與龐大的廠房設備；乙國則剛經歷一場毀滅性地震，絕大多數廠 房設備損毀殆盡，但勞動人口數量並未減少。兩國政府在同一時間宣布，企業購買新設備可抵 減應繳稅額，以鼓勵企業添購資本財。假設兩國企業皆對此政策做出積極回應，政策發酵後， 兩國的資金借貸成本與每位勞工平均產出的變化有何差異？`,
     options: {
       A: `兩國的資金借貸成本皆會下 降，且甲國的每位勞工平均產出提升幅度將大於乙國。`,
@@ -5338,8 +5338,8 @@ const questionsData = [
   {
     id: "q_0188",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `某國中央銀行無預警宣布，將商業銀行每吸收一元存款後必須保留不得貸出的資金比例，由原 本的五分之一調降為十分之一。假設該國所有商業銀行皆將多餘資金全數貸放出去，民眾習慣 將所有現金存入銀行而不保留手邊現鈔，且央行的基礎貨幣總量維持不變。在此政策完全落實 且經濟達到長期均衡後，一名正準備續簽長期勞動合約的工人，應預期其薪資數字發生何種變 化，方能維持與政策實施前完全相同的實質購買力？`,
     options: {
       A: `薪資數字增加一半即可。`,
@@ -5355,8 +5355,8 @@ const questionsData = [
   {
     id: "q_0189",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","29"],
+    topic: "GDP",
     question: `一個封閉經濟體在特定年度內的總生產價值為八千億元。該國政府在該年度共徵收了兩千億元 的稅款，並支出一千五百億元用於公務員薪資與公共設施維護，另外撥發了五百億元的現金津 貼直接匯入低收入戶的銀行帳戶。若該年度全體國民的民間消費總額為五千億元，下列關於該 國資金運作狀況的敘述何者正確？`,
     options: {
       A: `民間儲蓄為一千億元，政府財政呈現五百億元的盈餘。`,
@@ -5372,8 +5372,8 @@ const questionsData = [
   {
     id: "q_0190",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","26"],
+    topic: "Money & Banking",
     question: `某國政府過去長期維持財政收支平衡，但今年起為了推動大型社會福利計畫，決定在不增加稅 收的情況下長期舉借龐大債務。在此同時，該國中央銀行嚴格維持市場上流通資金總量的擴張 速度絕對固定不變。在上述兩項政策共同作用下，該國可貸資金市場的借貸成本與整體物價上 漲速度將出現何種長期變化？`,
     options: {
       A: `未經物價調整的表面借貸成本與扣除物價變動後的實質借貸 成本皆不受影響。`,
@@ -5389,8 +5389,8 @@ const questionsData = [
   {
     id: "q_0191",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `The economy of Utopia contains 2,200 $1 bills. If people hold equal amounts of currency and demand deposits, and banks maintain a reserve ratio of 10%, what is the total quantity of money in this economy?`,
     options: {
       A: `$2,200`,
@@ -5406,8 +5406,8 @@ const questionsData = [
   {
     id: "q_0192",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `Weiwei has a utility function U = W^{1/2}, where W is his wealth in millions of dollars and U is the utility he obtains from that wealth. In the final stage of a game show, the host offers Weiwei a choice between: (Option A) $16 million for sure, or(Option B) a gamble that pays $4 million with a probability of 0.6 and $36 million with a probability of 0.4.Based on expected utility theory, which option should Weiwei choose and why?`,
     options: {
       A: `Weiwei should choose Option A because it offers a higher expected utility of 4, compared to Option B's expected utility of 3.6.`,
@@ -5423,8 +5423,8 @@ const questionsData = [
   {
     id: "q_0193",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `NCU Bank starts with $400 in bank capital. It then accepts $1,600 in deposits. It keeps 12.5% of deposits in reserve and uses the rest of its assets to make bank loans. Suppose that 5% of the borrowers from NCU Bank default and these bank loans become worthless. Which of the following statements is correct regarding the bank's leverage ratio and the subsequent changes to its balance sheet?`,
     options: {
       A: `The leverage ratio is 5. The bank's total assets decline by 4%, and its bank capital declines by 20%.`,
@@ -5440,8 +5440,8 @@ const questionsData = [
   {
     id: "q_0194",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","29","30"],
+    topic: "GDP",
     question: `Suppose that this year's money supply is $400 billion, nominal GDP is $8 trillion, and real GDP is $4 trillion. Suppose that the velocity of money is constant and the economy's output of goods and services rises by 5% each year. What money supply should the central bank set next year if it wants an inflation rate of 10%?`,
     options: {
       A: `$420 billion`,
@@ -5457,8 +5457,8 @@ const questionsData = [
   {
     id: "q_0195",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","27"],
+    topic: "Saving & Investment",
     question: `Three students have each saved $2,000. Each has an investment opportunity in which he or she can invest up to $4,000. The rates of return on the students' investment projects are: Alice 4%, Bob 6%, and Charlie 15%. Suppose their school opens up a market for loanable funds in which students can borrow and lend among themselves. At the equilibrium interest rate of 6%, how much does each student have a year later after the investment projects pay their return and loans have been repaid? Furthermore, compared to a situation where borrowing is prohibited, is anyone worse off?`,
     options: {
       A: `Alice: $2,120, Bob: $2,120, Charlie: $2,480; No one is worse off, both borrowers and lenders benefit.`,
@@ -5474,8 +5474,8 @@ const questionsData = [
   {
     id: "q_0196",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `2025 年，台灣發生以下交易： (1) 台積電出售於台南新廠生產的晶片給德國車廠，金額 500 億元 (2) 某投資人在台股市場買進 2,000 萬元台積電股票 (3) 一家台灣餐廳向漁市場購入 300 萬元鮪魚，製成料理後賣給顧客，全年營收 1,200 萬元 (4) 台灣政府發放每人 1 萬元現金補貼 (5) 某家庭購買中古屋 4,000 萬元，並支付房仲佣金 80 萬元 若其他條件不變，下列何者最接 近「計入台灣 GDP 的金額」？`,
     options: {
       A: `500 億 + 2,000 萬 + 1,200 萬 + 1 萬 + 4,000 萬 + 80 萬`,
@@ -5491,8 +5491,8 @@ const questionsData = [
   {
     id: "q_0197",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `2025 年，某國發生以下現象： 進口 iPhone 價格大幅下降 國產軍用無人機價格大幅上升 政 府大量採購本國無人機 消費者大量購買進口 iPhone 國產食品價格幾乎不變 若其他條件不 變，下列何者最可能成立？`,
     options: {
       A: `CPI 與 GDP deflator 都上升`,
@@ -5508,8 +5508,8 @@ const questionsData = [
   {
     id: "q_0198",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `某開發中國家政府宣布： 「為了複製台灣半導體產業成功經驗，未來五年將大量興建晶圓廠 與 AI 資料中心。政府官員認為，只要實體資本（工廠、設備）持續增加，即使教育品質停 滯、研發投入不足、工程師大量外流，該國仍能長期維持每年 10% 以上的實質 GDP 成長 率。」 同期間，該國還出現以下現象： 新增晶圓廠的產能利用率逐年下降 工程師薪資大幅 上升 國內創新專利數量停滯 外資企業逐漸轉向其他國家設廠 若依據課程中「生產力與經濟 成長」的觀點，下列何者最能合理解釋該國未來可能面臨的問題？`,
     options: {
       A: `只要資本存量持續增 加，勞動生產力必然永久等比例提高，因此上述問題不影響長期成長`,
@@ -5525,8 +5525,8 @@ const questionsData = [
   {
     id: "q_0199",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","24"],
+    topic: "Open Economy",
     question: `某國近年因通膨率長期高於主要貿易夥伴，導致國內商品價格持續上升；然而，政府為維持進 口商品價格穩定與控制短期政治壓力，長期透過外匯市場干預來維持本國貨幣強勢。數年後， 該國出現： 出口競爭力下降 貿易逆差擴大 外匯存底持續減少 黑市匯率與官方匯率差距擴大 若依據 purchasing-power parity（PPP）與匯率理論，下列何者最能合理解釋上述現象？`,
     options: {
       A: `若政府持續干預匯率，PPP 理論將完全失效，因此不會影響長期貿易狀況`,
@@ -5542,8 +5542,8 @@ const questionsData = [
   {
     id: "q_0200",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `某國在經濟衰退期間，中央銀行為刺激景氣，長期維持低利率政策並大量買進政府債券；同 時，銀行體系因市場資金充裕而持有大量超額準備（excess reserves）。然而，數年後該國 卻出現以下現象： 房價與股價持續大幅上漲 民間借貸與槓桿操作增加 銀行放款成長速度開 始趨緩 通膨率仍未明顯上升 部分官員因此主張： 「既然 CPI 沒有大幅上升，就代表貨幣政 策並未過度寬鬆，也不需要擔心金融市場風險。」 若依據課程中貨幣制度與金融體系的觀 點，下列何者最能合理反駁上述說法？`,
     options: {
       A: `只要 CPI 維持穩定，就代表貨幣供給一定沒有增 加`,
@@ -5559,8 +5559,8 @@ const questionsData = [
   {
     id: "q_0201",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `假設市場利率為 5%，某公司考慮一項投資計畫：今天投入 1 億美元，預計 10 年後可獲得 2 億美元。根據現值理論，該公司是否應執行此計畫？`,
     options: {
       A: `不應該，因為 10 年後 2 億美元的現 值僅約 8,400 萬美元`,
@@ -5576,8 +5576,8 @@ const questionsData = [
   {
     id: "q_0202",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `在關於生產力的討論中，「技術知識」(Technological knowledge) 與「人力資本」(Human capital) 的主要區別為何？`,
     options: {
       A: `技術知識指社會對生產方式的理解；人力資本則是將這些知識 傳遞給勞工的過程與資源。`,
@@ -5593,8 +5593,8 @@ const questionsData = [
   {
     id: "q_0203",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","23"],
+    topic: "Saving & Investment",
     question: `假設在一個封閉經濟體中，GDP (Y) = 10,000，消費 (C) = 6,000，稅收 (T) = 1,500，政府購 買 (G) = 2,000。請問私人儲蓄 (Private Saving) 為多少？`,
     options: {
       A: `2,500`,
@@ -5610,8 +5610,8 @@ const questionsData = [
   {
     id: "q_0204",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `當日本汽車製造商豐田 (Toyota) 在美國擴建其汽車工廠時，這項投資對美國經濟指標的影響 為何？`,
     options: {
       A: `美國的 GDP 下跌，但 GNP 上升。`,
@@ -5627,8 +5627,8 @@ const questionsData = [
   {
     id: "q_0205",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `如果聯邦公開市場委員會（FOMC）希望擴張貨幣供給，以刺激經濟活動，中央銀行最可能採 取下列哪項措施？`,
     options: {
       A: `在公開市場出售政府公債，回收市場資金`,
@@ -5644,8 +5644,8 @@ const questionsData = [
   {
     id: "q_0206",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `2026 年，台灣某連鎖烘焙企業發生以下事件： 向加拿大進口高級小麥 300 萬元，其中： 200 萬元用於今年生產麵包 剩餘 100 萬元留作原料存貨 公司今年共生產麵包價值 900 萬元， 其中： 賣給台灣消費者 700 萬元 出口日本 100 萬元 剩餘 100 萬元未售出 公司購買一台台灣 製自動烤箱 250 萬元。 公司出售去年庫存的冷凍蛋糕 80 萬元給消費者。 台灣政府因應物價 上漲，發放民眾消費補助 50 億元。 消費者使用其中部分補助購買法國進口奶油 20 萬元。 下列何者正確？`,
     options: {
       A: `2026 年台灣 GDP 增加 2030 萬元`,
@@ -5662,8 +5662,8 @@ const questionsData = [
   {
     id: "q_0207",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `2026 年某國： CPI 從 150 上升到 165 名目薪資從 60,000 元上升到 63,000 元 下列何者正 確？`,
     options: {
       A: `名目薪資增加 5%，實質薪資也增加 5%`,
@@ -5679,8 +5679,8 @@ const questionsData = [
   {
     id: "q_0208",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `某國政府長期預算赤字擴大，必須發行大量公債融資。同時，企業原本計畫增加 AI 設備與自 動化工廠投資。下列哪一個推論最合理？`,
     options: {
       A: `政府借款增加會使可貸資金供給增加，利率下 降，企業投資增加`,
@@ -5696,8 +5696,8 @@ const questionsData = [
   {
     id: "q_0209",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","23","31"],
+    topic: "Finance",
     question: `2026 年，台灣高股息 ETF 市場出現熱潮，發生以下事件： 某投信公司新發行一檔高股息 ETF，投資人總共申購 800 億元。 投信公司用其中 760 億元買進台灣上市公司既有股票。 投 信公司支付券商交易手續費、會計師費、法律顧問費與廣告費共 12 億元。 投信公司向一家台 灣軟體公司購買 ETF 配息試算平台，花費 6 億元。 該 ETF 當年收到成分股公司發放的現金 股利 30 億元，並將其中 28 億元配發給投資人。 投資人收到配息後，其中 5 億元用來購買日 本進口家電。 其中 2 億元用來購買台灣新生產的智慧家電。 政府為鼓勵長期投資，對 ETF 投資人發放稅務補助共 20 億元。 下列何者正確？`,
     options: {
       A: `2026 年台灣 GDP 增加 866 億元`,
@@ -5713,8 +5713,8 @@ const questionsData = [
   {
     id: "q_0210",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `某央行希望使隔夜拆款利率上升。已知目前銀行體系準備金充足，拆款市場供給曲線位於 S 1，央行決定採取政策後，拆款市場供給曲線移至 S2，利率由 1.5% 上升至 2.0%。 下列何者 最可能是央行採取的政策？`,
     options: {
       A: `買進政府債券，使銀行準備金增加`,
@@ -5730,8 +5730,8 @@ const questionsData = [
   {
     id: "q_0211",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `The following are six economic activities that occurred this year. ① The total ticket revenue from a concert held by a South Korean K-pop girl group at the Taipei Arena. ② The milliondollar annual salary earned by a famous Taiwanese baseball player playing in Major League Baseball (MLB) in the United States. ③ The "imputed rent" of owner-occupied housing. ④ A 5,000 NTD "commission and service fee" paid to a car broker when purchasing a used car. ⑤ 100 bottles of fresh milk purchased by a bubble tea shop from local Taiwanese dairy farmers to make pearl milk tea. ⑥ Emergency relief funds and condolence payments distributed by the government to disaster victims. How many of the above items should be included in Taiwan's Gross Domestic Product (GDP) for the current year?`,
     options: {
       A: `2 items`,
@@ -5747,8 +5747,8 @@ const questionsData = [
   {
     id: "q_0212",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `An economy experiences the following three independent events during the current year: ① A domestic car dealership increases the retail price of electric vehicles imported from Germany. ② A leading tech firm purchases a batch of newly developed, domestically manufactured automated semiconductor equipment from a local supplier, and the price of this equipment spikes. ③ A domestic commercial airline purchases a brand-new, imported cargo jet from a foreign aircraft manufacturer. Which of the following statements regarding the immediate effects of these events is/are correct? I. Event ① and Event ③ both cause the nation's CPI to increase. II. Event ② causes the GDP deflator to increase but leaves the CPI unchanged. III. Event ③ has no immediate effect on either the CPI or the GDP deflator.`,
     options: {
       A: `II only`,
@@ -5765,8 +5765,8 @@ const questionsData = [
   {
     id: "q_0213",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `An economist is analyzing two government bonds with different times to maturity: Bond A matures in 1 year, and Bond B matures in 20 years. Both bonds currently yield the same market interest rate. Suppose the central bank suddenly decides to increase the market interest rate. Which of the following statements regarding the immediate impact on the values of these two bonds is/are correct? I. The market value of both Bond A and Bond B will decrease. II. The market value of Bond A will increase, while the market value of Bond B will decrease. III. Bond B will experience a larger percentage change in value than Bond A, meaning long-term bonds are more sensitive to interest rate changes.`,
     options: {
       A: `I only`,
@@ -5782,8 +5782,8 @@ const questionsData = [
   {
     id: "q_0214",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `According to the Efficient Markets Hypothesis (EMH), stock prices reflect all publicly available information about the value of the asset. Based on this theory and its implications, which of the following statements is/are correct? I. If the EMH holds true, an investor can consistently earn superior returns that beat the market average by carefully analyzing publicly available financial statements. II. Stock prices follow a "random walk," meaning that future price movements are impossible to predict based on past or currently available information. III. In reality, asset prices always perfectly reflect their true fundamental value at every single moment, making market irrationality impossible.`,
     options: {
       A: `II only`,
@@ -5799,8 +5799,8 @@ const questionsData = [
   {
     id: "q_0215",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `The Federal Reserve (Fed) decides to implement a monetary policy to cool down an overheating economy. To achieve this, the Fed sells government bonds through Open Market Operations (OMO). Based on the theory of the Federal Funds market, which of the following statements regarding the immediate impact of this policy is/are correct? I. The Federal Funds market is an interbank market where commercial banks borrow and lend reserves to one another. II. Selling government bonds removes reserves from the banking system, which shifts the supply curve of federal funds to the left. III. As a result of this policy, the equilibrium federal funds rate will decrease.`,
     options: {
       A: `I only`,
@@ -5816,8 +5816,8 @@ const questionsData = [
   {
     id: "q_0216",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `下列哪一項最符合 GDP 的定義？`,
     options: {
       A: `一國人民在全世界生產的所有商品與服務價值`,
@@ -5833,8 +5833,8 @@ const questionsData = [
   {
     id: "q_0217",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `如果一個國家的名目 GDP 上升，但實質 GDP 沒有上升，最可能代表什麼意思？`,
     options: {
       A: `國家的 實際產量明顯增加`,
@@ -5850,8 +5850,8 @@ const questionsData = [
   {
     id: "q_0218",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","27","31"],
+    topic: "CPI & Inflation",
     question: `下列哪一項最適合用來衡量一般消費者生活成本的變化？`,
     options: {
       A: `CPI`,
@@ -5867,8 +5867,8 @@ const questionsData = [
   {
     id: "q_0219",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23","31"],
+    topic: "CPI & Inflation",
     question: `下列哪一項最能說明 CPI 可能無法完全反映每個人真實生活感受的原因？`,
     options: {
       A: `CPI 完全不計 算商品價格`,
@@ -5884,8 +5884,8 @@ const questionsData = [
   {
     id: "q_0220",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23"],
+    topic: "CPI & Inflation",
     question: `台灣 2024 年 GDP 成長率為 4.59%，CPI 上漲 2.18%。下列哪一項解讀最合理？`,
     options: {
       A: `GDP 成長代表每個人的生活一定變好`,
@@ -5901,8 +5901,8 @@ const questionsData = [
   {
     id: "q_0221",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `假設阿明在台灣開了一家手搖飲店，他向台灣在地小農購買了 5,000 元的茶葉與牛奶，並製 作成飲料以 15,000 元全部賣給台灣的消費者。同時，他又花了 8,000 元買了一台全新由日本 原裝進口的封口機。請問這些交易對台灣當年 GDP 各組成項目與總額的影響為何？`,
     options: {
       A: `消費 C 增加 15,000，投資 I 增加 8,000，淨出口 NX 減少 8,000，GDP 總額增加 15,000。`,
@@ -5918,8 +5918,8 @@ const questionsData = [
   {
     id: "q_0222",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","23"],
+    topic: "CPI & Inflation",
     question: `關於消費者物價指數 (CPI) 與 GDP 平減指數 (GDP Deflator)，下列敘述何者正確？`,
     options: {
       A: `當台 灣進口的原油價格大幅上漲時，會使台灣的 GDP 平減指數大幅上升，但對 CPI 影響較小。`,
@@ -5935,8 +5935,8 @@ const questionsData = [
   {
     id: "q_0223",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `假設政府為了發放高額的社會福利金，而大幅增加政府的財政赤字。在可貸資金市場中，若其 他條件不變，這項政策通常會導致什麼結果？`,
     options: {
       A: `可貸資金的供給增加，均衡利率下降。`,
@@ -5952,8 +5952,8 @@ const questionsData = [
   {
     id: "q_0224",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `假設中央銀行規定的法定準備率為 10%，且銀行不會保留任何超額準備，大眾也習慣將所有 現金存入銀行體系。當央行透過公開市場操作，向民間買入 100 萬元的政府公債時，整個銀 行體系的貨幣供給量最多可以增加多少？`,
     options: {
       A: `100 萬元`,
@@ -5969,8 +5969,8 @@ const questionsData = [
   {
     id: "q_0225",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `在一個開放經濟體系的總體經濟學恆等式中，關於淨出口 (Net Exports, NX)與淨資本流出 (Net Capital Outflow, NCO)的關係，下列哪一個敘述必定成立？`,
     options: {
       A: `當一個國家呈現貿易赤字 (NX < 0) 時，該國必定同時是資本淨流出國 (NCO > 0)。`,
@@ -5986,8 +5986,8 @@ const questionsData = [
   {
     id: "q_0226",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `Question 1 A street food vendor sells fried chicken for $5 per piece. Last year he sold 1,000 pieces. This year, he raised the price to $6 per piece due to rising oil costs, but still sold the same 1,000 pieces. The government reports that Nominal GDP from this vendor rose, but Real GDP did not. Which of the following best explains why?`,
     options: {
       A: `Real GDP rose because the vendor earned more money`,
@@ -6003,8 +6003,8 @@ const questionsData = [
   {
     id: "q_0227",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `Question 2 After two years of working from home, many office workers finally return to the city. Within months, restaurants are fully booked, airlines are selling out, and shopping malls are packed. Prices across the economy start creeping up. A economics student says: 'This is a textbook case of demand-pull inflation.' Using the Expenditure Approach (Y = C + I + G + NX), which statement best supports the student's claim?`,
     options: {
       A: `Government spending (G) increased, pushing up the price level`,
@@ -6020,8 +6020,8 @@ const questionsData = [
   {
     id: "q_0228",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `Question 3 Two neighbors both experience a month where the CPI rose 5%. Maria is a retiree who spends 70% of her monthly budget on food and medicine, both of which rose 9% this month. James is a young professional who spends most of his income on rent, gadgets, and travel, which only rose 2–3%. Who is actually more affected by this month's inflation, and why?`,
     options: {
       A: `James, because he earns more and therefore loses more in absolute dollar terms`,
@@ -6037,8 +6037,8 @@ const questionsData = [
   {
     id: "q_0229",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `Question 4 A small open economy has the following changes in one year: households increase spending on local goods by $300B (C↑), a factory closes and business investment drops by $200B (I↓), the government keeps its budget unchanged (G = 0), and the trade deficit widens by $50B as more goods are imported (NX↓). Using Y = C + I + G + NX, what is the net change in GDP?`,
     options: {
       A: `+$300B — only consumer spending counts toward GDP`,
@@ -6054,8 +6054,8 @@ const questionsData = [
   {
     id: "q_0230",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `Question 5: Which of the following transactions would be counted in GDP?`,
     options: {
       A: `A college student buys a second-hand laptop from his roommate for $200`,
@@ -6071,8 +6071,8 @@ const questionsData = [
   {
     id: "q_0231",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `下列哪一項最能精確說明「消費者物價指數（CPI）」的核心功能？`,
     options: {
       A: `衡量一國境內所生產 之最終商品與服務的整體價格水準變動`,
@@ -6088,8 +6088,8 @@ const questionsData = [
   {
     id: "q_0232",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設某國以 2020 年為基準年。已知該國 2024 年的 CPI 為 120，2025 年的 CPI 上升至 126。請問該國 2025 年的通貨膨脹率是多少？`,
     options: {
       A: `5%`,
@@ -6105,8 +6105,8 @@ const questionsData = [
   {
     id: "q_0233",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `當政府公布的官方總體 CPI 上升幅度不高時，部分民眾仍感受到明顯的物價壓力。從經濟學 角度來看，下列哪一個原因最具解釋力？`,
     options: {
       A: `官方 CPI 完全排除了食物類與居住類等民生基 本消費項目`,
@@ -6122,8 +6122,8 @@ const questionsData = [
   {
     id: "q_0234",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `在衡量生活成本時，關於 CPI 的「替代偏誤（Substitution Bias）」，下列敘述何者正確？`,
     options: {
       A: `當某商品價格大幅上漲時，消費者可能改買其他替代品，但 CPI 因使用固定商品籃計算， 可能高估實際生活成本的上升幅度`,
@@ -6139,8 +6139,8 @@ const questionsData = [
   {
     id: "q_0235",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `經濟學家或政策制定者在評估一般民眾所承受的實際生活成本壓力時，通常不會只看總體 CPI 數字，而是會採取下列哪一種分析方式？`,
     options: {
       A: `僅追蹤股票市場加權指數與政府當期財政稅收 總額`,
@@ -6156,8 +6156,8 @@ const questionsData = [
   {
     id: "q_0236",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `關於台灣 GDP 的計算，下列哪一項會被計入當年度的 GDP 中？`,
     options: {
       A: `台灣某科技大廠花費 5 億元，購買一座 2015 年完工的二手廠房`,
@@ -6173,8 +6173,8 @@ const questionsData = [
   {
     id: "q_0237",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `假設台灣大量進口的原油價格大幅飆漲（國內消費者與企業皆依賴進口汽油），但同時台灣國 內自產自銷的工業用機床設備，因技術進步而使價格大幅下跌。在其他條件不變的情況下，這 對台灣的 CPI（消費者物價指數）與 GDP 平減指數會有何影響？`,
     options: {
       A: `CPI 會上升，GDP 平減 指數會上升`,
@@ -6190,8 +6190,8 @@ const questionsData = [
   {
     id: "q_0238",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `官方編製 CPI 時，基期消費籃子中包含 10 碗牛肉麵與 10 份排骨飯。今年度牛肉價格狂飆， 導致消費者改變飲食習慣，改為購買 5 碗牛肉麵與 15 份排骨飯，但消費者覺得吃飽的滿足感 和以前一樣。若政府仍以「基期消費籃子」的固定權重來計算今年的 CPI，下列敘述何者正 確？`,
     options: {
       A: `CPI 能精準反映消費者真實生活成本的變動`,
@@ -6207,8 +6207,8 @@ const questionsData = [
   {
     id: "q_0239",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","25"],
+    topic: "GDP",
     question: `A 國為追求經濟成長，修法將勞工每週法定工時從 40 小時延長至 50 小時。因為沒時間煮 飯，民眾大量增加外食消費；同時，工廠產能全開導致了嚴重的空氣污染。請問這對 A 國的 GDP 數字與國民真實生活水準有何影響？`,
     options: {
       A: `GDP 增加；生活水準必然提升，因為民眾消費 了更多的外食`,
@@ -6224,8 +6224,8 @@ const questionsData = [
   {
     id: "q_0240",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `小明將新台幣 100,000 元存入銀行，名目年利率為 3%。在同一年間，該國的消費者物價指數 5 從 120 上升到了 126。關於小明這筆存款一年後的實質報酬，下列敘述何者正確？`,
     options: {
       A: `通貨 膨脹率為 6%，實質利率為 -3%，小明的實質購買力下降`,
@@ -6241,8 +6241,8 @@ const questionsData = [
   {
     id: "q_0241",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","23","27","31"],
+    topic: "Saving & Investment",
     question: `根據總體經濟學的嚴格定義，當你拿出現金購買台積電的股票或是 0050 ETF 時，這種行為屬 於下列何者？`,
     options: {
       A: `投資 (Investment)`,
@@ -6258,8 +6258,8 @@ const questionsData = [
   {
     id: "q_0242",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `美國的標準普爾 500 指數（S&P 500），都是依據成分股的「哪一種數據」來加總並分配權 重的？`,
     options: {
       A: `每日交易量加權`,
@@ -6275,8 +6275,8 @@ const questionsData = [
   {
     id: "q_0243",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","29","27"],
+    topic: "Saving & Investment",
     question: `ETF（指數股票型基金）在運作本質上類似於「共同基金（Mutual funds）」。請問共同基金 在金融體系中扮演著什麼主要角色？`,
     options: {
       A: `負責發行國家貨幣的中央銀行`,
@@ -6292,8 +6292,8 @@ const questionsData = [
   {
     id: "q_0244",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","26"],
+    topic: "Finance",
     question: `當 ETF 市場投資過熱時，累積了龐大的散戶資金。一旦發生重大利空導致投資人恐慌性贖 回，會迫使 ETF 必須大量拋售手中持股變現，導致股票資產價格大跌；而資產價格大跌又會 引發下一波更大的恐慌與贖回。這種「越跌越賣、越賣越跌」的現象，最符合金融危機 （Financial Crises）的哪一個概念？`,
     options: {
       A: `預算盈餘 (Budget surplus)`,
@@ -6309,8 +6309,8 @@ const questionsData = [
   {
     id: "q_0245",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","29","24"],
+    topic: "Finance",
     question: `ETF 投資過熱時，許多熱錢只是因為「這家公司被納入 0050 或熱門 ETF 的成分股」就跟著 盲目買進，導致股價飆漲。市場對一檔股票的「需求（Demand）」在正常、理性的情況下， 應該是反映這家公司的什麼特質？`,
     options: {
       A: `政府發放的失業救濟金額度`,
@@ -6326,8 +6326,8 @@ const questionsData = [
   {
     id: "q_0246",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `台灣某大學生為了架設網頁設計期末專案，不小心向美國亞馬遜（AWS）購買了 210 美元的 開發者支援方案。這筆交易對台灣當年 GDP 的組成項目有何影響？`,
     options: {
       A: `台灣的消費（C）增 加，GDP 增加`,
@@ -6343,8 +6343,8 @@ const questionsData = [
   {
     id: "q_0247",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","30"],
+    topic: "Money & Banking",
     question: `假設某國政府為了融資龐大的公共建設支出，要求中央銀行大量印製鈔票，導致該國每個月的 物價以 50% 的速度狂飆，引發惡性通貨膨脹。關於此現象對該國經濟的影響，下列敘述何者 正確？`,
     options: {
       A: `根據費雪效果，該國的名目利率將會隨之下降`,
@@ -6360,8 +6360,8 @@ const questionsData = [
   {
     id: "q_0248",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `假設你參加抽獎中了一筆獎金，主辦單位給你兩個選擇：選項一、今天立刻領取 10,000 元； 選項二、兩年後領取 11,000 元。若目前市場上的無風險年利率為 6%，在不考慮通貨膨脹與 個人偏好的情況下，根據現值的計算，理性的經濟人應該如何選擇？`,
     options: {
       A: `選擇選項一，因為選 項二的現值低於 10,000 元`,
@@ -6377,8 +6377,8 @@ const questionsData = [
   {
     id: "q_0249",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `由於國際原物料價格波動，使得台灣民眾經常購買的「進口日本品牌汽車」價格大幅上漲。假 設台灣國內自行生產的汽車與其他商品價格皆保持不變，這種情況會如何影響台灣的消費者物 價指數（CPI）與 GDP 平減指數？`,
     options: {
       A: `CPI 與 GDP 平減指數皆會上升`,
@@ -6394,8 +6394,8 @@ const questionsData = [
   {
     id: "q_0250",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31","27"],
+    topic: "Open Economy",
     question: `台灣的某家科技公司將一批精密機械設備出口外銷至歐洲，並將賺得的 100 萬歐元全數用來 購買德國某家上市公司的股票。就總體經濟的開放體系國民所得帳而言，這項雙邊經濟活動對 台灣的影響為何？`,
     options: {
       A: `台灣的淨出口（NX）增加，淨資本流出（NCO）減少`,
@@ -6411,8 +6411,8 @@ const questionsData = [
   {
     id: "q_0251",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `某國去年名目 GDP 為 5000 億元，今年名目 GDP 為 5600 億元。若 GDP 平減指數由 100 上 升至 112，則今年實質 GDP 成長率最接近下列何者？`,
     options: {
       A: `0%`,
@@ -6428,8 +6428,8 @@ const questionsData = [
   {
     id: "q_0252",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `假設某國 2026 年發生以下事件，哪一項會使 GDP 增加最多？`,
     options: {
       A: `小明以 80 萬元購買一棟 20 年屋齡的中古屋`,
@@ -6445,8 +6445,8 @@ const questionsData = [
   {
     id: "q_0253",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `某投資案今天需投入 200 萬元，5 年後可回收 300 萬元。若市場利率為 10%，則該投資案應 該？`,
     options: {
       A: `接受，因為現值大於成本`,
@@ -6462,8 +6462,8 @@ const questionsData = [
   {
     id: "q_0254",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `某國今年： •名目 GDP+15% •CPI+20% •人口不變 下列何者最合理？`,
     options: {
       A: `經濟變好`,
@@ -6479,8 +6479,8 @@ const questionsData = [
   {
     id: "q_0255",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `若某國 GDP 大幅成長、失業率下降，但股市下跌，下列哪個最合理？`,
     options: {
       A: `GDP 增加股市一定 漲`,
@@ -6496,8 +6496,8 @@ const questionsData = [
   {
     id: "q_0256",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設台灣 2025 受颱風影響，蔬菜價格上漲 30%，但同期間主婦明顯減少蔬菜類採購，改買冷 凍肉品與罐頭，下列關於 CPI 的敘述何者最正確?`,
     options: {
       A: `由於消費者改買替代品，CPI 會反映實 際支出，因此不會高估生成本。`,
@@ -6513,8 +6513,8 @@ const questionsData = [
   {
     id: "q_0257",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `CPI 與 GDP Deflator 差異，下列何者不正確?`,
     options: {
       A: `CPI 包含進口的消費品，GDP 不包含。`,
@@ -6530,8 +6530,8 @@ const questionsData = [
   {
     id: "q_0258",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `下列哪一項應該計入台灣 2025 年的 GDP?`,
     options: {
       A: `王先生在 2025 年購買一棟 2010 年完工的中古 屋，售價 1,500 萬元`,
@@ -6547,8 +6547,8 @@ const questionsData = [
   {
     id: "q_0259",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `小美在 2024 年初將 100,000 元存入銀行的一年定存，名目利率為 1.6。同期間台灣全年 CPI 年增率為 2.18%。下列敘述何者最正確?`,
     options: {
       A: `小美的實質利率約為+3.78%，購買力大幅提升。`,
@@ -6564,8 +6564,8 @@ const questionsData = [
   {
     id: "q_0260",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `小李在 2020 年向小張借了 100 萬元，約定五年後以名目利率 2%一次還清，到期還款約 110.4 萬，借款當時，雙方都預期 2020-2025 通膨率將維持每年 1%，實際上，因為疫情後供 應鏈衝擊，2020-2025 年通膨率每年達到 3%，請問以下敘述何者正確?`,
     options: {
       A: `通膨高於預期有 利於債權人小張，因為他到期拿回來的 110.4 萬在 2025 年的購買力高於借款時雙方的預期。`,
@@ -6581,8 +6581,8 @@ const questionsData = [
   {
     id: "q_0261",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `下列關於 GDP（國內生產毛額） 與 CPI（消費者物價指數） 的敘述，何者正確？`,
     options: {
       A: `GDP 衡量一國人民生活成本的變化，CPI 衡量一國總產出的市場價值。`,
@@ -6598,8 +6598,8 @@ const questionsData = [
   {
     id: "q_0262",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `下列哪一項通常不會計入當年度 GDP？`,
     options: {
       A: `今年新建好的住宅`,
@@ -6615,8 +6615,8 @@ const questionsData = [
   {
     id: "q_0263",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `如果 CPI 從 100 上升到 110，代表什麼意思？`,
     options: {
       A: `物價水準下降 10%`,
@@ -6632,8 +6632,8 @@ const questionsData = [
   {
     id: "q_0264",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `下列哪一項最能說明「實質 GDP」和「名目 GDP」的差別？`,
     options: {
       A: `實質 GDP 只計算服務，名 目 GDP 只計算商品`,
@@ -6649,8 +6649,8 @@ const questionsData = [
   {
     id: "q_0265",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","27","31"],
+    topic: "CPI & Inflation",
     question: `下列關於 CPI 的敘述，何者正確？`,
     options: {
       A: `CPI 是用來衡量股票市場漲跌的指標`,
@@ -6666,8 +6666,8 @@ const questionsData = [
   {
     id: "q_0266",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `小凱在 2025 年初以新臺幣 2,000 萬元購買了一棟落成於 2020 年的中古住宅自住。為了購買 此屋，小凱向銀行貸款 1,500 萬元，當年支付貸款利息 30 萬元；此外，該房屋在 2025 年度 的市場估算租金（Imputed Rent）為 40 萬元。假設 2025 年的名目銀行貸款利率為 2%，而 該年度由 GDP 平減指數算出的通貨膨脹率為 2.5%。請問下列關於 2025 年國內生產毛額 （GDP）受此交易影響的敘述，何者完全正確？`,
     options: {
       A: `中古住宅屬於資本財，因此 2,000 萬元的購屋支出應計入 2025 年的國內私人投資（I)；而 1,500 萬元的房貸屬於金融交易，故 不計入 GDP。`,
@@ -6683,8 +6683,8 @@ const questionsData = [
   {
     id: "q_0267",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `關於「促使生產力與經濟成長的公共政策」之敘述，下列哪一項政府政策與其試圖提升的「生 產力決定要素（Factors of Production）」配對完全正確？`,
     options: {
       A: `政府實施租稅優惠鼓勵集體將 所得投入銀行儲蓄，以利企業借貸購買新機器-->提升技術知識（Technical Knowledge）。`,
@@ -6700,8 +6700,8 @@ const questionsData = [
   {
     id: "q_0268",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `假設某封閉經濟體在 2025 年的實質 GDP（Y）為 1,200 億元，民間消費（C）為 700 億元， 政府購買（G）為 250 億元，且政府當年的稅收總額（T）為 300 億元（假設無任何政府移轉 支付）。請問下列關於該國各項儲蓄指標的計算，何者完全正確？`,
     options: {
       A: `公共儲蓄（Public Saving）為 50 億元，私人儲蓄（Private Saving）為 200 億元，國民儲蓄（National Saving）為 250 億元。`,
@@ -6717,8 +6717,8 @@ const questionsData = [
   {
     id: "q_0269",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `許多財務顧問會建議投資人不要把所有雞蛋放在同一個籃子裡，關於「多元化降低風險」的理 論與統計圖表，當投資組合中的股票數量從 1 支逐漸增加到 40 支以上時，下列關於風險變化 的敘述，何者完全正確？`,
     options: {
       A: `特有風險（Firm-Specific Risk）與市場風險（Market Risk）都 會隨著股票數量的增加而同步降低，最終使總風險歸零。`,
@@ -6734,8 +6734,8 @@ const questionsData = [
   {
     id: "q_0270",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `想像兩個不同的銀行體系： 體系甲：實行「100% 準備金銀行制度（100-Percent-Reserve Banking）」。 體系乙：實行「部分準備金銀行制度（Fractional-Reserve Banking）」。 當 這兩個體系同時面臨全體恐慌的市民發動「銀行擠兌（Bank Run）」時，根據簡報中的貨幣 創造與銀行運作原理，下列敘述何者完全正確？`,
     options: {
       A: `體系甲與體系乙都會因為擠兌而導致整體 經濟的貨幣供給量（M_1）出現同比例的多倍數緊縮（貨幣創造逆轉）。`,
@@ -6751,8 +6751,8 @@ const questionsData = [
   {
     id: "q_0271",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `If the Consumer Price Index (CPI) increases from 120 in Year 1 to 132 in Year 2, and during the same period a worker's nominal wage increases from $50,000 to $53,000, what happens to the worker's real wage and purchasing power?`,
     options: {
       A: `The real wage increases because the nominal wage grew by $3,000.`,
@@ -6769,8 +6769,8 @@ const questionsData = [
   {
     id: "q_0272",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `Consider an economy where Gross Domestic Product ($GDP$) is $8.0 trillion, Consumption ($C$) is $5.0 trillion, Government Purchases ($G$) is $1.5 trillion, and Taxes net of transfer payments ($T$) is $1.2 trillion. Assuming a closed economy, what are the values of Private Saving and Public Saving?`,
     options: {
       A: `Private Saving = $1.8 trillion; Public Saving = $0.3 trillion`,
@@ -6786,8 +6786,8 @@ const questionsData = [
   {
     id: "q_0273",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `If the government shifts from running a balanced budget to running a large budget deficit, how will this policy change affect the market for loanable funds?`,
     options: {
       A: `The supply of loanable funds shifts left, driving up the interest rate and crowding out private investment.`,
@@ -6803,8 +6803,8 @@ const questionsData = [
   {
     id: "q_0274",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `Suppose the commercial banking system operates with a reserve ratio of 10% and holds no excess reserves. If a customer deposits $2,000 in cash into their checking account, what is the maximum potential increase in the total money supply created by the entire banking system?`,
     options: {
       A: `$2,000`,
@@ -6820,8 +6820,8 @@ const questionsData = [
   {
     id: "q_0275",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `If a nation's Net Capital Outflow (NCO) is positive, what does this mathematically imply about the country's national saving, domestic investment, and net exports (NX)?`,
     options: {
       A: `National Saving is less than domestic investment, and it runs a trade deficit.`,
@@ -6837,8 +6837,8 @@ const questionsData = [
   {
     id: "q_0276",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `關於 GDP 的敘述，何者正確？`,
     options: {
       A: `二手車交易的全部價格都會計入當年度 GDP`,
@@ -6854,8 +6854,8 @@ const questionsData = [
   {
     id: "q_0277",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `當中央銀行調高重貼現率時，最可能造成下列何種結果？`,
     options: {
       A: `市場利率下降`,
@@ -6871,8 +6871,8 @@ const questionsData = [
   {
     id: "q_0278",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["misc"],
+    topic: "Misc",
     question: `若某商品價格上升後，其需求量反而增加，則該商品最可能是：`,
     options: {
       A: `劣等財`,
@@ -6888,8 +6888,8 @@ const questionsData = [
   {
     id: "q_0279",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["misc"],
+    topic: "Misc",
     question: `若政府對香菸課徵貨物稅，則最可能產生下列何種影響？`,
     options: {
       A: `香菸供給曲線右移`,
@@ -6905,8 +6905,8 @@ const questionsData = [
   {
     id: "q_0280",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["misc"],
+    topic: "Misc",
     question: `在完全競爭市場中，若廠商的邊際成本（MC）高於市場價格（P），則廠商應該：`,
     options: {
       A: `增加產 量`,
@@ -6922,8 +6922,8 @@ const questionsData = [
   {
     id: "q_0281",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31","29"],
+    topic: "CPI & Inflation",
     question: `台灣政府為刺激經濟，大幅增加公共建設支出，導致預算由平衡轉為赤字。在其他條件不變 下，以下何者最可能發生？`,
     options: {
       A: `市場利率下降，民間投資增加`,
@@ -6939,8 +6939,8 @@ const questionsData = [
   {
     id: "q_0282",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29","30"],
+    topic: "CPI & Inflation",
     question: `Z 國通膨率長期維持在 15%，你觀察到該國人民頻繁跑銀行存提款、商家每週更換價格標 籤、且長期租約幾乎消失。這些現象分別對應通膨的哪些成本？`,
     options: {
       A: `菜單成本、皮鞋成本、任 意財富重分配`,
@@ -6956,8 +6956,8 @@ const questionsData = [
   {
     id: "q_0283",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25","26"],
+    topic: "Production & Growth",
     question: `甲國與乙國初始所得相同，甲國儲蓄率較高，乙國維持現狀。根據成長理論，長期而言：`,
     options: {
       A: `甲國所得永遠高於乙國，且差距持續擴大`,
@@ -6973,8 +6973,8 @@ const questionsData = [
   {
     id: "q_0284",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `2022 年土耳其通膨率約 80%，美國約 8%。根據購買力平價理論，土耳其里拉對美元應如何 變動？`,
     options: {
       A: `升值約 80%`,
@@ -6990,8 +6990,8 @@ const questionsData = [
   {
     id: "q_0285",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `某銀行收到客戶存入 100 萬元，法定準備率為 20%。該銀行將超額準備全數貸出，借款人將 錢再存入另一家銀行，如此循環。整個銀行體系最終新增的存款總額為何？`,
     options: {
       A: `100 萬元`,
@@ -7007,8 +7007,8 @@ const questionsData = [
   {
     id: "q_0286",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `下列哪一項最可能是升息對房市的直接影響？`,
     options: {
       A: `增加房屋需求`,
@@ -7024,8 +7024,8 @@ const questionsData = [
   {
     id: "q_0287",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `中央銀行最主要透過哪一種方式執行貨幣政策？`,
     options: {
       A: `調整所得稅`,
@@ -7041,8 +7041,8 @@ const questionsData = [
   {
     id: "q_0288",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `根據需求法則，當房貸利率提高時，最可能發生什麼情況？`,
     options: {
       A: `房屋需求增加`,
@@ -7058,8 +7058,8 @@ const questionsData = [
   {
     id: "q_0289",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `如果房價問題主要來自「供給不足」，代表單靠升息可能：`,
     options: {
       A: `完全解決房價問題`,
@@ -7075,8 +7075,8 @@ const questionsData = [
   {
     id: "q_0290",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `下列哪一項最符合「貨幣政策」的概念？`,
     options: {
       A: `政府增加公共建設支出`,
@@ -7092,8 +7092,8 @@ const questionsData = [
   {
     id: "q_0291",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `下列哪一項最能正確描述生產力？`,
     options: {
       A: `生產一單位商品所需要的勞動時間`,
@@ -7109,8 +7109,8 @@ const questionsData = [
   {
     id: "q_0292",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `若某銀行收到一筆 1,000 元的新存款，法定準備率為 10%，且銀行不保留超額準備，則這家 銀行最多可以新增多少放款？`,
     options: {
       A: `100 元`,
@@ -7126,8 +7126,8 @@ const questionsData = [
   {
     id: "q_0293",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29"],
+    topic: "CPI & Inflation",
     question: `某人把 100 元存入銀行，一年後變成 106 元；同期間物價上升 2%。則其實質利率最接近下 列何者？`,
     options: {
       A: `2%`,
@@ -7143,8 +7143,8 @@ const questionsData = [
   {
     id: "q_0294",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `若一個封閉經濟中，政府由平衡預算變成預算盈餘，其他條件不變，最可能出現下列哪種結 果？`,
     options: {
       A: `國民儲蓄減少，利率上升`,
@@ -7160,8 +7160,8 @@ const questionsData = [
   {
     id: "q_0295",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30"],
+    topic: "Money & Inflation",
     question: `根據貨幣數量方程式 MV = PY，若貨幣供給增加為原本的 2 倍、貨幣流通速度不變，而實質 GDP 增加為原本的 1.25 倍，則物價水準約為原本的幾倍？`,
     options: {
       A: `0.8 倍`,
@@ -7177,8 +7177,8 @@ const questionsData = [
   {
     id: "q_0296",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `| 年度 | 電動車價格 | 電動車數量 | 咖啡價格 | 咖啡數量 | | 2024 | 100 | 50 |5 | 1000 | 2025 | 120 | 60 |6 | 1100 計算 2025 的實質 GDP`,
     options: {},
     answer: "",
@@ -7189,8 +7189,8 @@ const questionsData = [
   {
     id: "q_0297",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `| 年度 | 電動車價格 | 電動車數量 | 咖啡價格 | 咖啡數量 | | 2024 | 100 | 50 |5 | 1000 | 2025 | 120 | 60 |6 | 1100 計算 2025 的 GDP Deflator`,
     options: {},
     answer: "",
@@ -7201,8 +7201,8 @@ const questionsData = [
   {
     id: "q_0298",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `| 年度 | 電動車價格 | 電動車數量 | 咖啡價格 | 咖啡數量 | | 2024 | 100 | 2025 | 120 | 50 | 60 |5 |6 | 1000 | 1100 若 CPI basket 為「2 台電動車 + 100 杯咖啡」，計算 2025 CPI`,
     options: {},
     answer: "",
@@ -7213,8 +7213,8 @@ const questionsData = [
   {
     id: "q_0299",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `今年發生以下事件： 1.小王購買建商新蓋房屋 1200 萬元 2.小美購買二手房屋 900 萬元 3.小 陳支付房仲費 20 萬元 4.政府發放失業補助 5 萬元 5.某公司進口日本機器設備 300 萬元 哪些 會計入 GDP？`,
     options: {},
     answer: "",
@@ -7225,8 +7225,8 @@ const questionsData = [
   {
     id: "q_0300",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","31"],
+    topic: "GDP",
     question: `今年發生以下事件： 1.小王購買建商新蓋房屋 1200 萬元 2.小美購買二手房屋 900 萬元 3.小 陳支付房仲費 20 萬元 4.政府發放失業補助 5 萬元 5.某公司進口日本機器設備 300 萬元 分別 屬於 GDP 哪個項目（C、I、G、NX）？`,
     options: {},
     answer: "",
@@ -7237,8 +7237,8 @@ const questionsData = [
   {
     id: "q_0301",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `根據 GDP 的屬地主義原則，下列哪一項交易會被計入台灣的 GDP？`,
     options: {
       A: `台積電在美國亞利桑 那州新廠生產並售出的晶片產值`,
@@ -7254,8 +7254,8 @@ const questionsData = [
   {
     id: "q_0302",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `若義大利品牌 Armani 調漲其在美國銷售的牛仔褲價格，對美國的價格平減指數（GDP deflator）與消費者物價指數（CPI）有何影響？`,
     options: {
       A: `GDP deflator 上升，CPI 不受影響`,
@@ -7271,8 +7271,8 @@ const questionsData = [
   {
     id: "q_0303",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","26"],
+    topic: "GDP",
     question: `在一個封閉經濟體中，若 GDP 為 10 兆元，消費為 6.5 兆元，政府支出為 2 兆元且預算赤字 為 3000 億元，則該國的投資（Investment）為多少？`,
     options: {
       A: `1.8 兆元`,
@@ -7288,8 +7288,8 @@ const questionsData = [
   {
     id: "q_0304",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","31"],
+    topic: "CPI & Inflation",
     question: `在開放經濟模型中，若 Ectenia 國的年通膨率預期為 3.5%，而 Wiknam 國為 7%，根據購買 力平價（PPP）理論，20 年後兩國間的匯率會如何變動？`,
     options: {
       A: `兩國的名目匯率將僅由實質 GDP 成長率決定。`,
@@ -7305,8 +7305,8 @@ const questionsData = [
   {
     id: "q_0305",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `在生產函數 Y=AF(L,K,H,N) 中，若「實體資本」（K）不斷增加，但其他投入要素保持不變， 長期而言會觀察到什麼現象？`,
     options: {
       A: `勞動生產力（Y/L）將會下降。`,
@@ -7322,8 +7322,8 @@ const questionsData = [
   {
     id: "q_0306",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `In recent years, retail investors in Taiwan rushed to buy high-dividend ETFs (ExchangeTraded Funds) like ETF 00940, with many believing that ETFs are completely risk-free and act just like a bank savings account. According to the principles of the financial system, which statement regarding ETFs is correct?`,
     options: {
       A: `ETFs enjoy the same national deposit insurance guarantees as traditional bank accounts.`,
@@ -7339,8 +7339,8 @@ const questionsData = [
   {
     id: "q_0307",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `Grandpa tells Mark: "Back in 1971, my monthly salary as an apprentice in a factory was only NT$2,000, but life felt much easier back then!" Suppose the CPI in 1971 (the base year) was 20, and the CPI in 2025 is 110. To compare Grandpa's purchasing power with today's standard, what is his 1971 monthly salary worth in 2025 dollars?`,
     options: {
       A: `NT$2,000`,
@@ -7356,8 +7356,8 @@ const questionsData = [
   {
     id: "q_0308",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `Taiwan experiences two simultaneous shocks in its labor market: (1) A major industrial union successfully bargains for an efficiency wage well above the market equilibrium, and (2) The government shortens the maximum duration of legal unemployment insurance benefits from 6 months to 2 months. What is the combined, deterministic effect of these two institutional changes on Structural and Frictional unemployment?`,
     options: {
       A: `Both structural and frictional unemployment will rise simultaneously.`,
@@ -7373,8 +7373,8 @@ const questionsData = [
   {
     id: "q_0309",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","29","30","24"],
+    topic: "GDP",
     question: `According to the Quantity Equation (M * V = P * Y), suppose Taiwan’s real GDP is expanding steadily at 3% per year. Concurrently, due to the widespread adoption of convenient digital payment systems (e.g., Line Pay, Jko Pay), people hold much less physical cash, causing the velocity of money to increase by a rapid 5% per year. If the Central Bank wants to maintain absolute price stability (an inflation rate of exactly 0%), what policy must it pursue regarding the growth rate of the money supply?`,
     options: {
       A: `It must increase the money supply by exactly $8% per year.`,
@@ -7390,8 +7390,8 @@ const questionsData = [
   {
     id: "q_0310",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26","24","25","31"],
+    topic: "Saving & Investment",
     question: `Suppose the government of Taiwan transitions from a balanced budget to a massive budget deficit to fund an infrastructure package. Concurrently, to appease voters, the government eliminates taxes on private interest income (encouraging households to save more). If the "Crowding-Out Effect" perfectly dominates the market, what is the net effect on the equilibrium real interest rate and private investment?`,
     options: {
       A: `The interest rate must fall, and private investment will expand.`,
@@ -7407,8 +7407,8 @@ const questionsData = [
   {
     id: "q_0311",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","27"],
+    topic: "GDP",
     question: `下列哪一項交易會被計入台灣今年的國內生產毛額（GDP）中的「投資（Investment）」項 目？`,
     options: {
       A: `張先生購買了 10 萬元台積電的股票`,
@@ -7424,8 +7424,8 @@ const questionsData = [
   {
     id: "q_0312",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `假設某國只生產蘋果與橘子。今年與去年相比，所有商品的價格都上漲了 10%，但所有商品 的生產數量都減少了 5%。請問該國今年的「名目 GDP」與「實質 GDP」會發生什麼變化？`,
     options: {
       A: `名目 GDP 增加，實質 GDP 減少`,
@@ -7441,8 +7441,8 @@ const questionsData = [
   {
     id: "q_0313",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `消費者物價指數（CPI）在衡量生活成本時，常會因為各種偏誤而「高估」真實的通貨膨脹 率。關於 CPI 的「替代偏誤（Substitution bias）」，下列敘述何者正確？`,
     options: {
       A: `當某項商品品 質大幅提升時，CPI 未能充分反映其品質增加的價值。`,
@@ -7458,8 +7458,8 @@ const questionsData = [
   {
     id: "q_0314",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `假設國際原油價格大幅上漲，這對台灣的「GDP 平減指數（GDP Deflator）」和「消費者物 價指數（CPI）」會有什麼最直接的影響？（假設台灣本土完全不生產原油，全數仰賴進口）`,
     options: {
       A: `CPI 和 GDP 平減指數都會大幅且等比例上升`,
@@ -7475,8 +7475,8 @@ const questionsData = [
   {
     id: "q_0315",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `小明向銀行借了一筆年利率 5% 的貸款。簽約當時，雙方預期今年的通貨膨脹率為 2%。沒想 到今年發生了嚴重的通貨緊縮，實際通貨膨脹率為 -1%。針對此情況，下列敘述何者正確？`,
     options: {
       A: `實質利率變為 4%，對小明（債務人）有利`,
@@ -7492,8 +7492,8 @@ const questionsData = [
   {
     id: "q_0316",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `下列哪一項最正確描述以下交易對台灣當年 GDP 的影響？ 某家庭在 2026 年購買一間中古 屋，成交價 1,200 萬元，並支付房仲服務費 20 萬元。搬入後自住，該房屋當年的設算租金估 計為 30 萬元。同年，該家庭又購買一台台灣本土新生產的冰箱 4 萬元。政府另外發放每人 6,000 元現金補助。`,
     options: {
       A: `GDP 增加 1,254.6 萬元，因為中古屋、房仲費、設算租金、冰箱與 政府補助都應計入 GDP`,
@@ -7509,8 +7509,8 @@ const questionsData = [
   {
     id: "q_0317",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `假設以下三件事發生在同一年： ① 義大利進口牛仔褲在台灣售價上升 ② 台灣本土製造的半 導體設備價格上升，且主要賣給台灣企業使用 ③ 台灣本土咖啡店調漲拿鐵價格 關於 CPI 與 GDP 平減指數，下列哪一項正確？`,
     options: {
       A: `① 只會影響 GDP 平減指數；② 只會影響 CPI；③ 兩者都不影響`,
@@ -7526,8 +7526,8 @@ const questionsData = [
   {
     id: "q_0318",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `假設法定準備率為 10%，銀行不持有超額準備，且民眾不持有新增現金。下列兩種情境何者 對貨幣供給增加較多？ 情境一：小明把原本藏在家中保險箱的 1,000 元現金存入銀行。 情境 二：中央銀行向民眾買入 1,000 元政府債券，並以新創造的貨幣付款，該筆款項最後全數存 入銀行體系。`,
     options: {
       A: `情境一增加較多，因為存款會透過貨幣乘數擴張`,
@@ -7543,8 +7543,8 @@ const questionsData = [
   {
     id: "q_0319",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30"],
+    topic: "Money & Inflation",
     question: `假設某經濟體符合貨幣數量說，貨幣流通速度 V 固定不變。若某一年貨幣供給 M 成長 8%， 實質 GDP Y 成長 3%，則下列何者最接近該年的通貨膨脹率與名目 GDP 成長率？`,
     options: {
       A: `通貨 膨脹率約 8%，名目 GDP 成長率約 11%`,
@@ -7560,8 +7560,8 @@ const questionsData = [
   {
     id: "q_0320",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `某國政府為了改善貿易逆差，決定限制汽車進口數量。根據開放經濟的總體模型，假設國民儲 蓄與國內投資沒有改變，下列哪一項最正確？`,
     options: {
       A: `進口減少會使淨出口 NX 永久增加，因此 貿易逆差一定改善`,
@@ -7577,8 +7577,8 @@ const questionsData = [
   {
     id: "q_0321",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["25"],
+    topic: "Production & Growth",
     question: `根據經濟學對生產力（Productivity）決定因素的分析，下列哪一項政府政策「最無法」直接 提升一國勞工的長期生產力？`,
     options: {
       A: `提供企業研發（R&D）稅賦減免，鼓勵技術創新`,
@@ -7594,8 +7594,8 @@ const questionsData = [
   {
     id: "q_0322",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["26"],
+    topic: "Saving & Investment",
     question: `題目： 在一個封閉經濟體（Closed Economy）中，假設國內生產毛額（Y）為 10,000，政府 稅收（T）為 1,500，政府支出（G）為 2,000，民間消費（C）為 6,500。下列關於該國儲蓄 與投資的敘述，何者正確？`,
     options: {
       A: `該國的公共儲蓄（Public Saving）為 500`,
@@ -7611,8 +7611,8 @@ const questionsData = [
   {
     id: "q_0323",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `假設某金融商品保證在 2 年後支付 12,100 元，且目前的市場年利率（折現率）為 10%。根據 現值（Present Value, PV）理論，理性的投資人現在「最多」願意花多少錢購買這個商品？`,
     options: {
       A: `12,100 元`,
@@ -7628,8 +7628,8 @@ const questionsData = [
   {
     id: "q_0324",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `關於經濟學中「風險厭惡（Risk Aversion）」與資產定價的關聯，下列敘述何者最符合經濟 學理論？`,
     options: {
       A: `風險厭惡代表投資人絕對不會購買任何具有波動風險的股票，只會將資金放在銀 行定存。`,
@@ -7645,8 +7645,8 @@ const questionsData = [
   {
     id: "q_0325",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","26"],
+    topic: "Finance",
     question: `某封閉經濟體中的 A 企業正面臨兩項資本投資計畫的抉擇： 計畫 X：預計在 1 年後產生 110 萬元的收益。 計畫 Y：預計在 2 年後產生 121 萬元的收益。 假設目前市場的可貸資金均衡 利率（折現率）為 5%。然而，該國政府近期為了彌補龐大的「預算赤字（Budget Deficit）」，決定大量發行政府公債。此舉引發了市場的「排擠效應（Crowding-out effect）」，導致可貸資金市場的均衡利率大幅飆升至 12%。 根據經濟學理論，下列關於這 兩項投資計畫與可貸資金市場的敘述，何者最準確？`,
     options: {
       A: `政府發行公債彌補赤字，會使該國 的「國民儲蓄（National Saving）」增加，進而帶動可貸資金供給右移。`,
@@ -7662,8 +7662,8 @@ const questionsData = [
   {
     id: "q_0326",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `關於傳統消費者物價指數（CPI）與替代偏誤（Substitution Bias），下列敘述何者正確？`,
     options: {
       A: `傳統 CPI 會低估真實的生活成本，因為它沒有考慮到商品品質的提升。`,
@@ -7679,8 +7679,8 @@ const questionsData = [
   {
     id: "q_0327",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","31"],
+    topic: "GDP",
     question: `如果美國境內販售的義大利進口牛仔褲價格上漲，這將如何影響美國的價格指數？`,
     options: {
       A: `CPI 上 升，GDP 平減指數不受影響`,
@@ -7696,8 +7696,8 @@ const questionsData = [
   {
     id: "q_0328",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設目前的經濟環境中，名目利率為 8%，通貨膨脹率為 3%，且政府對民眾的「名目利息收 入」課徵 25% 的所得稅。若央行大幅擴張貨幣供給，使通貨膨脹率上升至 7%。根據費雪效 應（Fisher Effect）並假設「稅前實質利率」由市場基本面決定而維持不變，請問民眾的「稅 後實質利率」會發生什麼變化？這反映了通膨的哪一種成本？`,
     options: {
       A: `稅後實質利率維持 3% 不 變；這顯示費雪效應能完全抵銷通膨成本。`,
@@ -7713,8 +7713,8 @@ const questionsData = [
   {
     id: "q_0329",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `假設美國與日本之間只有一種可交易商品：小麥。目前美國小麥價格為每單位 5 美元，日本 小麥價格為 500 日圓，目前名目匯率為 1 美元兌換 120 日圓。若未來一年美國經歷 10% 的 通貨膨脹，日本經歷 0% 的通貨膨脹，且兩國長期發展完全符合「購買力平價（PPP）」理 論。關於目前市場狀態與未來匯率的預測，下列敘述何者正確？`,
     options: {
       A: `目前實質匯率為 1.2（無 套利空間）；一年後名目匯率將升值至 1 美元兌換 132 日圓。`,
@@ -7730,8 +7730,8 @@ const questionsData = [
   {
     id: "q_0330",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `Assume a legendary baseball player had an annual salary of $500,000 in 1980. If the Consumer Price Index (CPI) was 80 in 1980 and 320 in 2023, what would his 1980 salary be equivalent to in 2023 dollars, assuming real purchasing power remains constant?`,
     options: {
       A: `$125,000`,
@@ -7747,8 +7747,8 @@ const questionsData = [
   {
     id: "q_0331",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據 Asset Valuation，當股票的價格（Price）小於其內在價值（Value）時，這代表該股票 處於什麼狀態？`,
     options: {
       A: `Speculative Bubble`,
@@ -7764,8 +7764,8 @@ const questionsData = [
   {
     id: "q_0332",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `關於市場不理性（Market Irrationality）中的「投機性泡沫（Speculative Bubbles）」，下列 敘述何者正確？`,
     options: {
       A: `投機客因為預期價格會繼續上漲，進而購買已被高估的資產`,
@@ -7781,8 +7781,8 @@ const questionsData = [
   {
     id: "q_0333",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `假設銀行體系的法定準備率（R）為 20%，根據貨幣乘數（The Money Multiplier）公式， 銀行體系每增加 1 元的準備金，最多能創造出多少元的貨幣？`,
     options: {
       A: `$2`,
@@ -7798,8 +7798,8 @@ const questionsData = [
   {
     id: "q_0334",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29"],
+    topic: "CPI & Inflation",
     question: `根據「貨幣中立性（The Neutrality of Money）」的長期觀點，當中央銀行增加貨幣供給 （例如印鈔）時，下列哪一個經濟變數會發生改變？`,
     options: {
       A: `勞動的總就業量（Total employment of labor）`,
@@ -7815,8 +7815,8 @@ const questionsData = [
   {
     id: "q_0335",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `關於購買力平價（Purchasing-Power Parity, PPP）理論的內涵與基本邏輯，下列敘述何者 正確？`,
     options: {
       A: `購買力平價是一種用來預測各國人口出生率的理論`,
@@ -7832,8 +7832,8 @@ const questionsData = [
   {
     id: "q_0336",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設政府以 2015 年為基期編製消費者物價指數 (CPI)，當時的典型購買籃包含「10 磅牛肉與 20 磅雞肉」。2015 年時牛肉與雞肉的價格皆為每磅 5 美元。到了 2016 年，牛肉價格上漲至 每磅 9 美元，雞肉價格上漲至每磅 6 美元。然而，因為牛肉變得太貴，消費者在 2016 年實際 上只買了 5 磅牛肉，並將雞肉購買量增加到 25 磅。關於 CPI 的計算與實際生活成本的變動， 下列敘述何者正確？`,
     options: {
       A: `根據官方 CPI 的計算方法，2015 到 2016 年的通貨膨脹率為 30%。`,
@@ -7849,8 +7849,8 @@ const questionsData = [
   {
     id: "q_0337",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `假設法定準備率為 5%，且銀行不會保留超額準備金，民眾也不持有現金。現在有兩種情況： (情境一) 聯準會透過公開市場操作，印製 2,000 美元的新鈔向民眾買入債券；(情境二) 某位民 眾將原本藏在餅乾盒裡的 2,000 美元現金全數存入銀行。關於這兩種情境對整體「貨幣供給 (Money Supply)」最大可能增加量的影響，下列何者正確？`,
     options: {
       A: `情境一與情境二對貨幣供給 的最大增加量完全相同，皆為 40,000 美元`,
@@ -7866,8 +7866,8 @@ const questionsData = [
   {
     id: "q_0338",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24","29","30","23"],
+    topic: "CPI & Inflation",
     question: `假設某國只生產玉米一種商品，且貨幣流通速度 (V) 保持固定不變。2014 年該國生產了 800 英斗的玉米，貨幣供給量為 2,000 美元，當時玉米的價格為每英斗 5 美元。到了 2015 年，由 於科技進步，玉米的產量增加到了 824 英斗；同時央行為了刺激經濟，將貨幣供給量增加了 5%，達到 2,100 美元。請問該國 2014 年至 2015 年間的通貨膨脹率為何？`,
     options: {
       A: `5%，因為在 古典學派理論中，通貨膨脹率必定等於貨幣供給成長率`,
@@ -7883,8 +7883,8 @@ const questionsData = [
   {
     id: "q_0339",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `假設一個簡化的經濟體中只有種豆子的農夫 Bob 和種稻米的農夫 Rita 兩人。他們兩人的日常 消費總是「1 單位的豆子配上 1 單位的稻米」，因此我們將此設定為標準消費籃 (Market Basket)。在 2016 年，豆子價格為 1 美元，稻米價格為 3 美元。到了 2017 年，豆子價格上 漲至 2 美元，但稻米價格大跌至 1.50 美元。請問此經濟體的整體物價水準有何變動？且對 Bob 與 Rita 的實質購買力造成了什麼影響？`,
     options: {
       A: `發生通貨膨脹；Bob 的處境變差，Rita 的處 境變好`,
@@ -7900,8 +7900,8 @@ const questionsData = [
   {
     id: "q_0340",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30"],
+    topic: "Money & Inflation",
     question: `假設某國的貨幣流通速度 (Velocity of money) 保持固定不變，且該國隨著科技進步，實質 GDP (Y) 每年能穩定成長 5%。根據「貨幣數量說 (Quantity Theory of Money)」，若該國中 央銀行希望維持物價水準 (P) 的完全穩定（即通貨膨脹率為 0%），央行應該如何設定貨幣供 給 (M) 的長期成長率？`,
     options: {
       A: `貨幣供給成長率應設定為 0%，因為只要不印製新鈔，就不會發生 通貨膨脹。`,
@@ -7917,8 +7917,8 @@ const questionsData = [
   {
     id: "q_0341",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","27","31"],
+    topic: "Money & Banking",
     question: `Question: If Taiwan's central bank decides to massively sell government bonds in the open market, what is the primary purpose of this action and its impact on the macroeconomy?`,
     options: {
       A: `Increase the money supply, lower market interest rates, and stimulate investment.`,
@@ -7934,8 +7934,8 @@ const questionsData = [
   {
     id: "q_0342",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23"],
+    topic: "GDP",
     question: `Question: Regarding the calculation of Gross Domestic Product (GDP), which of the following transactions would be included in Taiwan's GDP for the current year?`,
     options: {
       A: `A college student buying a second-hand iPhone 14.`,
@@ -7951,8 +7951,8 @@ const questionsData = [
   {
     id: "q_0343",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `Question: Assuming all other conditions remain constant, when the New Taiwan Dollar (NTD) "depreciates" significantly against the US Dollar, which of the following impacts is most likely to occur in Taiwan's economy?`,
     options: {
       A: `It benefits Taiwanese importers as imported goods become cheaper.`,
@@ -7968,8 +7968,8 @@ const questionsData = [
   {
     id: "q_0344",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `Question: If the market expects the central bank to significantly "raise" policy interest rates next month, what immediate impact will this have on the bond market?`,
     options: {
       A: `Bond prices will fall, and bond yields will rise.`,
@@ -7985,8 +7985,8 @@ const questionsData = [
   {
     id: "q_0345",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30"],
+    topic: "Money & Inflation",
     question: `Question: During a period of inflation, which of the following groups typically becomes a "de facto beneficiary" due to rising prices?`,
     options: {
       A: `Retired civil servants receiving a fixed pension.`,
@@ -8002,8 +8002,8 @@ const questionsData = [
   {
     id: "q_0346",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24","29","30"],
+    topic: "GDP",
     question: `According to the Classical Dichotomy, which of the following economic variables would be affected in the long run if the central bank decides to double the money supply?`,
     options: {
       A: `Real GDP`,
@@ -8019,8 +8019,8 @@ const questionsData = [
   {
     id: "q_0347",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","24"],
+    topic: "GDP",
     question: `An economy is currently operating at its long-run macroeconomic equilibrium. If a sudden wave of pessimism hits businesses, leading to a sharp decrease in investment spending, which of the following short-run changes will occur?`,
     options: {
       A: `Both the price level and real GDP will increase.`,
@@ -8036,8 +8036,8 @@ const questionsData = [
   {
     id: "q_0348",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `According to the Fisher Effect, if the central bank successfully conducts monetary policies that cause the expected inflation rate to permanently rise by $4\\%$, how will the nominal interest rate and the real interest rate adjust in the long run?`,
     options: {
       A: `The nominal interest rate increases by $4\\%$, and the real interest rate remains unchanged.`,
@@ -8053,8 +8053,8 @@ const questionsData = [
   {
     id: "q_0349",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30"],
+    topic: "Money & Inflation",
     question: `Which of the following scenarios best illustrates the concept of Menu Costs during a period of high inflation?`,
     options: {
       A: `A restaurant owner decides to decrease the wages of waiters to cut operational costs.`,
@@ -8070,8 +8070,8 @@ const questionsData = [
   {
     id: "q_0350",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30","23","24"],
+    topic: "Money & Inflation",
     question: `If the Velocity of Money ($V$) increases because of a new banking technology that allows people to make transactions more efficiently with less cash, what will happen in the long run according to the Quantity Theory of Money, assuming real GDP ($Y$) and the money supply ($M$) remain unchanged?`,
     options: {
       A: `Real GDP will increase to match the higher efficiency.`,
@@ -8087,8 +8087,8 @@ const questionsData = [
   {
     id: "q_0351",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `下列何者最能解釋美中貿易戰後，台灣半導體產業短期內受益的原因？`,
     options: {
       A: `台灣減少所有半導 體出口`,
@@ -8104,8 +8104,8 @@ const questionsData = [
   {
     id: "q_0352",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `根據國際貿易理論，下列何者會增加台灣的淨出口（Net Exports）？`,
     options: {
       A: `台灣進口大量國外 晶片設備，但出口不變`,
@@ -8121,8 +8121,8 @@ const questionsData = [
   {
     id: "q_0353",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["31"],
+    topic: "Open Economy",
     question: `若新台幣貶值，下列何者最可能發生？`,
     options: {
       A: `台灣出口商品在國際市場變得較便宜`,
@@ -8138,8 +8138,8 @@ const questionsData = [
   {
     id: "q_0354",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29"],
+    topic: "Money & Banking",
     question: `若中央銀行（Fed）在公開市場操作中向民眾購買政府債券，下列何者最可能發生？`,
     options: {
       A: `銀行 準備金減少，貨幣供給減少`,
@@ -8155,8 +8155,8 @@ const questionsData = [
   {
     id: "q_0355",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27"],
+    topic: "Finance",
     question: `根據效率市場假說（EMH），若某家公司即將公布獲利大幅成長的消息，下列何者最符合效 率市場的觀點？`,
     options: {
       A: `投資人可以長期穩定利用公開資訊擊敗大盤`,
@@ -8172,8 +8172,8 @@ const questionsData = [
   {
     id: "q_0356",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["29","30"],
+    topic: "Money & Banking",
     question: `若在長期（Long run）下，中央銀行因為實施緊縮性貨幣政策而減少了貨幣供給量。在其他條 件不變下，關於貨幣市場的變動與價值決定，下列敘述何者最符合古典學派的理論推導？`,
     options: {
       A: `貨幣供給曲線會向右移動，導致長期的物價水準上升`,
@@ -8189,8 +8189,8 @@ const questionsData = [
   {
     id: "q_0357",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["27","29"],
+    topic: "Finance",
     question: `若快樂銀行（Happy Bank）擁有資產總額 $1,000$ 元，其中包含準備金、放款與證券，而其 銀行資本（Bank Capital，即股東權益）為 $50$ 元 。下列關於該銀行槓桿與風險的敘述，何 者正確？`,
     options: {
       A: `該銀行的槓桿比率（Leverage Ratio）為 5 倍`,
@@ -8206,8 +8206,8 @@ const questionsData = [
   {
     id: "q_0358",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["23","29"],
+    topic: "GDP",
     question: `若某國中央銀行在長期下將貨幣供給量「增加為原本的 2 倍」，根據上述理論，下列哪一個 經濟變數將會隨之加倍？`,
     options: {
       A: `實質國內生產毛額（Real GDP）`,
@@ -8223,8 +8223,8 @@ const questionsData = [
   {
     id: "q_0359",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["24"],
+    topic: "CPI & Inflation",
     question: `當政府因為面臨龐大預算赤字而透過大量印製鈔票來融通財政，因而引發嚴重的通貨膨脹時， 下列相關敘述何者最符合經濟學原理？`,
     options: {
       A: `這會對所有手中持有貨幣的人課徵「通貨膨脹 稅」，導致他們口袋中貨幣的實際購買力下降`,
@@ -8240,8 +8240,8 @@ const questionsData = [
   {
     id: "q_0360",
     source: "practice",
-    chapter: "",
-    topic: "",
+    chapter: ["30","24"],
+    topic: "Money & Inflation",
     question: `當一個經濟體發生未預期到的高通貨膨脹（Unexpected High Inflation）時，會對資源配置與 經濟效率造成扭曲。下列關於這些純理論成本與扭曲機制的敘述，何者正確？`,
     options: {
       A: `菜單成本 （Menu costs）指的是高通膨迫使消費者必須花費更多時間和精力去尋找最便宜的商品，因 而磨損鞋子`,
