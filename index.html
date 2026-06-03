@@ -463,6 +463,24 @@
     <div class="divider"></div>
 
     <div class="sidebar-section">
+      <div class="sidebar-section-label">Source</div>
+      <button class="filter-btn active" id="btn-src-all" onclick="setSource('all')">
+        All Sources <span class="count" id="cnt-src-all">0</span>
+      </button>
+      <button class="filter-btn" id="btn-src-lecture" onclick="setSource('lecture')">
+        Lecture <span class="count" id="cnt-src-lecture">0</span>
+      </button>
+      <button class="filter-btn" id="btn-src-homework" onclick="setSource('homework')">
+        Homework <span class="count" id="cnt-src-homework">0</span>
+      </button>
+      <button class="filter-btn" id="btn-src-student" onclick="setSource('student')">
+        Student <span class="count" id="cnt-src-student">0</span>
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="sidebar-section">
       <div class="sidebar-section-label">Chapter</div>
       <button class="filter-btn active" id="btn-ch-all" onclick="setChapter('all')">
         All Chapters <span class="count" id="cnt-ch-all">0</span>
@@ -470,8 +488,20 @@
       <button class="filter-btn" id="btn-ch-23-24" onclick="setChapter('23-24')">
         CH 23–24 GDP & CPI <span class="count" id="cnt-ch-23-24">0</span>
       </button>
+      <button class="filter-btn" id="btn-ch-23" onclick="setChapter('23')">
+        CH 23 GDP <span class="count" id="cnt-ch-23">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-24" onclick="setChapter('24')">
+        CH 24 CPI <span class="count" id="cnt-ch-24">0</span>
+      </button>
       <button class="filter-btn" id="btn-ch-25-26" onclick="setChapter('25-26')">
         CH 25–26 Growth <span class="count" id="cnt-ch-25-26">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-25" onclick="setChapter('25')">
+        CH 25 Growth <span class="count" id="cnt-ch-25">0</span>
+      </button>
+      <button class="filter-btn" id="btn-ch-26" onclick="setChapter('26')">
+        CH 26 Growth <span class="count" id="cnt-ch-26">0</span>
       </button>
       <button class="filter-btn" id="btn-ch-27" onclick="setChapter('27')">
         CH 27 Finance <span class="count" id="cnt-ch-27">0</span>
@@ -544,6 +574,7 @@
 <script>
 // ── State ──
 let currentMode = 'all';
+let currentSource = 'all';
 let currentChapter = 'all';
 let queue = [];
 let qIndex = 0;
@@ -564,6 +595,7 @@ function saveStarred(s) { localStorage.setItem('econ_starred', JSON.stringify(s)
 // ── Filter Logic ──
 function getFilteredQuestions() {
   let q = questionsData;
+  if (currentSource !== 'all') q = q.filter(x => x.source === currentSource);
   if (currentChapter !== 'all') q = q.filter(x => x.chapter === currentChapter);
   if (currentMode === 'starred') {
     const s = getStarred();
@@ -583,9 +615,17 @@ function setMode(mode) {
   startSession();
 }
 
+function setSource(src) {
+  currentSource = src;
+  ['all','lecture','homework','student'].forEach(s => {
+    document.getElementById('btn-src-'+s).classList.toggle('active', s === src);
+  });
+  startSession();
+}
+
 function setChapter(ch) {
   currentChapter = ch;
-  ['all','23-24','25-26','27','29','30','31'].forEach(c => {
+  ['all','23-24','23','24','25-26','25','26','27','29','30','31'].forEach(c => {
     const el = document.getElementById('btn-ch-'+c);
     if (el) el.classList.toggle('active', c === ch);
   });
@@ -788,12 +828,19 @@ function updateCounts() {
   const r = getRecord();
   const s = getStarred();
   const wrongIds = Object.entries(r).filter(([,v]) => v === 'wrong').map(([k]) => k);
-  const chapters = ['23-24','25-26','27','29','30','31'];
+  const sources = ['lecture','homework','student'];
+  const chapters = ['23-24','23','24','25-26','25','26','27','29','30','31'];
 
   document.getElementById('cnt-all').textContent = questionsData.length;
   document.getElementById('cnt-starred').textContent = s.length;
   document.getElementById('cnt-wrong').textContent = wrongIds.length;
+  document.getElementById('cnt-src-all').textContent = questionsData.length;
   document.getElementById('cnt-ch-all').textContent = questionsData.length;
+
+  sources.forEach(src => {
+    const el = document.getElementById('cnt-src-' + src);
+    if (el) el.textContent = questionsData.filter(q => q.source === src).length;
+  });
 
   chapters.forEach(ch => {
     const el = document.getElementById('cnt-ch-' + ch);
