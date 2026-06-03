@@ -749,8 +749,10 @@ function startSession() {
   sessionCorrect = 0;
   sessionWrong = 0;
   queue = [...getFilteredQuestions()];
-  qIndex = 0;
   answered = false;
+  const r = getRecord();
+  qIndex = queue.findIndex(q => !r[q.id]);
+  if (qIndex === -1) qIndex = queue.length;
   document.getElementById('results-screen').style.display = 'none';
   document.getElementById('question-area').style.display = '';
   updateCounts();
