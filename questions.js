@@ -3461,6 +3461,7 @@ const questionsData = [
     explanation: `房租與外食是年輕人常見支出，如果漲價明顯，即使整體 CPI 不高，也會讓人感覺生活壓力 變大。`,
     starred: false,
     verified: true,
+    disabled: true,
   },
   {
     id: "q_0072",

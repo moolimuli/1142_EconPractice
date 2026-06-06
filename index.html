@@ -460,6 +460,130 @@
   .r-wrong { color: var(--red); }
   .r-skip { color: var(--text-dim); }
 
+  /* ── Question List Modal ── */
+  #qlist-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    background: rgba(28, 25, 23, 0.5);
+  }
+  #qlist-modal.show { display: flex; }
+
+  .qlist-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    width: min(560px, 92vw);
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+
+  .qlist-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  .qlist-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .qlist-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-left: 8px;
+  }
+  .qlist-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-muted);
+    line-height: 1;
+    padding: 4px;
+  }
+  .qlist-close:hover { color: var(--text); }
+
+  .qlist-search {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .qlist-search input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    outline: none;
+  }
+  .qlist-search input:focus { border-color: var(--accent); }
+
+  .qlist-body {
+    overflow-y: auto;
+    flex: 1;
+    padding: 8px 10px;
+  }
+
+  .qlist-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.12s;
+    border: 1px solid transparent;
+  }
+  .qlist-item:hover { background: var(--surface2); }
+  .qlist-item.current {
+    background: var(--accent-soft);
+    border-color: var(--accent-border);
+  }
+
+  .qlist-status {
+    font-size: 13px;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: 'DM Mono', monospace;
+  }
+  .qlist-id {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    min-width: 60px;
+  }
+  .qlist-item.current .qlist-id { color: var(--accent); }
+  .qlist-text {
+    font-size: 13px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+  }
+  .qlist-item.current .qlist-text { color: var(--text); font-weight: 500; }
+  .qlist-empty {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
   /* Scrollbar */
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: transparent; }
@@ -628,6 +752,23 @@
 
   <div id="sidebar-overlay" onclick="closeSidebar()"></div>
 
+  <!-- QUESTION LIST MODAL -->
+  <div id="qlist-modal" onclick="closeQuestionList(event)">
+    <div class="qlist-box">
+      <div class="qlist-header">
+        <div>
+          <span class="qlist-title">題目列表</span>
+          <span class="qlist-subtitle" id="qlist-count"></span>
+        </div>
+        <button class="qlist-close" onclick="closeQuestionList()">✕</button>
+      </div>
+      <div class="qlist-search">
+        <input type="text" id="qlist-search-input" placeholder="搜尋題號或題目內容…" oninput="renderQList(this.value)">
+      </div>
+      <div class="qlist-body" id="qlist-body"></div>
+    </div>
+  </div>
+
   <!-- MAIN -->
   <div id="main">
     <div id="topbar">
@@ -637,6 +778,7 @@
         <span class="question-counter" id="q-counter">— / —</span>
       </div>
       <div class="topbar-right">
+        <button class="btn" onclick="openQuestionList()">≡ 題目</button>
         <button class="btn" onclick="shuffleQuestions()">⇄ Shuffle</button>
         <button class="btn danger" onclick="resetSession()">↺ Reset</button>
       </div>
@@ -852,6 +994,7 @@ function renderQuestion() {
 
     <div class="nav-row">
       <button class="btn" onclick="prevQuestion()" ${qIndex === 0 ? 'disabled style="opacity:0.3"' : ''}>← Prev</button>
+      <button class="btn" id="skip-btn" onclick="nextQuestion()">Skip →</button>
       <button class="btn primary" id="next-btn" onclick="nextQuestion()" style="display:none">Next →</button>
     </div>
   `;
@@ -893,6 +1036,7 @@ function selectOption(qid, key) {
   if (isCorrect) sessionCorrect++; else sessionWrong++;
   updateStats();
 
+  document.getElementById('skip-btn').style.display = 'none';
   document.getElementById('next-btn').style.display = 'inline-flex';
 }
 
@@ -1000,6 +1144,73 @@ function updateStats() {
   document.getElementById('stat-wrong').textContent = wrong;
   document.getElementById('stat-acc').textContent = acc;
 }
+
+// ── Question List Modal ──
+function openQuestionList() {
+  document.getElementById('qlist-search-input').value = '';
+  document.getElementById('qlist-count').textContent = `${queue.length} 題`;
+  renderQList('');
+  document.getElementById('qlist-modal').classList.add('show');
+  setTimeout(() => document.getElementById('qlist-search-input').focus(), 50);
+  const current = document.querySelector('.qlist-item.current');
+  if (current) current.scrollIntoView({ block: 'center' });
+}
+
+function closeQuestionList(e) {
+  if (e && e.target !== document.getElementById('qlist-modal')) return;
+  document.getElementById('qlist-modal').classList.remove('show');
+}
+
+function renderQList(filter) {
+  const r = getRecord();
+  const keyword = (filter || '').toLowerCase();
+  const body = document.getElementById('qlist-body');
+
+  const items = queue.map((q, i) => ({ q, i })).filter(({ q }) => {
+    if (!keyword) return true;
+    const plainQ = q.question.replace(/<[^>]+>/g, '');
+    return q.id.toLowerCase().includes(keyword) || plainQ.toLowerCase().includes(keyword);
+  });
+
+  if (items.length === 0) {
+    body.innerHTML = '<div class="qlist-empty">找不到符合的題目</div>';
+    return;
+  }
+
+  body.innerHTML = items.map(({ q, i }) => {
+    const status = r[q.id];
+    let icon, color;
+    if (i === qIndex)            { icon = '●'; color = 'var(--accent)'; }
+    else if (status === 'correct') { icon = '✓'; color = 'var(--green)'; }
+    else if (status === 'wrong')   { icon = '✗'; color = 'var(--red)'; }
+    else                           { icon = '·'; color = 'var(--text-muted)'; }
+    const text = q.question.replace(/<[^>]+>/g, '').substring(0, 45);
+    return `
+      <div class="qlist-item ${i === qIndex ? 'current' : ''}" onclick="jumpToQuestion(${i})">
+        <span class="qlist-status" style="color:${color}">${icon}</span>
+        <span class="qlist-id">${q.id}</span>
+        <span class="qlist-text">${text}…</span>
+      </div>`;
+  }).join('');
+
+  if (!keyword) {
+    setTimeout(() => {
+      const cur = body.querySelector('.current');
+      if (cur) cur.scrollIntoView({ block: 'center' });
+    }, 0);
+  }
+}
+
+function jumpToQuestion(i) {
+  qIndex = i;
+  answered = false;
+  document.getElementById('qlist-modal').classList.remove('show');
+  renderQuestion();
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('qlist-modal').classList.remove('show');
+});
 
 // ── Init ──
 updateCounts();
