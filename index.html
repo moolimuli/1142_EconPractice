@@ -951,7 +951,7 @@ function renderQuestion() {
   const starred = getStarred().includes(q.id);
   const flagged = getFlagged().includes(q.id);
   const r = getRecord();
-  const doneCount = queue.filter(x => r[x.id]).length;
+  const doneCount = currentMode === 'all' ? queue.filter(x => r[x.id]).length : qIndex;
   answered = false;
 
   const aiBadge = q.answer_source === 'ai_generated'
