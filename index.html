@@ -893,8 +893,12 @@ function startSession() {
   queue = [...getFilteredQuestions()];
   answered = false;
   const r = getRecord();
-  qIndex = queue.findIndex(q => !r[q.id]);
-  if (qIndex === -1) qIndex = queue.length;
+  if (currentMode === 'all') {
+    qIndex = queue.findIndex(q => !r[q.id]);
+    if (qIndex === -1) qIndex = queue.length;
+  } else {
+    qIndex = 0;
+  }
   document.getElementById('results-screen').style.display = 'none';
   document.getElementById('question-area').style.display = '';
   updateCounts();
