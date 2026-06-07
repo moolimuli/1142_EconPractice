@@ -778,6 +778,7 @@
         <span class="question-counter" id="q-counter">— / —</span>
       </div>
       <div class="topbar-right">
+        <div id="google_translate_element"></div>
         <button class="btn" onclick="openQuestionList()">≡ 題目</button>
         <button class="btn" onclick="shuffleQuestions()">⇄ Shuffle</button>
         <button class="btn danger" onclick="resetSession()">↺ Reset</button>
@@ -1221,5 +1222,14 @@ updateCounts();
 updateStats();
 startSession();
 </script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'zh-TW', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+    'google_translate_element'
+  );
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
