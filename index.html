@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Economics Practice</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -629,7 +629,7 @@
     .question-counter { font-size: 11px; padding: 3px 8px; }
     .btn { padding: 7px 10px; font-size: 12px; }
 
-    #question-area { padding: 16px 14px; }
+    #question-area { padding: 16px 14px calc(32px + env(safe-area-inset-bottom)) 14px; }
     .question-card { padding: 20px 16px; }
     .question-text { font-size: 15px; }
     .option-btn { padding: 12px 14px; font-size: 13px; }
